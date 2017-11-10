@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     30353,        819]
-NotebookOptionsPosition[     29091,        770]
-NotebookOutlinePosition[     29436,        785]
-CellTagsIndexPosition[     29393,        782]
+NotebookDataLength[    162885,       3477]
+NotebookOptionsPosition[    160113,       3379]
+NotebookOutlinePosition[    160457,       3394]
+CellTagsIndexPosition[    160414,       3391]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -123,7 +123,9 @@ Cell[BoxData[
   Editable->False]], "Output",
  CellChangeTimes->{{3.718304870150279*^9, 3.718304900149414*^9}, 
    3.71840652683171*^9, 3.7184068225604477`*^9, 3.718410923360364*^9, 
-   3.718742577198724*^9}]
+   3.718742577198724*^9, 3.7187436772731857`*^9, 3.7187461781063414`*^9, 
+   3.7192431687684083`*^9, 3.719249025288415*^9, 3.719249477357574*^9, 
+   3.719250524234991*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -192,7 +194,9 @@ Cell[BoxData[
      Editable->False], ")"}]}]}]], "Output",
  CellChangeTimes->{3.7183048603549023`*^9, 3.718402843782461*^9, 
   3.718406526974309*^9, 3.7184068226783266`*^9, 3.71841092373804*^9, 
-  3.718742577364993*^9}]
+  3.718742577364993*^9, 3.7187436773623667`*^9, 3.718746178209114*^9, 
+  3.7192431688877525`*^9, 3.719249025360593*^9, 3.7192494776470127`*^9, 
+  3.7192505243482924`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -214,7 +218,9 @@ Cell[BoxData[
    MultilineFunction->None], "[", "x", "]"}]], "Output",
  CellChangeTimes->{{3.71840473472009*^9, 3.7184047519883194`*^9}, 
    3.71840652699846*^9, 3.718406822704379*^9, 3.7184109237570887`*^9, 
-   3.7187425774276676`*^9}]
+   3.7187425774276676`*^9, 3.7187436773799276`*^9, 3.7187461782256584`*^9, 
+   3.719243168981002*^9, 3.7192490253806458`*^9, 3.7192494776700993`*^9, 
+   3.719250524378373*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -387,13 +393,17 @@ Cell[BoxData["14.231170021098274`"], "Output",
  CellChangeTimes->{
   3.7184088434710054`*^9, {3.718408899578873*^9, 3.7184089030574436`*^9}, 
    3.7184089511691775`*^9, 3.7184096849714413`*^9, 3.718410923858363*^9, 
-   3.718742577502927*^9}],
+   3.718742577502927*^9, 3.7187436774270377`*^9, 3.7187461782854524`*^9, 
+   3.7192431690436687`*^9, 3.7192490254377975`*^9, 3.719249477727253*^9, 
+   3.7192505244460583`*^9}],
 
 Cell[BoxData["14.23125478598582`"], "Output",
  CellChangeTimes->{
   3.7184088434710054`*^9, {3.718408899578873*^9, 3.7184089030574436`*^9}, 
    3.7184089511691775`*^9, 3.7184096849714413`*^9, 3.718410923858363*^9, 
-   3.7187425775058928`*^9}]
+   3.718742577502927*^9, 3.7187436774270377`*^9, 3.7187461782854524`*^9, 
+   3.7192431690436687`*^9, 3.7192490254377975`*^9, 3.719249477727253*^9, 
+   3.719250524448571*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -451,7 +461,9 @@ Cell[BoxData["0.2999935900284324`"], "Output",
  CellChangeTimes->{
   3.7184096344403324`*^9, 3.7184097007525973`*^9, {3.7184099798634553`*^9, 
    3.7184099881599116`*^9}, 3.718410436972763*^9, 3.718410923902484*^9, 
-   3.7187425775389814`*^9}]
+   3.7187425775389814`*^9, 3.718743677473161*^9, 3.7187461783269734`*^9, 
+   3.71924316908434*^9, 3.7192490254779043`*^9, 3.719249477785882*^9, 
+   3.719250524489674*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -561,7 +573,8 @@ Cell[BoxData[
    3.7184102623953953`*^9}, {3.718410298574753*^9, 3.718410329419793*^9}, 
    3.7184104694645886`*^9, {3.7184105544690866`*^9, 3.718410826199757*^9}, {
    3.7184111076266127`*^9, 3.7184111357230916`*^9}, {3.7187426971628942`*^9, 
-   3.7187426974103913`*^9}}],
+   3.7187426974103913`*^9}, {3.7187461412421227`*^9, 3.7187461604640503`*^9}, 
+   3.7192431658337293`*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -594,23 +607,23 @@ Cell[BoxData[
       Hold["fixed point, a"], Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`a$$], 1, ""}, 0, 5, 0.5}}, Typeset`size$$ = {
     256., {3., 9.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`S$1833$$ = 0, K$1834$$ = 
-    0, $CellContext`\[Sigma]$1835$$ = 0, $CellContext`r$1836$$ = 
-    0, $CellContext`T$1837$$ = 0, $CellContext`order$1838$$ = 
-    0, $CellContext`a$1839$$ = 0}, 
+    Typeset`skipInitDone$$ = False, $CellContext`S$1429$$ = 0, K$1434$$ = 
+    0, $CellContext`\[Sigma]$1435$$ = 0, $CellContext`r$1436$$ = 
+    0, $CellContext`T$1437$$ = 0, $CellContext`order$1438$$ = 
+    0, $CellContext`a$1439$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`a$$ = 1, K$$ = 100, $CellContext`order$$ = 
         10, $CellContext`r$$ = 0.05, $CellContext`S$$ = 
         100., $CellContext`T$$ = 1, $CellContext`\[Sigma]$$ = 0.3}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`S$$, $CellContext`S$1833$$, 0], 
-        Hold[K$$, K$1834$$, 0], 
-        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$1835$$, 0], 
-        Hold[$CellContext`r$$, $CellContext`r$1836$$, 0], 
-        Hold[$CellContext`T$$, $CellContext`T$1837$$, 0], 
-        Hold[$CellContext`order$$, $CellContext`order$1838$$, 0], 
-        Hold[$CellContext`a$$, $CellContext`a$1839$$, 0]}, 
+        Hold[$CellContext`S$$, $CellContext`S$1429$$, 0], 
+        Hold[K$$, K$1434$$, 0], 
+        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$1435$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$1436$$, 0], 
+        Hold[$CellContext`T$$, $CellContext`T$1437$$, 0], 
+        Hold[$CellContext`order$$, $CellContext`order$1438$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$1439$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -764,12 +777,2608 @@ $CellContext`CallPrice]; $CellContext`impliedVol = $CellContext`std/
  CellChangeTimes->{{3.7184106907040043`*^9, 3.7184107140424805`*^9}, {
    3.718410778269255*^9, 3.718410826749381*^9}, 3.718410923975453*^9, {
    3.7184111220196753`*^9, 3.7184111360916176`*^9}, 3.7187425776533003`*^9, 
-   3.718742663551868*^9, 3.7187426984482446`*^9}]
+   3.718742663551868*^9, 3.7187426984482446`*^9, 3.718743677553712*^9, {
+   3.718746161353861*^9, 3.718746178371091*^9}, 3.719243169120534*^9, 
+   3.719249025541072*^9, 3.7192494778774576`*^9, 3.7192505245618677`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Module", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"lo", "=", 
+      RowBox[{"logForward", "[", 
+       RowBox[{"100", ",", "100", ",", "1", ",", "0.05"}], "]"}]}], ",", 
+     RowBox[{"a", "=", "1"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{"Limit", "[", 
+    RowBox[{
+     RowBox[{"D", "[", 
+      RowBox[{
+       SuperscriptBox[
+        RowBox[{"(", 
+         FractionBox[
+          RowBox[{"(", 
+           RowBox[{"Z", "-", "a"}], ")"}], 
+          RowBox[{
+           RowBox[{"BSCall", "[", 
+            RowBox[{"S", ",", "lo", ",", "Z"}], "]"}], "-", 
+           RowBox[{"BSCall", "[", 
+            RowBox[{"S", ",", "lo", ",", "a"}], "]"}]}]], ")"}], "2"], ",", 
+       "Z"}], "]"}], ",", 
+     RowBox[{"Z", "\[Rule]", "a"}]}], "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.718742735326175*^9, 3.7187427494144106`*^9}, {
+  3.718742798947158*^9, 3.7187428908113956`*^9}, {3.718742926833728*^9, 
+  3.718742933846698*^9}, {3.7187432012761965`*^9, 3.7187432712785997`*^9}}],
+
+Cell[BoxData[
+ FractionBox["2.10440416368881`", 
+  SuperscriptBox["S", "2"]]], "Output",
+ CellChangeTimes->{{3.7187428404133673`*^9, 3.718742891500673*^9}, 
+   3.7187430636221447`*^9, 3.7187432726529727`*^9, 3.718743677956784*^9, 
+   3.7187461787093744`*^9, 3.719243169519069*^9, 3.719249025672326*^9, 
+   3.7192494787579994`*^9, 3.7192505250040417`*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"ReversionCoeffs", "[", 
+    RowBox[{"S_", ",", "K_", ",", "T_", ",", "r_", ",", "a_", ",", "n_"}], 
+    "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"lo", "=", 
+       RowBox[{"logForward", "[", 
+        RowBox[{"S", ",", "K", ",", "T", ",", "r"}], "]"}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"Limit", "[", 
+      RowBox[{
+       RowBox[{"D", "[", 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           FractionBox[
+            RowBox[{"(", 
+             RowBox[{"Z", "-", "a"}], ")"}], 
+            RowBox[{
+             RowBox[{"BSCall", "[", 
+              RowBox[{"S", ",", "lo", ",", "Z"}], "]"}], "-", 
+             RowBox[{"BSCall", "[", 
+              RowBox[{"S", ",", "lo", ",", "a"}], "]"}]}]], ")"}], "n"], ",", 
+         RowBox[{"{", 
+          RowBox[{"Z", ",", 
+           RowBox[{"n", "-", "1"}]}], "}"}]}], "]"}], ",", 
+       RowBox[{"Z", "\[Rule]", "a"}]}], "]"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.718743318165514*^9, 3.718743319399342*^9}, {
+  3.7187433575605803`*^9, 3.7187435457699356`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Table", "[", 
+  RowBox[{
+   RowBox[{"ReversionCoeffs", "[", 
+    RowBox[{"100", ",", "100", ",", "1", ",", "0.05", ",", "1", ",", "n"}], 
+    "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", "1", ",", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.718743550071216*^9, 3.7187435980159993`*^9}, {
+  3.718743671045268*^9, 3.718743671376648*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.029159291976334666`", ",", "0.000210440416368881`", ",", 
+   "9.421689901363702`*^-6"}], "}"}]], "Output",
+ CellChangeTimes->{{3.7187435704859734`*^9, 3.7187435785970154`*^9}, 
+   3.7187436800351596`*^9, 3.7187461787279243`*^9, 3.719243171527109*^9, 
+   3.719249025706417*^9, 3.7192494811168437`*^9, 3.719250527254828*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Adjusted initial point using Jim Gatheral\[CloseCurlyQuote]s tight upper \
+bound of implied volatility: A more rapidly asymptotic series.\
+\>", "Section",
+ CellChangeTimes->{{3.7192443982469754`*^9, 3.7192444713402057`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"StdUpperBound", "[", 
+    RowBox[{"C_", ",", "F_", ",", "K_", ",", "T_", ",", "r_"}], "]"}], ":=", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+      "c", ",", "k", ",", "a", ",", "psi", ",", "theta", ",", "upperBound"}], 
+      "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"c", "=", 
+       FractionBox["C", 
+        RowBox[{
+         RowBox[{"Exp", "[", 
+          RowBox[{
+           RowBox[{"-", "r"}], " ", "T"}], "]"}], " ", "F"}]]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"k", "=", 
+       RowBox[{"Log", "[", 
+        FractionBox["K", "F"], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"a", "=", 
+       FractionBox[
+        RowBox[{"1", "-", "c"}], 
+        RowBox[{"1", "+", 
+         RowBox[{"Exp", "[", "k", "]"}]}]]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"psi", "=", 
+       RowBox[{"InverseCDF", "[", 
+        RowBox[{
+         RowBox[{"NormalDistribution", "[", 
+          RowBox[{"0", ",", "1"}], "]"}], ",", "a"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"theta", "=", 
+       RowBox[{
+        RowBox[{"-", 
+         FractionBox[
+          RowBox[{"PDF", "[", 
+           RowBox[{
+            RowBox[{"NormalDistribution", "[", 
+             RowBox[{"0", ",", "1"}], "]"}], ",", "psi"}], "]"}], "psi"]}], 
+        "*", " ", 
+        FractionBox[
+         RowBox[{
+          RowBox[{"Exp", "[", "k", "]"}], "-", "1"}], 
+         RowBox[{
+          RowBox[{"Exp", "[", 
+           RowBox[{"2", " ", "k"}], "]"}], "+", "1"}]]}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"upperBound", " ", "=", 
+       RowBox[{"N", "[", " ", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"InverseCDF", "[", 
+            RowBox[{
+             RowBox[{"NormalDistribution", "[", 
+              RowBox[{"0", ",", "1"}], "]"}], ",", 
+             RowBox[{"a", "+", 
+              RowBox[{"theta", "*", 
+               RowBox[{"Exp", "[", "k", "]"}]}]}]}], "]"}]}], "-", 
+          RowBox[{"InverseCDF", "[", 
+           RowBox[{
+            RowBox[{"NormalDistribution", "[", 
+             RowBox[{"0", ",", "1"}], "]"}], ",", 
+            RowBox[{"a", "-", "theta"}]}], "]"}]}], ",", "30"}], "]"}]}]}]}], 
+    "\[IndentingNewLine]", "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.71924320459818*^9, 3.719243305062341*^9}, {
+  3.7192433380413713`*^9, 3.719243479995822*^9}, {3.71924358033877*^9, 
+  3.719243607089596*^9}, {3.7192436800012765`*^9, 3.719243902811346*^9}, {
+  3.7192441293208313`*^9, 3.7192441341043577`*^9}, {3.719248995664137*^9, 
+  3.719248997600459*^9}, {3.719249398685669*^9, 3.7192494037359776`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"With", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"S", "=", "100"}], ",", 
+     RowBox[{"K", "=", "120"}], ",", 
+     RowBox[{"T", "=", "1"}], ",", 
+     RowBox[{"r", "=", "0.05"}], ",", 
+     RowBox[{"\[Sigma]", "=", "0.3"}]}], "}"}], ",", 
+   RowBox[{"StdUpperBound", "[", 
+    RowBox[{
+     RowBox[{"BSCallHandy", "[", 
+      RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}], 
+     ",", 
+     RowBox[{"S", "*", 
+      RowBox[{"Exp", "[", 
+       RowBox[{"r", " ", "T"}], "]"}]}], ",", "K", ",", "T", ",", "r"}], 
+    "]"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.7192439072641296`*^9, 3.7192439237420006`*^9}, {
+  3.7192439723203135`*^9, 3.719244099331224*^9}, {3.7192441405442257`*^9, 
+  3.71924420285784*^9}, {3.7192494074159307`*^9, 3.7192494088717313`*^9}}],
+
+Cell[BoxData["0.3001412933884637`"], "Output",
+ CellChangeTimes->{{3.7192440736047473`*^9, 3.719244099697445*^9}, {
+   3.719244137732541*^9, 3.7192442032879295`*^9}, 3.7192490257320194`*^9, 
+   3.719249482397484*^9, 3.7192505280208626`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"targetCallPrice", "=", 
+        RowBox[{"BSCallHandy", "[", 
+         RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], 
+         "]"}]}], ",", 
+       RowBox[{"estimatedCallPrice", "=", 
+        RowBox[{"BSCallTaylorExpansion", "[", 
+         RowBox[{
+         "S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]", ",", "a", ",", 
+          "order"}], "]"}]}], ",", "estimatedIV", ",", "fixa", ",", 
+       "upperbound"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"fixa", "=", " ", 
+       RowBox[{"StdUpperBound", "[", 
+        RowBox[{
+         RowBox[{"BSCallHandy", "[", 
+          RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}],
+          ",", 
+         RowBox[{"S", "*", 
+          RowBox[{"Exp", "[", 
+           RowBox[{"r", " ", "T"}], "]"}]}], ",", "K", ",", "T", ",", "r"}], 
+        "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"upperbound", " ", "=", " ", 
+       FractionBox["fixa", 
+        SqrtBox["T"]]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"estimatedIV", "=", 
+       RowBox[{"InverseCallIV", "[", 
+        RowBox[{
+        "targetCallPrice", ",", "S", ",", "K", ",", "T", ",", "r", ",", "a", 
+         ",", "order"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"targetCallPrice", ",", "estimatedCallPrice"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"\[Sigma]", ",", "upperbound", ",", "estimatedIV"}], "}"}]}],
+        "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+   "\"\<underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)\>\"", ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"S", ",", "100.", ",", "\"\<\>\""}], "}"}], ",", "0", ",", 
+     "150", ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<strike, K\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"K", ",", "100", ",", "\"\<\>\""}], "}"}], ",", "0", ",", "150",
+      ",", "0.5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<volatility, \[Sigma]\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Sigma]", ",", "0.3", ",", "\"\<\>\""}], "}"}], ",", "0.01", 
+     ",", "1", ",", "0.01", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<risk-free rate, r\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"r", ",", "0.05", ",", "\"\<\>\""}], "}"}], ",", "0.0", ",", 
+     "0.25", ",", "0.01", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<years to maturity, T\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"T", ",", "1", ",", "\"\<\>\""}], "}"}], ",", "0.1", ",", "3", 
+     ",", "0.25", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<truncated order, order\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"order", ",", "10", ",", "\"\<\>\""}], "}"}], ",", "0", ",", 
+     "64", ",", "8", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<fixed point, a\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"a", ",", 
+       RowBox[{"StdUpperBound", "[", 
+        RowBox[{
+         RowBox[{"BSCallHandy", "[", 
+          RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}],
+          ",", 
+         RowBox[{"S", "*", 
+          RowBox[{"Exp", "[", 
+           RowBox[{"r", " ", "T"}], "]"}]}], ",", "K", ",", "T", ",", "r"}], 
+        "]"}], ",", "\"\<\>\""}], "}"}], ",", "0", ",", "5", ",", "0.5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"ControlPlacement", "\[Rule]", "Left"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.719244267738454*^9, 3.7192442684238305`*^9}, {
+  3.71924472575788*^9, 3.719244845115471*^9}, {3.7192449133551865`*^9, 
+  3.719244917611848*^9}, {3.719247923084504*^9, 3.719247945593335*^9}, {
+  3.719248797638819*^9, 3.7192488422931786`*^9}, {3.7192488826376686`*^9, 
+  3.719248928172059*^9}, {3.7192490019763994`*^9, 3.7192490084887943`*^9}, {
+  3.7192490390091853`*^9, 3.719249048868826*^9}, {3.7192494122425127`*^9, 
+  3.719249418409501*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = ConditionalExpression[
+    1.4142135623730950488016887242096980785696718753769480731767`30. 
+      InverseErfc[
+       2.`30. ((1.`30. + 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+           1.`30. + 0.5`30. 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+            K$$ $CellContext`S$$^(-1) (1.`30. + 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+           0.5`30. (-1.`30. - 1.`30. 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
+         0.282094791773878143474039725780386292922025314664499428685`30. 
+         2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
+1.`30.) InverseErfc[
+             2.`30. (1.`30. + 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+               1.`30. + 0.5`30. 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                K$$ $CellContext`S$$^(-1) (1.`30. + 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+               0.5`30. (-1.`30. - 1.`30. 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) (1.`30. + 
+           2.7182818284590452353602874713526624976385970411900203714065`30.^((\
+-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+            K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+          2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
+1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)/InverseErfc[
+         2.`30. (1.`30. + 
+            2.7182818284590452353602874713526624976385970411900203714065`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+           1.`30. + 0.5`30. 
+            2.7182818284590452353602874713526624976385970411900203714065`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+            K$$ $CellContext`S$$^(-1) (1.`30. + 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+           0.5`30. (-1.`30. - 1.`30. 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))])] + 
+     1.4142135623730950488016887242096980785696718753769480731767`30. 
+      InverseErfc[
+       2.`30. ((1.`30. + 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+           1.`30. + 0.5`30. 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+            K$$ $CellContext`S$$^(-1) (1.`30. + 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+           0.5`30. (-1.`30. - 1.`30. 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
+         0.282094791773878143474039725780386292922025314664499428685`30. 
+          2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
+1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
+            InverseErfc[
+              2.`30. (1.`30. + 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+                1.`30. + 0.5`30. 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                 K$$ $CellContext`S$$^(-1) (1.`30. + 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                0.5`30. (-1.`30. - 1.`30. 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) 
+          K$$ (1.`30. + 
+            2.7182818284590452353602874713526624976385970411900203714065`30.^(\
+(-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+             K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+           2.7182818284590452353602874713526624976385970411900203714065`30.^((\
+-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+            K$$/$CellContext`S$$) $CellContext`S$$^(-1)/InverseErfc[
+          2.`30. (1.`30. + 
+             2.7182818284590452353602874713526624976385970411900203714065`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+            1.`30. + 0.5`30. 
+             2.7182818284590452353602874713526624976385970411900203714065`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+             K$$ $CellContext`S$$^(-1) (1.`30. + 
+              Erf[0.7071067811865475244008443621048490392848359376884740365884\
+`30. ((-0.5`30.) $CellContext`T$$^
+                   Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                   Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+            0.5`30. (-1.`30. - 1.`30. 
+              Erf[0.7071067811865475244008443621048490392848359376884740365884\
+`30. (0.5`30. $CellContext`T$$^
+                   Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                   Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))])], 
+     And[0 <= (1.`30. + 
+          2.7182818284590452353602874713526624938382062863352767788129`30.^((-\
+1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (1.`30. + 
+         0.5`30. 2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+          K$$ $CellContext`S$$^(-1) (1.`30. + 
+           Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                Rational[-1, 
+                  2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+         0.5`30. (-1.`30. - 1.`30. 
+           Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                Rational[-1, 
+                  2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
+       0.282094791773878143474039725780386292922025314664499428685`30. 
+       2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.`\
+30.) InverseErfc[
+           2.`30. (1.`30. + 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+             1.`30. + 0.5`30. 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+              K$$ $CellContext`S$$^(-1) (1.`30. + 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+             0.5`30. (-1.`30. - 1.`30. 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) (1.`30. + 
+         2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
+2.`30.) $CellContext`r$$ $CellContext`T$$) 
+          K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+        2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.\
+`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)/InverseErfc[
+       2.`30. (1.`30. + 
+          2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
+1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (1.`30. + 
+         0.5`30. 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+          K$$ $CellContext`S$$^(-1) (1.`30. + 
+           Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                Rational[-1, 
+                  2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+         0.5`30. (-1.`30. - 1.`30. 
+           Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                Rational[-1, 
+                  2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))] <= 1.`30., 
+      0 <= (1.`30. + 
+         2.7182818284590452353602874713526624938382062863352767788129`30.^((-\
+1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (1.`30. + 
+        0.5`30. 2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+         K$$ $CellContext`S$$^(-1) (1.`30. + 
+          Erf[0.7071067811865475244008443621048490392848359376884740365884`30.\
+ ((-0.5`30.) $CellContext`T$$^
+               Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+               Rational[-1, 
+                 2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+        0.5`30. (-1.`30. - 1.`30. 
+          Erf[0.7071067811865475244008443621048490392848359376884740365884`30.\
+ (0.5`30. $CellContext`T$$^
+               Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+               Rational[-1, 
+                 2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+      0 <= (1.`30. + 
+         2.7182818284590452353602874713526624938382062863352767788129`30.^((-\
+1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (1.`30. + 
+        0.5`30. 2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+         K$$ $CellContext`S$$^(-1) (1.`30. + 
+          Erf[0.7071067811865475244008443621048490392848359376884740365884`30.\
+ ((-0.5`30.) $CellContext`T$$^
+               Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+               Rational[-1, 
+                 2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+        0.5`30. (-1.`30. - 1.`30. 
+          Erf[0.7071067811865475244008443621048490392848359376884740365884`30.\
+ (0.5`30. $CellContext`T$$^
+               Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+               Rational[-1, 
+                 2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+      0 <= (1.`30. + 
+          2.7182818284590452353602874713526624938382062863352767788129`30.^((-\
+1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (1.`30. + 
+         0.5`30. 2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+          K$$ $CellContext`S$$^(-1) (1.`30. + 
+           Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                Rational[-1, 
+                  2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+         0.5`30. (-1.`30. - 1.`30. 
+           Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                Rational[-1, 
+                  2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
+       0.282094791773878143474039725780386292922025314664499428685`30. 
+        2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.\
+`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
+          InverseErfc[
+            2.`30. (1.`30. + 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) 
+        K$$ (1.`30. + 
+          2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
+2.`30.) $CellContext`r$$ $CellContext`T$$) 
+           K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+         2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
+1.`30.) $CellContext`r$$ $CellContext`T$$) 
+          K$$/$CellContext`S$$) $CellContext`S$$^(-1)/InverseErfc[
+        2.`30. (1.`30. + 
+           2.7182818284590452353602874713526624976385970411900203714065`30.^((\
+-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+          1.`30. + 0.5`30. 
+           2.7182818284590452353602874713526624976385970411900203714065`30.^((\
+-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+           K$$ $CellContext`S$$^(-1) (1.`30. + 
+            Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                 Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                 Rational[-1, 
+                   2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+          0.5`30. (-1.`30. - 1.`30. 
+            Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                 Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                 Rational[-1, 
+                   2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))] <= 1.`30., 
+      0 <= (1.`30. + 
+         2.7182818284590452353602874713526624938382062863352767788129`30.^((-\
+1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (1.`30. + 
+        0.5`30. 2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+         K$$ $CellContext`S$$^(-1) (1.`30. + 
+          Erf[0.7071067811865475244008443621048490392848359376884740365884`30.\
+ ((-0.5`30.) $CellContext`T$$^
+               Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+               Rational[-1, 
+                 2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+        0.5`30. (-1.`30. - 1.`30. 
+          Erf[0.7071067811865475244008443621048490392848359376884740365884`30.\
+ (0.5`30. $CellContext`T$$^
+               Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+               Rational[-1, 
+                 2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+      0 <= (1.`30. + 
+         2.7182818284590452353602874713526624938382062863352767788129`30.^((-\
+1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (1.`30. + 
+        0.5`30. 2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+         K$$ $CellContext`S$$^(-1) (1.`30. + 
+          Erf[0.7071067811865475244008443621048490392848359376884740365884`30.\
+ ((-0.5`30.) $CellContext`T$$^
+               Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+               Rational[-1, 
+                 2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+        0.5`30. (-1.`30. - 1.`30. 
+          Erf[0.7071067811865475244008443621048490392848359376884740365884`30.\
+ (0.5`30. $CellContext`T$$^
+               Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+               Rational[-1, 
+                 2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30.]], K$$ = 
+    100, $CellContext`order$$ = 10, $CellContext`r$$ = 
+    0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
+    1, $CellContext`\[Sigma]$$ = 0.3, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold["underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)"], 
+      Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`S$$], 100., ""}, 0, 150, 1}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["strike, K"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[K$$], 100, ""}, 0, 150, 0.5}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["volatility, \[Sigma]"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`\[Sigma]$$], 0.3, ""}, 0.01, 1, 0.01}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["risk-free rate, r"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`r$$], 0.05, ""}, 0., 0.25, 0.01}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["years to maturity, T"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`T$$], 1, ""}, 0.1, 3, 0.25}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["truncated order, order"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`order$$], 10, ""}, 0, 64, 8}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["fixed point, a"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`a$$], 
+       ConditionalExpression[
+       1.4142135623730950488016887242096980785696718753769480731767`30. 
+         InverseErfc[
+          2.`30. ((1.`30. + 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
+            0.282094791773878143474039725780386292922025314664499428685`30. 
+            2.7182818284590452353602874713526624976385970411900203714065`30.^(\
+(-1.`30.) InverseErfc[
+                2.`30. (1.`30. + 
+                   2.718281828459045235360287471352662497638597041190020371406\
+5`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                  0.5`30. 
+                   2.718281828459045235360287471352662497638597041190020371406\
+5`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                   K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                  0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) (1.`30. + 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+             2.7182818284590452353602874713526624976385970411900203714065`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)/
+            InverseErfc[
+            2.`30. (1.`30. + 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))])] + 
+        1.4142135623730950488016887242096980785696718753769480731767`30. 
+         InverseErfc[
+          2.`30. ((1.`30. + 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
+            0.282094791773878143474039725780386292922025314664499428685`30. 
+             2.7182818284590452353602874713526624976385970411900203714065`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
+               InverseErfc[
+                 2.`30. (1.`30. + 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                   0.5`30. 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                   0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) 
+             K$$ (1.`30. + 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+                K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$/$CellContext`S$$) $CellContext`S$$^(-1)/InverseErfc[
+             2.`30. (1.`30. + 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+               1.`30. + 0.5`30. 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                K$$ $CellContext`S$$^(-1) (1.`30. + 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+               0.5`30. (-1.`30. - 1.`30. 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))])], 
+        And[
+        0 <= (1.`30. + 
+             2.7182818284590452353602874713526624938382062863352767788129`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+            1.`30. + 0.5`30. 
+             2.7182818284590452353602874713526624938382062863352767788129`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+             K$$ $CellContext`S$$^(-1) (1.`30. + 
+              Erf[0.7071067811865475244008443621048490392848359376884740365884\
+`30. ((-0.5`30.) $CellContext`T$$^
+                   Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                   Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+            0.5`30. (-1.`30. - 1.`30. 
+              Erf[0.7071067811865475244008443621048490392848359376884740365884\
+`30. (0.5`30. $CellContext`T$$^
+                   Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                   Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
+          0.282094791773878143474039725780386292922025314664499428685`30. 
+          2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
+1.`30.) InverseErfc[
+              2.`30. (1.`30. + 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+                1.`30. + 0.5`30. 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                 K$$ $CellContext`S$$^(-1) (1.`30. + 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                0.5`30. (-1.`30. - 1.`30. 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) (1.`30. + 
+            2.7182818284590452353602874713526624976385970411900203714065`30.^(\
+(-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+             K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+           2.7182818284590452353602874713526624976385970411900203714065`30.^((\
+-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)/InverseErfc[
+          2.`30. (1.`30. + 
+             2.7182818284590452353602874713526624976385970411900203714065`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+            1.`30. + 0.5`30. 
+             2.7182818284590452353602874713526624976385970411900203714065`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+             K$$ $CellContext`S$$^(-1) (1.`30. + 
+              Erf[0.7071067811865475244008443621048490392848359376884740365884\
+`30. ((-0.5`30.) $CellContext`T$$^
+                   Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                   Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+            0.5`30. (-1.`30. - 1.`30. 
+              Erf[0.7071067811865475244008443621048490392848359376884740365884\
+`30. (0.5`30. $CellContext`T$$^
+                   Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                   Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))] <= 1.`30., 
+         0 <= (1.`30. + 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+           1.`30. + 0.5`30. 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+            K$$ $CellContext`S$$^(-1) (1.`30. + 
+             Erf[
+              0.7071067811865475244008443621048490392848359376884740365884`30.\
+ ((-0.5`30.) $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+           0.5`30. (-1.`30. - 1.`30. 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+         0 <= (1.`30. + 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+           1.`30. + 0.5`30. 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+            K$$ $CellContext`S$$^(-1) (1.`30. + 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+           0.5`30. (-1.`30. - 1.`30. 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+         0 <= (1.`30. + 
+             2.7182818284590452353602874713526624938382062863352767788129`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+            1.`30. + 0.5`30. 
+             2.7182818284590452353602874713526624938382062863352767788129`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+             K$$ $CellContext`S$$^(-1) (1.`30. + 
+              Erf[0.7071067811865475244008443621048490392848359376884740365884\
+`30. ((-0.5`30.) $CellContext`T$$^
+                   Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                   Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+            0.5`30. (-1.`30. - 1.`30. 
+              Erf[0.7071067811865475244008443621048490392848359376884740365884\
+`30. (0.5`30. $CellContext`T$$^
+                   Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                   Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
+          0.282094791773878143474039725780386292922025314664499428685`30. 
+           2.7182818284590452353602874713526624976385970411900203714065`30.^((\
+-1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
+             InverseErfc[
+               2.`30. (1.`30. + 
+                  2.7182818284590452353602874713526624976385970411900203714065\
+`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                   K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                 0.5`30. 
+                  2.7182818284590452353602874713526624976385970411900203714065\
+`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                  K$$ $CellContext`S$$^(-1) (1.`30. + 
+                   Erf[0.70710678118654752440084436210484903928483593768847403\
+65884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                 0.5`30. (-1.`30. - 1.`30. 
+                   Erf[0.70710678118654752440084436210484903928483593768847403\
+65884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) 
+           K$$ (1.`30. + 
+             2.7182818284590452353602874713526624976385970411900203714065`30.^\
+((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+              K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+            2.7182818284590452353602874713526624976385970411900203714065`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+             K$$/$CellContext`S$$) $CellContext`S$$^(-1)/InverseErfc[
+           2.`30. (1.`30. + 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+             1.`30. + 0.5`30. 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+              K$$ $CellContext`S$$^(-1) (1.`30. + 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+             0.5`30. (-1.`30. - 1.`30. 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))] <= 1.`30., 
+         0 <= (1.`30. + 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+           1.`30. + 0.5`30. 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+            K$$ $CellContext`S$$^(-1) (1.`30. + 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+           0.5`30. (-1.`30. - 1.`30. 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+         0 <= (1.`30. + 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+           1.`30. + 0.5`30. 
+            2.7182818284590452353602874713526624938382062863352767788129`30.^(\
+(-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+            K$$ $CellContext`S$$^(-1) (1.`30. + 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+           0.5`30. (-1.`30. - 1.`30. 
+             Erf[0.7071067811865475244008443621048490392848359376884740365884`\
+30. (0.5`30. $CellContext`T$$^
+                  Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                  Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30.]], ""}, 0, 5,
+       0.5}}, Typeset`size$$ = {253., {3., 9.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`S$3259$$ = 0, K$3260$$ = 
+    0, $CellContext`\[Sigma]$3261$$ = 0, $CellContext`r$3262$$ = 
+    0, $CellContext`T$3263$$ = 0, $CellContext`order$3264$$ = 
+    0, $CellContext`a$3265$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 
+        ConditionalExpression[
+         1.4142135623730950488016887242096980785696718753769480731767`30. 
+           InverseErfc[
+            2.`30. ((1.`30. + 
+                 2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+                1.`30. + 0.5`30. 
+                 2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                 K$$ $CellContext`S$$^(-1) (1.`30. + 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                0.5`30. (-1.`30. - 1.`30. 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
+              0.282094791773878143474039725780386292922025314664499428685`30. 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-1.`30.) InverseErfc[
+                  2.`30. (1.`30. + 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                    0.5`30. 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                    0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) (1.`30. + 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+                 K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)/
+              InverseErfc[
+              2.`30. (1.`30. + 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+                1.`30. + 0.5`30. 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                 K$$ $CellContext`S$$^(-1) (1.`30. + 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                0.5`30. (-1.`30. - 1.`30. 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))])] + 
+          1.4142135623730950488016887242096980785696718753769480731767`30. 
+           InverseErfc[
+            2.`30. ((1.`30. + 
+                 2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+                1.`30. + 0.5`30. 
+                 2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                 K$$ $CellContext`S$$^(-1) (1.`30. + 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                0.5`30. (-1.`30. - 1.`30. 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
+              0.282094791773878143474039725780386292922025314664499428685`30. 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
+                 InverseErfc[
+                   2.`30. (1.`30. + 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                    0.5`30. 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                    0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) 
+               K$$ (1.`30. + 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+                  K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                 K$$/$CellContext`S$$) $CellContext`S$$^(-1)/InverseErfc[
+               2.`30. (1.`30. + 
+                  2.7182818284590452353602874713526624976385970411900203714065\
+`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                   K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                 0.5`30. 
+                  2.7182818284590452353602874713526624976385970411900203714065\
+`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                  K$$ $CellContext`S$$^(-1) (1.`30. + 
+                   Erf[0.70710678118654752440084436210484903928483593768847403\
+65884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                 0.5`30. (-1.`30. - 1.`30. 
+                   Erf[0.70710678118654752440084436210484903928483593768847403\
+65884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))])], 
+          And[
+          0 <= (1.`30. + 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
+            0.282094791773878143474039725780386292922025314664499428685`30. 
+            2.7182818284590452353602874713526624976385970411900203714065`30.^(\
+(-1.`30.) InverseErfc[
+                2.`30. (1.`30. + 
+                   2.718281828459045235360287471352662497638597041190020371406\
+5`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                  0.5`30. 
+                   2.718281828459045235360287471352662497638597041190020371406\
+5`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                   K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                  0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) (1.`30. + 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+             2.7182818284590452353602874713526624976385970411900203714065`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)/
+            InverseErfc[
+            2.`30. (1.`30. + 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))] <= 1.`30., 
+           0 <= (1.`30. + 
+              2.7182818284590452353602874713526624938382062863352767788129`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+             1.`30. + 0.5`30. 
+              2.7182818284590452353602874713526624938382062863352767788129`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+              K$$ $CellContext`S$$^(-1) (1.`30. + 
+               Erf[
+                0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+             0.5`30. (-1.`30. - 1.`30. 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+           0 <= (1.`30. + 
+              2.7182818284590452353602874713526624938382062863352767788129`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+             1.`30. + 0.5`30. 
+              2.7182818284590452353602874713526624938382062863352767788129`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+              K$$ $CellContext`S$$^(-1) (1.`30. + 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+             0.5`30. (-1.`30. - 1.`30. 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+           0 <= (1.`30. + 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
+            0.282094791773878143474039725780386292922025314664499428685`30. 
+             2.7182818284590452353602874713526624976385970411900203714065`30.^\
+((-1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
+               InverseErfc[
+                 2.`30. (1.`30. + 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                   0.5`30. 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                   0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) 
+             K$$ (1.`30. + 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+                K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$/$CellContext`S$$) $CellContext`S$$^(-1)/InverseErfc[
+             2.`30. (1.`30. + 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+               1.`30. + 0.5`30. 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                K$$ $CellContext`S$$^(-1) (1.`30. + 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+               0.5`30. (-1.`30. - 1.`30. 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))] <= 1.`30., 
+           0 <= (1.`30. + 
+              2.7182818284590452353602874713526624938382062863352767788129`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+             1.`30. + 0.5`30. 
+              2.7182818284590452353602874713526624938382062863352767788129`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+              K$$ $CellContext`S$$^(-1) (1.`30. + 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+             0.5`30. (-1.`30. - 1.`30. 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+           0 <= (1.`30. + 
+              2.7182818284590452353602874713526624938382062863352767788129`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+             1.`30. + 0.5`30. 
+              2.7182818284590452353602874713526624938382062863352767788129`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+              K$$ $CellContext`S$$^(-1) (1.`30. + 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+             0.5`30. (-1.`30. - 1.`30. 
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30.]], K$$ = 
+        100, $CellContext`order$$ = 10, $CellContext`r$$ = 
+        0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
+        1, $CellContext`\[Sigma]$$ = 0.3}, "ControllerVariables" :> {
+        Hold[$CellContext`S$$, $CellContext`S$3259$$, 0], 
+        Hold[K$$, K$3260$$, 0], 
+        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$3261$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$3262$$, 0], 
+        Hold[$CellContext`T$$, $CellContext`T$3263$$, 0], 
+        Hold[$CellContext`order$$, $CellContext`order$3264$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$3265$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`targetCallPrice$ = \
+$CellContext`BSCallHandy[$CellContext`S$$, 
+           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$], \
+$CellContext`estimatedCallPrice$ = \
+$CellContext`BSCallTaylorExpansion[$CellContext`S$$, 
+           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$, \
+$CellContext`a$$, $CellContext`order$$], $CellContext`estimatedIV$, \
+$CellContext`fixa$, $CellContext`upperbound$}, $CellContext`fixa$ = \
+$CellContext`StdUpperBound[
+           $CellContext`BSCallHandy[$CellContext`S$$, 
+            K$$, $CellContext`T$$, $CellContext`r$$, \
+$CellContext`\[Sigma]$$], $CellContext`S$$ 
+           Exp[$CellContext`r$$ $CellContext`T$$], 
+           K$$, $CellContext`T$$, $CellContext`r$$]; $CellContext`upperbound$ = \
+$CellContext`fixa$/
+          Sqrt[$CellContext`T$$]; $CellContext`estimatedIV$ = \
+$CellContext`InverseCallIV[$CellContext`targetCallPrice$, $CellContext`S$$, 
+           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`a$$, \
+$CellContext`order$$]; {{$CellContext`targetCallPrice$, \
+$CellContext`estimatedCallPrice$}, {$CellContext`\[Sigma]$$, \
+$CellContext`upperbound$, $CellContext`estimatedIV$}}], 
+      "Specifications" :> {
+       "underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)", {{$CellContext`S$$, 
+          100., ""}, 0, 150, 1, Appearance -> "Labeled", ImageSize -> Tiny}, 
+        "", "strike, K", {{K$$, 100, ""}, 0, 150, 0.5, Appearance -> 
+         "Labeled", ImageSize -> Tiny}, "", 
+        "volatility, \[Sigma]", {{$CellContext`\[Sigma]$$, 0.3, ""}, 0.01, 1, 
+         0.01, Appearance -> "Labeled", ImageSize -> Tiny}, "", 
+        "risk-free rate, r", {{$CellContext`r$$, 0.05, ""}, 0., 0.25, 0.01, 
+         Appearance -> "Labeled", ImageSize -> Tiny}, "", 
+        "years to maturity, T", {{$CellContext`T$$, 1, ""}, 0.1, 3, 0.25, 
+         Appearance -> "Labeled", ImageSize -> Tiny}, "", 
+        "truncated order, order", {{$CellContext`order$$, 10, ""}, 0, 64, 8, 
+         Appearance -> "Labeled", ImageSize -> Tiny}, "", 
+        "fixed point, a", {{$CellContext`a$$, 
+          ConditionalExpression[
+          1.4142135623730950488016887242096980785696718753769480731767`30. 
+            InverseErfc[
+             2.`30. ((1.`30. + 
+                  2.7182818284590452353602874713526624938382062863352767788129\
+`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                   K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                 0.5`30. 
+                  2.7182818284590452353602874713526624938382062863352767788129\
+`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                  K$$ $CellContext`S$$^(-1) (1.`30. + 
+                   Erf[0.70710678118654752440084436210484903928483593768847403\
+65884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                 0.5`30. (-1.`30. - 1.`30. 
+                   Erf[0.70710678118654752440084436210484903928483593768847403\
+65884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
+               0.282094791773878143474039725780386292922025314664499428685`30.\
+ 2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.`30.) 
+                 InverseErfc[
+                   2.`30. (1.`30. + 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                    0.5`30. 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                    0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) (1.`30. + 
+                 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+                  K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)/
+               InverseErfc[
+               2.`30. (1.`30. + 
+                  2.7182818284590452353602874713526624976385970411900203714065\
+`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                   K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                 0.5`30. 
+                  2.7182818284590452353602874713526624976385970411900203714065\
+`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                  K$$ $CellContext`S$$^(-1) (1.`30. + 
+                   Erf[0.70710678118654752440084436210484903928483593768847403\
+65884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                 0.5`30. (-1.`30. - 1.`30. 
+                   Erf[0.70710678118654752440084436210484903928483593768847403\
+65884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))])] + 
+           1.4142135623730950488016887242096980785696718753769480731767`30. 
+            InverseErfc[
+             2.`30. ((1.`30. + 
+                  2.7182818284590452353602874713526624938382062863352767788129\
+`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                   K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                 0.5`30. 
+                  2.7182818284590452353602874713526624938382062863352767788129\
+`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                  K$$ $CellContext`S$$^(-1) (1.`30. + 
+                   Erf[0.70710678118654752440084436210484903928483593768847403\
+65884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                 0.5`30. (-1.`30. - 1.`30. 
+                   Erf[0.70710678118654752440084436210484903928483593768847403\
+65884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
+               0.282094791773878143474039725780386292922025314664499428685`30.\
+ 2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.`30.) \
+$CellContext`r$$ $CellContext`T$$ - 1.`30. 
+                  InverseErfc[
+                    2.`30. (1.`30. + 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                    0.5`30. 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                    0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) 
+                K$$ (1.`30. + 
+                  2.7182818284590452353602874713526624976385970411900203714065\
+`30.^((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+                   K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                  K$$/$CellContext`S$$) $CellContext`S$$^(-1)/InverseErfc[
+                2.`30. (1.`30. + 
+                   2.718281828459045235360287471352662497638597041190020371406\
+5`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                  0.5`30. 
+                   2.718281828459045235360287471352662497638597041190020371406\
+5`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                   K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                  0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))])], 
+           And[
+           0 <= (1.`30. + 
+                2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+               1.`30. + 0.5`30. 
+                2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                K$$ $CellContext`S$$^(-1) (1.`30. + 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+               0.5`30. (-1.`30. - 1.`30. 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
+             0.282094791773878143474039725780386292922025314664499428685`30. 
+             2.7182818284590452353602874713526624976385970411900203714065`30.^\
+((-1.`30.) InverseErfc[
+                 2.`30. (1.`30. + 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                   0.5`30. 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                   0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) (1.`30. + 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+                K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)/
+             InverseErfc[
+             2.`30. (1.`30. + 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+               1.`30. + 0.5`30. 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                K$$ $CellContext`S$$^(-1) (1.`30. + 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+               0.5`30. (-1.`30. - 1.`30. 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))] <= 1.`30., 
+            0 <= (1.`30. + 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+            0 <= (1.`30. + 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+            0 <= (1.`30. + 
+                2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+               1.`30. + 0.5`30. 
+                2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                K$$ $CellContext`S$$^(-1) (1.`30. + 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+               0.5`30. (-1.`30. - 1.`30. 
+                 Erf[0.7071067811865475244008443621048490392848359376884740365\
+884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
+             0.282094791773878143474039725780386292922025314664499428685`30. 
+              2.7182818284590452353602874713526624976385970411900203714065`30.\
+^((-1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
+                InverseErfc[
+                  2.`30. (1.`30. + 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$/$CellContext`S$$)^(-1) (1.`30. + 
+                    0.5`30. 
+                    2.71828182845904523536028747135266249763859704119002037140\
+65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                    K$$ $CellContext`S$$^(-1) (1.`30. + 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                    0.5`30. (-1.`30. - 1.`30. 
+                    Erf[0.7071067811865475244008443621048490392848359376884740\
+365884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))]^2) 
+              K$$ (1.`30. + 
+                2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-2.`30.) $CellContext`r$$ $CellContext`T$$) 
+                 K$$^2 $CellContext`S$$^(-2))^(-1) (-1.`30. + 
+               2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                K$$/$CellContext`S$$) $CellContext`S$$^(-1)/InverseErfc[
+              2.`30. (1.`30. + 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+                1.`30. + 0.5`30. 
+                 2.7182818284590452353602874713526624976385970411900203714065`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+                 K$$ $CellContext`S$$^(-1) (1.`30. + 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+                0.5`30. (-1.`30. - 1.`30. 
+                  Erf[0.707106781186547524400844362104849039284835937688474036\
+5884`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))] <= 1.`30., 
+            0 <= (1.`30. + 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30., 
+            0 <= (1.`30. + 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) K$$/$CellContext`S$$)^(-1) (
+              1.`30. + 0.5`30. 
+               2.7182818284590452353602874713526624938382062863352767788129`\
+30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1.`30. + 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. ((-0.5`30.) $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              0.5`30. (-1.`30. - 1.`30. 
+                Erf[0.70710678118654752440084436210484903928483593768847403658\
+84`30. (0.5`30. $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30.]], ""}, 0, 5,
+          0.5, Appearance -> "Labeled", ImageSize -> Tiny}}, 
+      "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
+     ImageSizeCache->{443., {170., 176.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`BSCallHandy[
+         Pattern[$CellContext`S, 
+          Blank[]], 
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]], 
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]]] := $CellContext`BSCall[$CellContext`S, 
+         $CellContext`logForward[$CellContext`S, 
+          K, $CellContext`T, $CellContext`r], 
+         $CellContext`Z[$CellContext`\[Sigma], $CellContext`T]], \
+$CellContext`BSCall[
+         Pattern[$CellContext`S, 
+          Blank[]], 
+         Pattern[$CellContext`lo, 
+          Blank[]], 
+         Pattern[$CellContext`Z, 
+          Blank[]]] := $CellContext`S ($CellContext`normalCDF[
+           $CellContext`d1[$CellContext`lo, $CellContext`Z]] - 
+         Exp[-$CellContext`lo] $CellContext`normalCDF[
+           $CellContext`d2[$CellContext`lo, $CellContext`Z]]), $CellContext`Z[
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]]] := $CellContext`\[Sigma] 
+        Sqrt[$CellContext`T], $CellContext`normalCDF[
+         Pattern[$CellContext`d, 
+          Blank[]]] := (1/2) (1 + 
+         Erf[$CellContext`d/Sqrt[2]]), $CellContext`d1[
+         Pattern[$CellContext`lo, 
+          Blank[]], 
+         Pattern[$CellContext`Z, 
+          Blank[]]] := $CellContext`lo/$CellContext`Z + $CellContext`Z/
+         2, $CellContext`d2[
+         Pattern[$CellContext`lo, 
+          Blank[]], 
+         Pattern[$CellContext`Z, 
+          Blank[]]] := $CellContext`lo/$CellContext`Z - $CellContext`Z/
+        2, $CellContext`logForward[
+         Pattern[$CellContext`S, 
+          Blank[]], 
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]]] := 
+       Log[$CellContext`S/
+          K] + $CellContext`r $CellContext`T, \
+$CellContext`BSCallTaylorExpansion[
+         Pattern[$CellContext`S, 
+          Blank[]], 
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]], 
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]], 
+         Pattern[$CellContext`a, 
+          Blank[]], 
+         Pattern[$CellContext`nOrder, 
+          Blank[]]] := 
+       Module[{$CellContext`mu, $CellContext`std, $CellContext`IVSeries}, \
+$CellContext`std = $CellContext`Z[$CellContext`\[Sigma], $CellContext`T]; \
+$CellContext`mu = $CellContext`logForward[$CellContext`S, 
+            K, $CellContext`T, $CellContext`r]; $CellContext`IVSeries = Series[
+            $CellContext`BSCall[$CellContext`S, $CellContext`mu, \
+$CellContext`Z], {$CellContext`Z, $CellContext`a, $CellContext`nOrder}]; \
+$CellContext`callPrice = ReplaceAll[
+            
+            Normal[$CellContext`IVSeries], $CellContext`Z -> \
+$CellContext`std]], $CellContext`callPrice = 
+       14.228124311728868`, $CellContext`StdUpperBound[
+         Pattern[C, 
+          Blank[]], 
+         Pattern[$CellContext`F, 
+          Blank[]], 
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]]] := 
+       Module[{$CellContext`c, $CellContext`k, $CellContext`a, \
+$CellContext`psi, $CellContext`theta, $CellContext`upperBound}, \
+$CellContext`c = 
+          C/(Exp[(-$CellContext`r) $CellContext`T] $CellContext`F); \
+$CellContext`k = 
+          Log[K/$CellContext`F]; $CellContext`a = (1 - $CellContext`c)/(1 + 
+           Exp[$CellContext`k]); $CellContext`psi = InverseCDF[
+            NormalDistribution[
+            0, 1], $CellContext`a]; $CellContext`theta = (-(PDF[
+               NormalDistribution[
+               0, 1], $CellContext`psi]/$CellContext`psi)) ((
+             Exp[$CellContext`k] - 1)/(Exp[2 $CellContext`k] + 
+            1)); $CellContext`upperBound = N[-InverseCDF[
+               NormalDistribution[
+               0, 1], $CellContext`a + $CellContext`theta 
+                Exp[$CellContext`k]] - InverseCDF[
+             NormalDistribution[0, 1], $CellContext`a - $CellContext`theta], 
+            30]], $CellContext`InverseCallIV[
+         Pattern[$CellContext`CallPrice, 
+          Blank[]], 
+         Pattern[$CellContext`S, 
+          Blank[]], 
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]], 
+         Pattern[$CellContext`a, 
+          Blank[]], 
+         Pattern[$CellContext`nOrder, 
+          Blank[]]] := 
+       Module[{$CellContext`mu, $CellContext`std, $CellContext`IVSeries, \
+$CellContext`inversedIVSeries, $CellContext`impliedVol}, $CellContext`mu = \
+$CellContext`logForward[$CellContext`S, 
+            K, $CellContext`T, $CellContext`r]; $CellContext`IVSeries = Series[
+            $CellContext`BSCall[$CellContext`S, $CellContext`mu, \
+$CellContext`Z], {$CellContext`Z, $CellContext`a, $CellContext`nOrder}]; \
+$CellContext`inversedIVSeries = 
+          InverseSeries[$CellContext`IVSeries]; $CellContext`std = ReplaceAll[
+            
+            Normal[$CellContext`inversedIVSeries], $CellContext`Z -> \
+$CellContext`CallPrice]; $CellContext`impliedVol = $CellContext`std/
+           Sqrt[$CellContext`T]]}; Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.7192489290421553`*^9, {3.719249025835874*^9, 3.7192490515724382`*^9}, 
+   3.7192494826977825`*^9, 3.7192505281522136`*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Dupire\[CloseCurlyQuote]s Local Volatility", "Section",
+ CellChangeTimes->{{3.7192483391359453`*^9, 3.7192483559768696`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"CallImpliedVariance", "[", 
+   RowBox[{
+   "CallPrice_", ",", "S_", ",", "logForward_", ",", "a_", ",", "nOrder_"}], 
+   "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "std", ",", "IVSeries", ",", "inversedIVSeries", ",", "impliedVar"}], 
+     "}"}], ",", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"IVSeries", "=", 
+      RowBox[{"Series", "[", 
+       RowBox[{
+        RowBox[{"BSCall", "[", 
+         RowBox[{"S", ",", "logForward", ",", "Z"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Z", ",", "a", ",", "nOrder"}], "}"}]}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"inversedIVSeries", " ", "=", " ", 
+      RowBox[{"InverseSeries", "[", "IVSeries", "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"std", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"Normal", "[", "inversedIVSeries", "]"}], "/.", 
+       RowBox[{"Z", "\[Rule]", "CallPrice"}]}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"impliedVar", " ", "=", " ", 
+      SuperscriptBox["std", "2"]}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
+ CellChangeTimes->{{3.719248432169223*^9, 3.719248478123147*^9}, {
+  3.7192496577258015`*^9, 3.719249658443633*^9}, {3.719249968170514*^9, 
+  3.7192499684174323`*^9}, {3.7192501978239083`*^9, 3.7192502561072645`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"S", "=", "100"}], ",", 
+     RowBox[{"K", "=", "100"}], ",", 
+     RowBox[{"T", "=", "1"}], ",", 
+     RowBox[{"r", "=", "0.05"}], ",", 
+     RowBox[{"\[Sigma]", "=", "0.3"}], ",", "C", ",", "F", ",", 
+     RowBox[{"nOrder", "=", "2"}], ",", "stdUpperBound", ",", "impliedVar"}], 
+    "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"C", " ", "=", " ", 
+     RowBox[{"BSCallHandy", "[", 
+      RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"F", " ", "=", " ", 
+     RowBox[{"S", "*", 
+      RowBox[{"Exp", "[", 
+       RowBox[{"r", " ", "T"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"stdUpperBound", "=", 
+     RowBox[{"StdUpperBound", "[", 
+      RowBox[{"C", ",", "F", ",", "K", ",", "T", ",", "r"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"impliedVar", " ", "=", " ", 
+     RowBox[{
+      RowBox[{"CallImpliedVariance", "[", 
+       RowBox[{
+       "C", ",", "S", ",", "lo", ",", "stdUpperBound", ",", "nOrder"}], "]"}],
+       "//", "Simplify"}]}]}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.719248499454589*^9, 3.7192485530562305`*^9}, {
+  3.719249015230398*^9, 3.719249020486475*^9}, {3.719249063085435*^9, 
+  3.719249259897599*^9}, {3.719249301712181*^9, 3.719249377967264*^9}, {
+  3.719249424721794*^9, 3.719249451922922*^9}, {3.7192495160207105`*^9, 
+  3.7192495516627064`*^9}, {3.7192495832005596`*^9, 3.7192496456135883`*^9}, {
+  3.719249796352871*^9, 3.7192498271957216`*^9}, {3.719249872243065*^9, 
+  3.719249901858179*^9}, {3.7192499801649723`*^9, 3.7192500203856287`*^9}, {
+  3.7192502757954473`*^9, 3.719250308644702*^9}, {3.7192503661713057`*^9, 
+  3.719250366466834*^9}, {3.71925051307533*^9, 3.71925054828277*^9}}],
+
+Cell[BoxData[
+ SuperscriptBox[
+  RowBox[{"(", 
+   RowBox[{"0.30000045309830903`", "\[VeryThinSpace]", "-", 
+    FractionBox[
+     RowBox[{"0.11536535721855902`", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"11.111077548349442`", " ", 
+        SuperscriptBox["lo", "2"]}]], " ", 
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"-", "1.`"}], "+", 
+        RowBox[{"0.7153749042802836`", " ", 
+         SuperscriptBox["\[ExponentialE]", "lo"]}], "+", 
+        RowBox[{"Erf", "[", 
+         RowBox[{"0.10606617737242555`", "\[VeryThinSpace]", "-", 
+          RowBox[{"2.3570190440840144`", " ", "lo"}]}], "]"}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", "lo"], " ", 
+         RowBox[{"Erf", "[", 
+          RowBox[{"0.10606617737242555`", "\[VeryThinSpace]", "+", 
+           RowBox[{"2.3570190440840144`", " ", "lo"}]}], "]"}]}]}], ")"}]}], 
+     RowBox[{
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"lo", " ", 
+         RowBox[{"(", 
+          RowBox[{"0.5`", "\[VeryThinSpace]", "+", 
+           RowBox[{"5.555538774174721`", " ", "lo"}]}], ")"}]}]], " ", 
+       RowBox[{"(", 
+        RowBox[{"0.04550924737901334`", "\[VeryThinSpace]", "-", 
+         RowBox[{"1.0113135535904714`", " ", "lo"}]}], ")"}]}], "+", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"5.555538774174721`", " ", 
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"0.04500013592959535`", "\[VeryThinSpace]", "+", 
+            RowBox[{"1.`", " ", "lo"}]}], ")"}], "2"]}]], " ", 
+       RowBox[{"(", 
+        RowBox[{"0.04500013592959536`", "\[VeryThinSpace]", "+", 
+         RowBox[{"1.`", " ", "lo"}]}], ")"}]}]}]], "-", 
+    RowBox[{
+     RowBox[{"(", 
+      RowBox[{"0.2464649137545074`", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"22.222155096698884`", " ", 
+         SuperscriptBox["lo", "2"]}]], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         RowBox[{
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"lo", " ", 
+            RowBox[{"(", 
+             RowBox[{"0.5`", "\[VeryThinSpace]", "+", 
+              RowBox[{"5.555538774174721`", " ", "lo"}]}], ")"}]}]], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "0.00009215678268816516`"}], "+", 
+            RowBox[{"0.1840849118341625`", " ", "lo"}], "+", 
+            RowBox[{"0.04550924737901335`", " ", 
+             SuperscriptBox["lo", "2"]}], "-", 
+            RowBox[{"1.0113135535904714`", " ", 
+             SuperscriptBox["lo", "3"]}]}], ")"}]}], "+", 
+         RowBox[{
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"5.555538774174721`", " ", 
+            SuperscriptBox[
+             RowBox[{"(", 
+              RowBox[{"0.04500013592959535`", "\[VeryThinSpace]", "+", 
+               RowBox[{"1.`", " ", "lo"}]}], ")"}], "2"]}]], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            RowBox[{"-", "0.0000911258257747862`"}], "-", 
+            RowBox[{"0.1820255559520635`", " ", "lo"}], "+", 
+            RowBox[{"0.045000135929595377`", " ", 
+             SuperscriptBox["lo", "2"]}], "+", 
+            RowBox[{"1.`", " ", 
+             SuperscriptBox["lo", "3"]}]}], ")"}]}]}], ")"}], " ", 
+       SuperscriptBox[
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "1.`"}], "+", 
+          RowBox[{"0.7153749042802836`", " ", 
+           SuperscriptBox["\[ExponentialE]", "lo"]}], "+", 
+          RowBox[{"Erf", "[", 
+           RowBox[{"0.10606617737242555`", "\[VeryThinSpace]", "-", 
+            RowBox[{"2.3570190440840144`", " ", "lo"}]}], "]"}], "+", 
+          RowBox[{
+           SuperscriptBox["\[ExponentialE]", "lo"], " ", 
+           RowBox[{"Erf", "[", 
+            RowBox[{"0.10606617737242555`", "\[VeryThinSpace]", "+", 
+             RowBox[{"2.3570190440840144`", " ", "lo"}]}], "]"}]}]}], ")"}], 
+        "2"]}], ")"}], "/", 
+     SuperscriptBox[
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"lo", " ", 
+           RowBox[{"(", 
+            RowBox[{"0.5`", "\[VeryThinSpace]", "+", 
+             RowBox[{"5.555538774174721`", " ", "lo"}]}], ")"}]}]], " ", 
+         RowBox[{"(", 
+          RowBox[{"0.04550924737901334`", "\[VeryThinSpace]", "-", 
+           RowBox[{"1.0113135535904714`", " ", "lo"}]}], ")"}]}], "+", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{"5.555538774174721`", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"0.04500013592959535`", "\[VeryThinSpace]", "+", 
+              RowBox[{"1.`", " ", "lo"}]}], ")"}], "2"]}]], " ", 
+         RowBox[{"(", 
+          RowBox[{"0.04500013592959536`", "\[VeryThinSpace]", "+", 
+           RowBox[{"1.`", " ", "lo"}]}], ")"}]}]}], ")"}], "3"]}]}], ")"}], 
+  "2"]], "Output",
+ CellChangeTimes->{
+  3.719249482988822*^9, {3.7192495172107625`*^9, 3.7192495244345417`*^9}, {
+   3.719249646214452*^9, 3.7192496674067063`*^9}, 3.7192497973305883`*^9, {
+   3.7192498736099286`*^9, 3.7192498825058794`*^9}, 3.719250021693673*^9, 
+   3.7192503122984743`*^9, 3.719250348648583*^9, {3.7192505286996775`*^9, 
+   3.719250548956877*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"S", "=", "100"}], ",", 
+      RowBox[{"K", "=", "100"}], ",", 
+      RowBox[{"T", "=", "1"}], ",", 
+      RowBox[{"r", "=", "0.05"}], ",", 
+      RowBox[{"\[Sigma]", "=", "0.3"}], ",", "C", ",", "F", ",", 
+      RowBox[{"nOrder", "=", "10"}], ",", "stdUpperBound", ",", 
+      "impliedVar"}], "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"C", " ", "=", " ", 
+      RowBox[{"BSCallHandy", "[", 
+       RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}]}], 
+     ";", "\[IndentingNewLine]", 
+     RowBox[{"F", " ", "=", " ", 
+      RowBox[{"S", "*", 
+       RowBox[{"Exp", "[", 
+        RowBox[{"r", " ", "T"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"stdUpperBound", "=", 
+      RowBox[{"StdUpperBound", "[", 
+       RowBox[{"C", ",", "F", ",", "K", ",", "T", ",", "r"}], "]"}]}], ";", 
+     "\[IndentingNewLine]", 
+     RowBox[{"impliedVar", " ", "=", " ", 
+      RowBox[{"CallImpliedVariance", "[", 
+       RowBox[{"C", ",", "S", ",", 
+        RowBox[{"logForward", "[", 
+         RowBox[{"S", ",", "K", ",", "T", ",", "r"}], "]"}], ",", 
+        "stdUpperBound", ",", "nOrder"}], "]"}]}]}]}], "\[IndentingNewLine]", 
+   "]"}], "\[IndentingNewLine]"}]], "Input",
+ CellChangeTimes->{{3.719250398039011*^9, 3.719250403496023*^9}, 
+   3.719250460694623*^9}],
+
+Cell[BoxData["0.08999999999999983`"], "Output",
+ CellChangeTimes->{3.7192505287327657`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"W", "[", 
+    RowBox[{
+    "T_", ",", "y_", ",", "r_", ",", "K_", ",", "C_", ",", "a_", ",", 
+     "nOrder_"}], "]"}], ":=", 
+   RowBox[{"CallImpliedVariance", "[", 
+    RowBox[{"C", ",", 
+     RowBox[{"K", "*", 
+      RowBox[{"Exp", "[", 
+       RowBox[{
+        RowBox[{"-", "y"}], "-", 
+        RowBox[{"r", " ", "T"}]}], "]"}]}], ",", 
+     RowBox[{"-", "y"}], ",", "a", ",", "nOrder"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"S", "=", "100"}], ",", 
+     RowBox[{"K", "=", "100"}], ",", 
+     RowBox[{"T", "=", "1"}], ",", 
+     RowBox[{"r", "=", "0.05"}], ",", 
+     RowBox[{"\[Sigma]", "=", "0.3"}], ",", "C", ",", "F", ",", 
+     RowBox[{"nOrder", "=", "10"}], ",", "y", ",", "stdUpperBound", ",", 
+     "impliedVar"}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"F", "=", 
+     RowBox[{"S", "*", 
+      RowBox[{"Exp", "[", 
+       RowBox[{"r", " ", "T"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"y", "=", 
+     RowBox[{"-", 
+      RowBox[{"logForward", "[", 
+       RowBox[{"S", ",", "K", ",", "T", ",", "r"}], "]"}]}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"C", "=", 
+     RowBox[{"BSCallHandy", "[", 
+      RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"stdUpperBound", "=", 
+     RowBox[{"StdUpperBound", "[", 
+      RowBox[{"C", ",", "F", ",", "K", ",", "T", ",", "r"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"W", "[", 
+     RowBox[{
+     "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "stdUpperBound", ",", 
+      "nOrder"}], "]"}]}]}], "\[IndentingNewLine]", "]"}]}], "Input",
+ CellChangeTimes->{{3.7192511868988805`*^9, 3.7192515936413045`*^9}, {
+  3.7192521022203526`*^9, 3.7192521280289145`*^9}}],
+
+Cell[BoxData["0.08999999999999983`"], "Output",
+ CellChangeTimes->{3.7192515024294167`*^9, 3.719251594017827*^9, 
+  3.7192521335112157`*^9}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"DTW", "[", 
+    RowBox[{
+    "T_", ",", "y_", ",", "r_", ",", "K_", ",", "C_", ",", "a_", ",", 
+     "nOrder_", ",", "delta_"}], "]"}], ":=", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"W", "[", 
+      RowBox[{
+       RowBox[{"T", "+", "delta"}], ",", "y", ",", "r", ",", "K", ",", "C", 
+       ",", "a", ",", "nOrder"}], "]"}], "-", 
+     RowBox[{"W", "[", 
+      RowBox[{
+      "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "a", ",", "nOrder"}], 
+      "]"}]}], "delta"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"DyW", "[", 
+    RowBox[{
+    "T_", ",", "y_", ",", "r_", ",", "K_", ",", "C_", ",", "a_", ",", 
+     "nOrder_", ",", "delta_"}], "]"}], ":=", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"W", "[", 
+      RowBox[{"T", ",", 
+       RowBox[{"y", "+", "delta"}], ",", "r", ",", "K", ",", "C", ",", "a", 
+       ",", "nOrder"}], "]"}], "-", 
+     RowBox[{"W", "[", 
+      RowBox[{
+      "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "a", ",", "nOrder"}], 
+      "]"}]}], "delta"]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"Dy2W", "[", 
+    RowBox[{
+    "T_", ",", "y_", ",", "r_", ",", "K_", ",", "C_", ",", "a_", ",", 
+     "nOrder_", ",", "delta_"}], "]"}], ":=", 
+   FractionBox[
+    RowBox[{
+     RowBox[{"W", "[", 
+      RowBox[{"T", ",", 
+       RowBox[{"y", "+", "delta"}], ",", "r", ",", "K", ",", "C", ",", "a", 
+       ",", "nOrder"}], "]"}], "-", 
+     RowBox[{"2", " ", 
+      RowBox[{"W", "[", 
+       RowBox[{
+       "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "a", ",", "nOrder"}],
+        "]"}]}], "+", 
+     RowBox[{"W", "[", 
+      RowBox[{"T", ",", 
+       RowBox[{"y", "-", "delta"}], ",", "r", ",", "K", ",", "C", ",", "a", 
+       ",", "nOrder"}], "]"}]}], 
+    SuperscriptBox["delta", "2"]]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7192505767893324`*^9, 3.7192506963671103`*^9}, {
+  3.7192507623040094`*^9, 3.719250834553409*^9}, {3.7192513334646277`*^9, 
+  3.7192513432122173`*^9}, {3.7192516479431295`*^9, 3.7192518342881117`*^9}}],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.7192518561629763`*^9, 3.71925186062078*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"S", "=", "100"}], ",", 
+     RowBox[{"K", "=", "100"}], ",", 
+     RowBox[{"T", "=", "1"}], ",", 
+     RowBox[{"r", "=", "0.05"}], ",", 
+     RowBox[{"\[Sigma]", "=", "0.3"}], ",", "C", ",", "F", ",", 
+     RowBox[{"nOrder", "=", "10"}], ",", "y", ",", "stdUpperBound", ",", 
+     RowBox[{"delta", "=", "0.00001"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"F", "=", 
+     RowBox[{"S", "*", 
+      RowBox[{"Exp", "[", 
+       RowBox[{"r", " ", "T"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"y", "=", 
+     RowBox[{"-", 
+      RowBox[{"logForward", "[", 
+       RowBox[{"S", ",", "K", ",", "T", ",", "r"}], "]"}]}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"C", "=", 
+     RowBox[{"BSCallHandy", "[", 
+      RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"stdUpperBound", "=", 
+     RowBox[{"StdUpperBound", "[", 
+      RowBox[{"C", ",", "F", ",", "K", ",", "T", ",", "r"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"DTW", "[", 
+       RowBox[{
+       "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "stdUpperBound", ",",
+         "nOrder", ",", "delta"}], "]"}], ",", 
+      RowBox[{"DyW", "[", 
+       RowBox[{
+       "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "stdUpperBound", ",",
+         "nOrder", ",", "delta"}], "]"}], ",", 
+      RowBox[{"Dy2W", "[", 
+       RowBox[{
+       "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "stdUpperBound", ",",
+         "nOrder", ",", "delta"}], "]"}]}], "}"}]}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.7192518769694843`*^9, 3.719251976739968*^9}, 
+   3.719252145015609*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "0.011251998595362965`", ",", "0.9871451449053325`", ",", 
+   "2.288130102057195`"}], "}"}]], "Output",
+ CellChangeTimes->{{3.719251914729149*^9, 3.719251945103089*^9}, 
+   3.719251977224117*^9, 3.719252151134758*^9}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"LocalVolatility", "[", 
+   RowBox[{
+   "T_", ",", "y_", ",", "r_", ",", "K_", ",", "C_", ",", "a_", ",", 
+    "nOrder_", ",", "delta_"}], "]"}], ":=", " ", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"dTW", ",", "dyW", ",", "dy2W", ",", "w", ",", "localVol"}], 
+     "}"}], ",", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"w", " ", "=", " ", 
+      RowBox[{"W", "[", 
+       RowBox[{
+       "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "a", ",", "nOrder"}],
+        "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"dTW", " ", "=", " ", 
+      RowBox[{"DTW", "[", 
+       RowBox[{
+       "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "a", ",", "nOrder", 
+        ",", "delta"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"dyW", " ", "=", " ", 
+      RowBox[{"DyW", "[", 
+       RowBox[{
+       "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "a", ",", "nOrder", 
+        ",", "delta"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"dy2W", " ", "=", " ", 
+      RowBox[{"Dy2W", "[", 
+       RowBox[{
+       "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "a", ",", "nOrder", 
+        ",", "delta"}], "]"}]}], ";", "\[IndentingNewLine]", 
+     RowBox[{"localVol", " ", "=", " ", 
+      RowBox[{"dTW", "/", " ", 
+       RowBox[{"(", 
+        RowBox[{"1", "-", 
+         RowBox[{
+          FractionBox["y", "w"], " ", "dyW"}], "+", " ", 
+         RowBox[{
+          FractionBox["1", "4"], 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             RowBox[{"-", " ", "1"}], "4"], "-", 
+            FractionBox["1", "w"], "+", " ", 
+            FractionBox[
+             SuperscriptBox["y", "2"], 
+             SuperscriptBox["w", "2"]]}], ")"}], 
+          SuperscriptBox["dyW", "2"]}], " ", "+", " ", 
+         RowBox[{
+          FractionBox["1", "2"], "dy2W"}]}], ")"}]}]}]}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.7192522706310673`*^9, 3.7192524231418304`*^9}, {
+  3.7192524844969797`*^9, 3.7192527539483232`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"LocalVolHandy", "[", 
+    RowBox[{
+    "S_", ",", "K_", ",", "T_", ",", "r_", ",", "C_", ",", "a_", ",", 
+     "nOrder_", ",", "delta_"}], "]"}], ":=", " ", 
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"y", "=", 
+       RowBox[{"-", 
+        RowBox[{"logForward", "[", 
+         RowBox[{"S", ",", "K", ",", "T", ",", "r"}], "]"}]}]}], "}"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"LocalVolatility", "[", 
+      RowBox[{
+      "T", ",", "y", ",", "r", ",", "K", ",", "C", ",", "a", ",", "nOrder", 
+       ",", "delta"}], "]"}]}], "]"}]}], ";"}]], "Input",
+ CellChangeTimes->{{3.719252789570694*^9, 3.719252896375704*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Module", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"S", "=", "100"}], ",", 
+     RowBox[{"K", "=", "100"}], ",", 
+     RowBox[{"T", "=", "1"}], ",", 
+     RowBox[{"r", "=", "0.05"}], ",", 
+     RowBox[{"\[Sigma]", "=", "0.3"}], ",", 
+     RowBox[{"delta", "=", "0.0001"}], ",", "C", ",", "F", ",", "a", ",", 
+     RowBox[{"nOrder", "=", "10"}]}], "}"}], ",", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"C", "=", 
+     RowBox[{"BSCallHandy", "[", 
+      RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}]}], 
+    ";", "\[IndentingNewLine]", 
+    RowBox[{"F", "=", 
+     RowBox[{"S", " ", 
+      RowBox[{"Exp", "[", 
+       RowBox[{"r", " ", "T"}], "]"}]}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"a", "=", 
+     RowBox[{"StdUpperBound", "[", 
+      RowBox[{"C", ",", "F", ",", "K", ",", "T", ",", "r"}], "]"}]}], ";", 
+    "\[IndentingNewLine]", 
+    RowBox[{"LocalVolHandy", "[", 
+     RowBox[{
+     "S", ",", "K", ",", "T", ",", "r", ",", "C", ",", "a", ",", "nOrder", 
+      ",", "delta"}], "]"}]}]}], "\[IndentingNewLine]", "]"}]], "Input",
+ CellChangeTimes->{{3.7192529015728445`*^9, 3.7192531354501762`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", "20.067100046796977`"}]], "Output",
+ CellChangeTimes->{3.7192531362882414`*^9}]
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{1536, 781},
-WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+WindowSize->{1520, 781},
+WindowMargins->{{-8, Automatic}, {Automatic, 0}},
 FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (October 8, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -788,37 +3397,86 @@ Cell[CellGroupData[{
 Cell[580, 22, 137, 1, 70, "Section"],
 Cell[CellGroupData[{
 Cell[742, 27, 294, 8, 30, "Input"],
-Cell[1039, 37, 2782, 88, 57, "Output"]
+Cell[1039, 37, 2928, 90, 57, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[3858, 130, 291, 8, 49, "Input"],
-Cell[4152, 140, 1727, 54, 54, "Output"]
+Cell[4004, 132, 291, 8, 49, "Input"],
+Cell[4298, 142, 1873, 56, 54, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[5916, 199, 223, 6, 30, "Input"],
-Cell[6142, 207, 328, 9, 30, "Output"]
+Cell[6208, 203, 223, 6, 30, "Input"],
+Cell[6434, 211, 476, 11, 30, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6519, 222, 118, 1, 70, "Section"],
-Cell[6640, 225, 3179, 101, 280, "Input"]
+Cell[6959, 228, 118, 1, 70, "Section"],
+Cell[7080, 231, 3179, 101, 280, "Input"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9856, 331, 121, 1, 70, "Section"],
-Cell[9980, 334, 1311, 34, 126, "Input"],
+Cell[10296, 337, 121, 1, 70, "Section"],
+Cell[10420, 340, 1311, 34, 126, "Input"],
 Cell[CellGroupData[{
-Cell[11316, 372, 537, 11, 50, "Input"],
-Cell[11856, 385, 241, 4, 30, "Output"],
-Cell[12100, 391, 242, 4, 30, "Output"]
+Cell[11756, 378, 537, 11, 50, "Input"],
+Cell[12296, 391, 391, 6, 30, "Output"],
+Cell[12690, 399, 388, 6, 30, "Output"]
 }, Open  ]],
-Cell[12357, 398, 1590, 38, 194, "Input"],
+Cell[13093, 408, 1590, 38, 194, "Input"],
 Cell[CellGroupData[{
-Cell[13972, 440, 358, 7, 30, "Input"],
-Cell[14333, 449, 243, 4, 30, "Output"]
+Cell[14708, 450, 358, 7, 30, "Input"],
+Cell[15069, 459, 386, 6, 30, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14613, 458, 4801, 105, 525, "Input"],
-Cell[19417, 565, 9646, 201, 396, "Output"]
+Cell[15492, 470, 4879, 106, 525, "Input"],
+Cell[20374, 578, 9814, 203, 363, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[30225, 786, 1052, 27, 103, "Input"],
+Cell[31280, 815, 354, 6, 46, "Output"]
+}, Open  ]],
+Cell[31649, 824, 1162, 32, 84, "Input"],
+Cell[CellGroupData[{
+Cell[32836, 860, 377, 9, 30, "Input"],
+Cell[33216, 871, 367, 7, 34, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[33632, 884, 234, 4, 70, "Section"],
+Cell[33869, 890, 2722, 71, 294, "Input"],
+Cell[CellGroupData[{
+Cell[36616, 965, 826, 21, 30, "Input"],
+Cell[37445, 988, 240, 3, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[37722, 996, 5627, 125, 651, "Input"],
+Cell[43352, 1123, 96111, 1708, 363, "Output"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[139512, 2837, 131, 1, 70, "Section"],
+Cell[139646, 2840, 1373, 33, 153, "Input"],
+Cell[CellGroupData[{
+Cell[141044, 2877, 1862, 39, 126, "Input"],
+Cell[142909, 2918, 5213, 122, 153, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[148159, 3045, 1412, 34, 145, "Input"],
+Cell[149574, 3081, 91, 1, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[149702, 3087, 1877, 50, 164, "Input"],
+Cell[151582, 3139, 140, 2, 30, "Output"]
+}, Open  ]],
+Cell[151737, 3144, 2077, 57, 131, "Input"],
+Cell[153817, 3203, 93, 1, 30, "Input"],
+Cell[CellGroupData[{
+Cell[153935, 3208, 1808, 46, 145, "Input"],
+Cell[155746, 3256, 259, 6, 30, "Output"]
+}, Open  ]],
+Cell[156020, 3265, 2040, 52, 161, "Input"],
+Cell[158063, 3319, 706, 19, 50, "Input"],
+Cell[CellGroupData[{
+Cell[158794, 3342, 1181, 29, 126, "Input"],
+Cell[159978, 3373, 107, 2, 30, "Output"]
 }, Open  ]]
 }, Open  ]]
 }
