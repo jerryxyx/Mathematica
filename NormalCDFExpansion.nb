@@ -10,16 +10,23 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    326525,       6952]
-NotebookOptionsPosition[    318363,       6811]
-NotebookOutlinePosition[    318721,       6827]
-CellTagsIndexPosition[    318678,       6824]
+NotebookDataLength[    320765,       6842]
+NotebookOptionsPosition[    312672,       6700]
+NotebookOutlinePosition[    313030,       6716]
+CellTagsIndexPosition[    312987,       6713]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
+Cell["Taylor Expansion Method for Implied Volatility", "Title",
+ CellChangeTimes->{{3.7193564374786053`*^9, 
+  3.719356463230933*^9}},ExpressionUUID->"6450bd91-c7ec-40b8-9b68-\
+2e11915c5821"],
+
+Cell[CellGroupData[{
+
 Cell["Singularities and Laurent Series of Error Function", "Section",
  CellChangeTimes->{{3.718403189124028*^9, 
   3.7184032298142824`*^9}},ExpressionUUID->"4c08c370-1ff2-458c-8eca-\
@@ -129,9 +136,10 @@ Cell[BoxData[
    3.71840652683171*^9, 3.7184068225604477`*^9, 3.718410923360364*^9, 
    3.718742577198724*^9, 3.7187436772731857`*^9, 3.7187461781063414`*^9, 
    3.7192431687684083`*^9, 3.719249025288415*^9, 3.719249477357574*^9, 
-   3.719250524234991*^9, 3.719328387326745*^9, 
-   3.719330507167047*^9},ExpressionUUID->"6df9da43-8414-46b4-91bb-\
-f716aed86285"]
+   3.719250524234991*^9, 3.719328387326745*^9, 3.719330507167047*^9, 
+   3.7195971204439087`*^9, 3.719599136844063*^9, 
+   3.7195995342152357`*^9},ExpressionUUID->"f5a9952d-75c9-4841-b049-\
+1c06c7b25d7a"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -212,9 +220,10 @@ Cell[BoxData[
   3.718406526974309*^9, 3.7184068226783266`*^9, 3.71841092373804*^9, 
   3.718742577364993*^9, 3.7187436773623667`*^9, 3.718746178209114*^9, 
   3.7192431688877525`*^9, 3.719249025360593*^9, 3.7192494776470127`*^9, 
-  3.7192505243482924`*^9, 3.7193283875379333`*^9, 
-  3.719330507355405*^9},ExpressionUUID->"359f9c48-cde8-4c96-9c2b-\
-1df9d2f45674"]
+  3.7192505243482924`*^9, 3.7193283875379333`*^9, 3.719330507355405*^9, 
+  3.719597120645002*^9, 3.7195991373989677`*^9, 
+  3.719599534454286*^9},ExpressionUUID->"ad11247a-89f5-4de5-86d1-\
+98a624cc7c20"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -251,9 +260,10 @@ Cell[BoxData[
    3.71840652699846*^9, 3.718406822704379*^9, 3.7184109237570887`*^9, 
    3.7187425774276676`*^9, 3.7187436773799276`*^9, 3.7187461782256584`*^9, 
    3.719243168981002*^9, 3.7192490253806458`*^9, 3.7192494776700993`*^9, 
-   3.719250524378373*^9, 3.719328387607691*^9, 
-   3.719330507384408*^9},ExpressionUUID->"17066f38-f133-4e0c-b5d3-\
-12c1db16f8fd"]
+   3.719250524378373*^9, 3.719328387607691*^9, 3.719330507384408*^9, 
+   3.719597120713311*^9, 3.719599137455299*^9, 
+   3.7195995346052322`*^9},ExpressionUUID->"a203dc0b-0f86-4fd7-bf45-\
+184617966625"]
 }, Open  ]]
 }, Open  ]],
 
@@ -479,8 +489,9 @@ Cell[BoxData["14.231170021098274`"], "Output",
    3.718742577502927*^9, 3.7187436774270377`*^9, 3.7187461782854524`*^9, 
    3.7192431690436687`*^9, 3.7192490254377975`*^9, 3.719249477727253*^9, 
    3.7192505244460583`*^9, 3.7193283877913847`*^9, 3.719330507474475*^9, 
-   3.719344893253274*^9},ExpressionUUID->"43a09cef-782a-4a0a-9a00-\
-2ae18aa6a717"],
+   3.719344893253274*^9, 3.7195971208533573`*^9, 3.719599137565716*^9, 
+   3.719599534768552*^9},ExpressionUUID->"cc1f5878-b03f-4962-a0c3-\
+1a0c710f29a5"],
 
 Cell[BoxData["14.23125478598582`"], "Output",
  CellChangeTimes->{
@@ -489,8 +500,9 @@ Cell[BoxData["14.23125478598582`"], "Output",
    3.718742577502927*^9, 3.7187436774270377`*^9, 3.7187461782854524`*^9, 
    3.7192431690436687`*^9, 3.7192490254377975`*^9, 3.719249477727253*^9, 
    3.7192505244460583`*^9, 3.7193283877913847`*^9, 3.719330507474475*^9, 
-   3.7193448932595787`*^9},ExpressionUUID->"44cf8122-8569-4286-a348-\
-d440b7b962f5"],
+   3.719344893253274*^9, 3.7195971208533573`*^9, 3.719599137565716*^9, 
+   3.7195995347784843`*^9},ExpressionUUID->"8c3982e7-dbf8-455f-a887-\
+989ed566eccc"],
 
 Cell[BoxData["9.354112471169666`"], "Output",
  CellChangeTimes->{
@@ -499,8 +511,9 @@ Cell[BoxData["9.354112471169666`"], "Output",
    3.718742577502927*^9, 3.7187436774270377`*^9, 3.7187461782854524`*^9, 
    3.7192431690436687`*^9, 3.7192490254377975`*^9, 3.719249477727253*^9, 
    3.7192505244460583`*^9, 3.7193283877913847`*^9, 3.719330507474475*^9, 
-   3.719344893265183*^9},ExpressionUUID->"68665b35-3576-4729-9c83-\
-63ea2727afc8"],
+   3.719344893253274*^9, 3.7195971208533573`*^9, 3.719599137565716*^9, 
+   3.719599534785658*^9},ExpressionUUID->"f6f0635b-d78d-4405-b30e-\
+d7b686632b8a"],
 
 Cell[BoxData["9.354197236057226`"], "Output",
  CellChangeTimes->{
@@ -509,8 +522,9 @@ Cell[BoxData["9.354197236057226`"], "Output",
    3.718742577502927*^9, 3.7187436774270377`*^9, 3.7187461782854524`*^9, 
    3.7192431690436687`*^9, 3.7192490254377975`*^9, 3.719249477727253*^9, 
    3.7192505244460583`*^9, 3.7193283877913847`*^9, 3.719330507474475*^9, 
-   3.719344893269958*^9},ExpressionUUID->"1505f42e-3b07-4a27-8f91-\
-691541cd097f"]
+   3.719344893253274*^9, 3.7195971208533573`*^9, 3.719599137565716*^9, 
+   3.719599534791066*^9},ExpressionUUID->"3f0fb25c-7ece-47cb-980a-\
+87eb62470e40"]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -616,8 +630,9 @@ Cell[BoxData["0.2999935900284324`"], "Output",
    3.7187425775389814`*^9, 3.718743677473161*^9, 3.7187461783269734`*^9, 
    3.71924316908434*^9, 3.7192490254779043`*^9, 3.719249477785882*^9, 
    3.719250524489674*^9, 3.719328387870878*^9, 3.719330507543022*^9, 
-   3.719344997191313*^9},ExpressionUUID->"966d66e3-bd9a-486a-8635-\
-86424e24f46e"],
+   3.719344997191313*^9, 3.719597120941008*^9, 3.719599137717917*^9, 
+   3.719599534843025*^9},ExpressionUUID->"ae060288-54c1-4fd6-bbe3-\
+d6d3cb74b35f"],
 
 Cell[BoxData["0.3000766831945564`"], "Output",
  CellChangeTimes->{
@@ -626,8 +641,9 @@ Cell[BoxData["0.3000766831945564`"], "Output",
    3.7187425775389814`*^9, 3.718743677473161*^9, 3.7187461783269734`*^9, 
    3.71924316908434*^9, 3.7192490254779043`*^9, 3.719249477785882*^9, 
    3.719250524489674*^9, 3.719328387870878*^9, 3.719330507543022*^9, 
-   3.719344997255456*^9},ExpressionUUID->"3f43d6a0-dfa9-44a3-8b4c-\
-8838f1ffc0d6"]
+   3.719344997191313*^9, 3.719597120941008*^9, 3.719599137717917*^9, 
+   3.719599534872405*^9},ExpressionUUID->"6afb70ca-bb1b-41cf-b050-\
+e63fe55a1eae"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -639,29 +655,41 @@ Cell[BoxData[{
     RowBox[{
      RowBox[{"{", 
       RowBox[{
-       RowBox[{"targetCallPrice", "=", 
-        RowBox[{"BSCallHandy", "[", 
-         RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], 
-         "]"}]}], ",", 
-       RowBox[{"estimatedCallPrice", "=", 
-        RowBox[{"BSCallTaylorExpansion", "[", 
-         RowBox[{
-         "S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]", ",", "a", ",", 
-          "order"}], "]"}]}], ",", "estimatedIV"}], "}"}], ",", 
-     "\[IndentingNewLine]", 
+      "targetCallPrice", ",", "estimatedCallPrice", ",", "estimatedIV", ",", 
+       "newtonRoot"}], "}"}], ",", "\[IndentingNewLine]", 
      RowBox[{
+      RowBox[{"targetCallPrice", "=", 
+       RowBox[{"BSCallHandy", "[", 
+        RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}]}],
+       ";", "\[IndentingNewLine]", 
+      RowBox[{"estimatedCallPrice", "=", 
+       RowBox[{"BSCallTaylorExpansion", "[", 
+        RowBox[{
+        "S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]", ",", "a", ",", 
+         "order"}], "]"}]}], ";", "\[IndentingNewLine]", 
       RowBox[{"estimatedIV", "=", 
        RowBox[{"InverseCallIV", "[", 
         RowBox[{
         "targetCallPrice", ",", "S", ",", "K", ",", "T", ",", "r", ",", "a", 
          ",", "order"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"newtonRoot", " ", "=", " ", 
+       RowBox[{"Timing", "[", 
+        RowBox[{"FindRoot", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"BSCallHandy", "[", 
+            RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "x"}], "]"}], 
+           "\[Equal]", "targetCallPrice"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "1"}], "}"}]}], "]"}], "]"}]}], ";", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
       RowBox[{"{", 
        RowBox[{
         RowBox[{"{", 
          RowBox[{"targetCallPrice", ",", "estimatedCallPrice"}], "}"}], ",", 
         RowBox[{"{", 
-         RowBox[{"\[Sigma]", ",", "estimatedIV"}], "}"}]}], "}"}]}]}], "]"}], 
-   ",", "\[IndentingNewLine]", 
+         RowBox[{"\[Sigma]", ",", "estimatedIV", ",", "newtonRoot"}], "}"}]}],
+        "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
    "\"\<underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)\>\"", ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
@@ -835,16 +863,17 @@ Cell[BoxData[{
    3.7184111076266127`*^9, 3.7184111357230916`*^9}, {3.7187426971628942`*^9, 
    3.7187426974103913`*^9}, {3.7187461412421227`*^9, 3.7187461604640503`*^9}, 
    3.7192431658337293`*^9, {3.719345027307643*^9, 3.71934508881742*^9}, {
-   3.719345125662434*^9, 
-   3.7193451271673403`*^9}},ExpressionUUID->"041da8f9-5be5-42a5-a4f5-\
+   3.719345125662434*^9, 3.7193451271673403`*^9}, {3.7196019865927553`*^9, 
+   3.719602135942979*^9}, {3.719602222405903*^9, 
+   3.719602245530677*^9}},ExpressionUUID->"041da8f9-5be5-42a5-a4f5-\
 27d45525e36f"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = 1, K$$ = 46., $CellContext`order$$ = 
-    10, $CellContext`r$$ = 0.05, $CellContext`S$$ = 120, $CellContext`T$$ = 
-    1, $CellContext`\[Sigma]$$ = 0.3, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`a$$ = 1, K$$ = 47., $CellContext`order$$ = 
+    10, $CellContext`r$$ = 0.05, $CellContext`S$$ = 132, $CellContext`T$$ = 
+    1, $CellContext`\[Sigma]$$ = 0.75, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
@@ -869,48 +898,54 @@ Cell[BoxData[
       Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
       Hold["fixed point, a"], Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`a$$], 1, ""}, 0, 5, 0.5}}, Typeset`size$$ = {
-    282., {3., 9.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`S$64520$$ = 0, K$64521$$ = 
-    0, $CellContext`\[Sigma]$64522$$ = 0, $CellContext`r$64523$$ = 
-    0, $CellContext`T$64524$$ = 0, $CellContext`order$64525$$ = 
-    0, $CellContext`a$64526$$ = 0}, 
+    466., {3., 9.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`S$18865$$ = 0, K$18866$$ = 
+    0, $CellContext`\[Sigma]$18867$$ = 0, $CellContext`r$18868$$ = 
+    0, $CellContext`T$18869$$ = 0, $CellContext`order$18870$$ = 
+    0, $CellContext`a$18871$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`a$$ = 1, K$$ = 100, $CellContext`order$$ = 
         10, $CellContext`r$$ = 0.05, $CellContext`S$$ = 
         100., $CellContext`T$$ = 1, $CellContext`\[Sigma]$$ = 0.3}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`S$$, $CellContext`S$64520$$, 0], 
-        Hold[K$$, K$64521$$, 0], 
-        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$64522$$, 0], 
-        Hold[$CellContext`r$$, $CellContext`r$64523$$, 0], 
-        Hold[$CellContext`T$$, $CellContext`T$64524$$, 0], 
-        Hold[$CellContext`order$$, $CellContext`order$64525$$, 0], 
-        Hold[$CellContext`a$$, $CellContext`a$64526$$, 0]}, 
+        Hold[$CellContext`S$$, $CellContext`S$18865$$, 0], 
+        Hold[K$$, K$18866$$, 0], 
+        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$18867$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$18868$$, 0], 
+        Hold[$CellContext`T$$, $CellContext`T$18869$$, 0], 
+        Hold[$CellContext`order$$, $CellContext`order$18870$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$18871$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
-      Module[{$CellContext`targetCallPrice$ = \
+      Module[{$CellContext`targetCallPrice$, \
+$CellContext`estimatedCallPrice$, $CellContext`estimatedIV$, \
+$CellContext`newtonRoot$}, $CellContext`targetCallPrice$ = \
 $CellContext`BSCallHandy[$CellContext`S$$, 
-           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$], \
+           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$]; \
 $CellContext`estimatedCallPrice$ = \
 $CellContext`BSCallTaylorExpansion[$CellContext`S$$, 
            K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$, \
-$CellContext`a$$, $CellContext`order$$], $CellContext`estimatedIV$}, \
-$CellContext`estimatedIV$ = \
+$CellContext`a$$, $CellContext`order$$]; $CellContext`estimatedIV$ = \
 $CellContext`InverseCallIV[$CellContext`targetCallPrice$, $CellContext`S$$, 
            K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`a$$, \
-$CellContext`order$$]; {{$CellContext`targetCallPrice$, \
+$CellContext`order$$]; $CellContext`newtonRoot$ = Timing[
+           
+           FindRoot[$CellContext`BSCallHandy[$CellContext`S$$, 
+              K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`x] == \
+$CellContext`targetCallPrice$, {$CellContext`x, 
+             
+             1}]]; {{$CellContext`targetCallPrice$, \
 $CellContext`estimatedCallPrice$}, {$CellContext`\[Sigma]$$, \
-$CellContext`estimatedIV$}}], 
+$CellContext`estimatedIV$, $CellContext`newtonRoot$}}], 
       "Specifications" :> {
        "underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)", {{$CellContext`S$$, 
           100., ""}, 0, 150, 1, Appearance -> "Labeled", ImageSize -> Tiny}, 
-        "", 
-        "strike, K", {{K$$, 100, ""}, 0, 150, 0.5, Appearance -> "Labeled", 
-         ImageSize -> Tiny}, "", 
+        "", "strike, K", {{K$$, 100, ""}, 0, 150, 0.5, Appearance -> 
+         "Labeled", ImageSize -> Tiny}, "", 
         "volatility, \[Sigma]", {{$CellContext`\[Sigma]$$, 0.3, ""}, 0.01, 1, 
          0.01, Appearance -> "Labeled", ImageSize -> Tiny}, "", 
         "risk-free rate, r", {{$CellContext`r$$, 0.05, ""}, 0., 0.25, 0.01, 
@@ -922,7 +957,7 @@ $CellContext`estimatedIV$}}],
         "fixed point, a", {{$CellContext`a$$, 1, ""}, 0, 5, 0.5, Appearance -> 
          "Labeled", ImageSize -> Tiny}}, 
       "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
-     ImageSizeCache->{454., {168., 173.}},
+     ImageSizeCache->{638., {168., 173.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -939,11 +974,8 @@ $CellContext`estimatedIV$}}],
           Blank[]]] := $CellContext`BSCall[$CellContext`S, 
          $CellContext`logForward[$CellContext`S, 
           K, $CellContext`T, $CellContext`r], 
-         $CellContext`Z[$CellContext`\[Sigma], $CellContext`T]], 
-       TagSet[K$$, 
-        MessageName[K$$, "usage"], 
-        "K is a default generic name for a summation index in a symbolic \
-sum."], $CellContext`BSCall[
+         $CellContext`Z[$CellContext`\[Sigma], $CellContext`T]], \
+$CellContext`BSCall[
          Pattern[$CellContext`S, 
           Blank[]], 
          Pattern[$CellContext`lo, 
@@ -1048,15 +1080,17 @@ $CellContext`CallPrice]; $CellContext`impliedVol = $CellContext`std/
    3.718746161353861*^9, 3.718746178371091*^9}, 3.719243169120534*^9, 
    3.719249025541072*^9, 3.7192494778774576`*^9, 3.7192505245618677`*^9, 
    3.719328388466036*^9, 3.719330507597821*^9, {3.719345115991839*^9, 
-   3.719345127706077*^9}},ExpressionUUID->"9d10ce25-c96e-4362-9182-\
-035a2302b3aa"],
+   3.719345127706077*^9}, 3.719597121048049*^9, 3.71959895273201*^9, 
+   3.719599137837061*^9, 3.719599535576974*^9, 3.719602010475566*^9, 
+   3.719602136544497*^9, 
+   3.719602246533868*^9},ExpressionUUID->"91b18adc-090b-47de-8d70-\
+8eeaf37c017e"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = 0.2, K$$ = 
-    91.5, $CellContext`order$$ = 24, $CellContext`r$$ = 
-    0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
+   DynamicModuleBox[{$CellContext`a$$ = 1, K$$ = 100, $CellContext`order$$ = 
+    10, $CellContext`r$$ = 0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
     1, $CellContext`\[Sigma]$$ = 0.3, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
@@ -1082,24 +1116,24 @@ Cell[BoxData[
       Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
       Hold["fixed point, a"], Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`a$$], 1, ""}, 0, 5, 0.5}}, Typeset`size$$ = {
-    282., {3., 9.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`S$64576$$ = 0, K$64577$$ = 
-    0, $CellContext`\[Sigma]$64578$$ = 0, $CellContext`r$64579$$ = 
-    0, $CellContext`T$64580$$ = 0, $CellContext`order$64581$$ = 
-    0, $CellContext`a$64582$$ = 0}, 
+    274., {3., 9.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`S$18903$$ = 0, K$18904$$ = 
+    0, $CellContext`\[Sigma]$18905$$ = 0, $CellContext`r$18906$$ = 
+    0, $CellContext`T$18907$$ = 0, $CellContext`order$18908$$ = 
+    0, $CellContext`a$18909$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`a$$ = 1, K$$ = 100, $CellContext`order$$ = 
         10, $CellContext`r$$ = 0.05, $CellContext`S$$ = 
         100., $CellContext`T$$ = 1, $CellContext`\[Sigma]$$ = 0.3}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`S$$, $CellContext`S$64576$$, 0], 
-        Hold[K$$, K$64577$$, 0], 
-        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$64578$$, 0], 
-        Hold[$CellContext`r$$, $CellContext`r$64579$$, 0], 
-        Hold[$CellContext`T$$, $CellContext`T$64580$$, 0], 
-        Hold[$CellContext`order$$, $CellContext`order$64581$$, 0], 
-        Hold[$CellContext`a$$, $CellContext`a$64582$$, 0]}, 
+        Hold[$CellContext`S$$, $CellContext`S$18903$$, 0], 
+        Hold[K$$, K$18904$$, 0], 
+        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$18905$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$18906$$, 0], 
+        Hold[$CellContext`T$$, $CellContext`T$18907$$, 0], 
+        Hold[$CellContext`order$$, $CellContext`order$18908$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$18909$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -1135,7 +1169,7 @@ $CellContext`estimatedIV$}}],
         "fixed point, a", {{$CellContext`a$$, 1, ""}, 0, 5, 0.5, Appearance -> 
          "Labeled", ImageSize -> Tiny}}, 
       "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
-     ImageSizeCache->{454., {168., 173.}},
+     ImageSizeCache->{446., {168., 173.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -1152,11 +1186,8 @@ $CellContext`estimatedIV$}}],
           Blank[]]] := $CellContext`BSPut[$CellContext`S, 
          $CellContext`logForward[$CellContext`S, 
           K, $CellContext`T, $CellContext`r], 
-         $CellContext`Z[$CellContext`\[Sigma], $CellContext`T]], 
-       TagSet[K$$, 
-        MessageName[K$$, "usage"], 
-        "K is a default generic name for a summation index in a symbolic \
-sum."], $CellContext`BSPut[
+         $CellContext`Z[$CellContext`\[Sigma], $CellContext`T]], \
+$CellContext`BSPut[
          Pattern[$CellContext`S, 
           Blank[]], 
          Pattern[$CellContext`lo, 
@@ -1262,26 +1293,11 @@ $CellContext`CallPrice]; $CellContext`impliedVol = $CellContext`std/
    3.718746161353861*^9, 3.718746178371091*^9}, 3.719243169120534*^9, 
    3.719249025541072*^9, 3.7192494778774576`*^9, 3.7192505245618677`*^9, 
    3.719328388466036*^9, 3.719330507597821*^9, {3.719345115991839*^9, 
-   3.7193451278262672`*^9}},ExpressionUUID->"adfa8dd3-ea79-4159-afc4-\
-7d36a1bbc234"],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","unfl","\"Underflow occurred in computation.\"",2,217,2,
-   22651421853478998320,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.719345461272296*^9},ExpressionUUID->"9492f47c-205a-461a-8ac8-\
-27f9d5b1a4c5"],
-
-Cell[BoxData[
- TemplateBox[{
-  "General","unfl","\"Underflow occurred in computation.\"",2,217,3,
-   22651421853478998320,"Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{
-  3.7193454612970552`*^9},ExpressionUUID->"9b234d8b-b3d1-4411-8361-\
-83bbfa772fe1"]
+   3.719345127706077*^9}, 3.719597121048049*^9, 3.71959895273201*^9, 
+   3.719599137837061*^9, 3.719599535576974*^9, 3.719602010475566*^9, 
+   3.719602136544497*^9, 
+   3.719602246683134*^9},ExpressionUUID->"7511fae0-2c39-4e5e-8907-\
+f0638d490e3c"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1324,8 +1340,9 @@ Cell[BoxData[
    3.7187430636221447`*^9, 3.7187432726529727`*^9, 3.718743677956784*^9, 
    3.7187461787093744`*^9, 3.719243169519069*^9, 3.719249025672326*^9, 
    3.7192494787579994`*^9, 3.7192505250040417`*^9, 3.719328390647582*^9, 
-   3.71933050773991*^9},ExpressionUUID->"931b2da8-6215-454a-b1ff-\
-0bbec569db9f"]
+   3.71933050773991*^9, 3.719597121647915*^9, 3.719599138985125*^9, 
+   3.7195995379563217`*^9},ExpressionUUID->"6de4e49e-3267-420e-9077-\
+aa1e335d6aff"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -1387,9 +1404,10 @@ Cell[BoxData[
  CellChangeTimes->{{3.7187435704859734`*^9, 3.7187435785970154`*^9}, 
    3.7187436800351596`*^9, 3.7187461787279243`*^9, 3.719243171527109*^9, 
    3.719249025706417*^9, 3.7192494811168437`*^9, 3.719250527254828*^9, 
-   3.7193283945712147`*^9, 
-   3.719330507824139*^9},ExpressionUUID->"30eb6192-29fc-41e9-9e54-\
-1b47889014a2"]
+   3.7193283945712147`*^9, 3.719330507824139*^9, 3.719597124845881*^9, 
+   3.719599143315946*^9, 
+   3.719599542355468*^9},ExpressionUUID->"e40c1d93-60a5-4f4e-a2b8-\
+3cf71de36933"]
 }, Open  ]]
 }, Open  ]],
 
@@ -1509,8 +1527,9 @@ Cell[BoxData["0.3001412933884637`"], "Output",
  CellChangeTimes->{{3.7192440736047473`*^9, 3.719244099697445*^9}, {
    3.719244137732541*^9, 3.7192442032879295`*^9}, 3.7192490257320194`*^9, 
    3.719249482397484*^9, 3.7192505280208626`*^9, 3.719328394710609*^9, 
-   3.719330507907979*^9},ExpressionUUID->"73757650-35be-412a-9c5e-\
-593e29f43e02"]
+   3.719330507907979*^9, 3.71959712497504*^9, 3.719599143535103*^9, 
+   3.71959954249755*^9},ExpressionUUID->"a708b0b8-a1fa-432e-b0c1-\
+9375ad3d5092"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1672,7 +1691,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                   Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
-         0.282094791773878143474039725780386292922025314664499428685`30. 
+         0.2820947917738781434740397257803862929220253146644994284221`30. 
          2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
 1.`30.) InverseErfc[
              2.`30. (1.`30. + 
@@ -1742,7 +1761,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                   Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
-         0.282094791773878143474039725780386292922025314664499428685`30. 
+         0.2820947917738781434740397257803862929220253146644994284221`30. 
           2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
 1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
             InverseErfc[
@@ -1812,7 +1831,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                 Rational[-1, 
                   2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
-       0.282094791773878143474039725780386292922025314664499428685`30. 
+       0.2820947917738781434740397257803862929220253146644994284221`30. 
        2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.`\
 30.) InverseErfc[
            2.`30. (1.`30. + 
@@ -1916,7 +1935,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                 Rational[-1, 
                   2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
-       0.282094791773878143474039725780386292922025314664499428685`30. 
+       0.2820947917738781434740397257803862929220253146644994284221`30. 
         2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.\
 `30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
           InverseErfc[
@@ -2005,8 +2024,8 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                Rational[-1, 
                  2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30.]], K$$ = 
-    70.5, $CellContext`order$$ = 10, $CellContext`r$$ = 
-    0.05, $CellContext`S$$ = 140, $CellContext`T$$ = 
+    100, $CellContext`order$$ = 10, $CellContext`r$$ = 
+    0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
     1, $CellContext`\[Sigma]$$ = 0.3, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
@@ -2055,7 +2074,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
-            0.282094791773878143474039725780386292922025314664499428685`30. 
+            0.2820947917738781434740397257803862929220253146644994284221`30. 
             2.7182818284590452353602874713526624976385970411900203714065`30.^(\
 (-1.`30.) InverseErfc[
                 2.`30. (1.`30. + 
@@ -2127,7 +2146,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
-            0.282094791773878143474039725780386292922025314664499428685`30. 
+            0.2820947917738781434740397257803862929220253146644994284221`30. 
              2.7182818284590452353602874713526624976385970411900203714065`30.^\
 ((-1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
                InverseErfc[
@@ -2200,7 +2219,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                    Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
-          0.282094791773878143474039725780386292922025314664499428685`30. 
+          0.2820947917738781434740397257803862929220253146644994284221`30. 
           2.7182818284590452353602874713526624976385970411900203714065`30.^((-\
 1.`30.) InverseErfc[
               2.`30. (1.`30. + 
@@ -2309,7 +2328,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                    Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
-          0.282094791773878143474039725780386292922025314664499428685`30. 
+          0.2820947917738781434740397257803862929220253146644994284221`30. 
            2.7182818284590452353602874713526624976385970411900203714065`30.^((\
 -1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
              InverseErfc[
@@ -2401,12 +2420,12 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                   Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30.]], ""}, 0, 5,
-       0.5}}, Typeset`size$$ = {357., {3., 9.}}, Typeset`update$$ = 0, 
+       0.5}}, Typeset`size$$ = {279., {3., 9.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`S$94255$$ = 0, K$94256$$ = 
-    0, $CellContext`\[Sigma]$94257$$ = 0, $CellContext`r$94258$$ = 
-    0, $CellContext`T$94259$$ = 0, $CellContext`order$94260$$ = 
-    0, $CellContext`a$94261$$ = 0}, 
+    False, $CellContext`S$5558$$ = 0, K$5559$$ = 
+    0, $CellContext`\[Sigma]$5560$$ = 0, $CellContext`r$5561$$ = 
+    0, $CellContext`T$5562$$ = 0, $CellContext`order$5563$$ = 
+    0, $CellContext`a$5564$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`a$$ = 
@@ -2433,9 +2452,9 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
-              0.282094791773878143474039725780386292922025314664499428685`30. 
-              2.7182818284590452353602874713526624976385970411900203714065`30.\
-^((-1.`30.) InverseErfc[
+              0.2820947917738781434740397257803862929220253146644994284221`30.\
+ 2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.`30.) 
+                InverseErfc[
                   2.`30. (1.`30. + 
                     2.71828182845904523536028747135266249763859704119002037140\
 65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
@@ -2505,9 +2524,9 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
-              0.282094791773878143474039725780386292922025314664499428685`30. 
-               2.7182818284590452353602874713526624976385970411900203714065`\
-30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
+              0.2820947917738781434740397257803862929220253146644994284221`30.\
+ 2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.`30.) \
+$CellContext`r$$ $CellContext`T$$ - 1.`30. 
                  InverseErfc[
                    2.`30. (1.`30. + 
                     2.71828182845904523536028747135266249763859704119002037140\
@@ -2579,7 +2598,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
-            0.282094791773878143474039725780386292922025314664499428685`30. 
+            0.2820947917738781434740397257803862929220253146644994284221`30. 
             2.7182818284590452353602874713526624976385970411900203714065`30.^(\
 (-1.`30.) InverseErfc[
                 2.`30. (1.`30. + 
@@ -2636,9 +2655,8 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]))] <= 1.`30.,
               2.7182818284590452353602874713526624938382062863352767788129`30.\
 ^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
               K$$ $CellContext`S$$^(-1) (1.`30. + 
-               Erf[
-                0.7071067811865475244008443621048490392848359376884740365884`\
-30. ((-0.5`30.) $CellContext`T$$^
+               Erf[0.707106781186547524400844362104849039284835937688474036588\
+4`30. ((-0.5`30.) $CellContext`T$$^
                     Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
@@ -2677,8 +2695,9 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30.,
                2.7182818284590452353602874713526624938382062863352767788129`\
 30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
                K$$ $CellContext`S$$^(-1) (1.`30. + 
-                Erf[0.70710678118654752440084436210484903928483593768847403658\
-84`30. ((-0.5`30.) $CellContext`T$$^
+                Erf[
+                 0.7071067811865475244008443621048490392848359376884740365884`\
+30. ((-0.5`30.) $CellContext`T$$^
                     Rational[1, 2] $CellContext`\[Sigma]$$ + $CellContext`T$$^
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
@@ -2690,7 +2709,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
-            0.282094791773878143474039725780386292922025314664499428685`30. 
+            0.2820947917738781434740397257803862929220253146644994284221`30. 
              2.7182818284590452353602874713526624976385970411900203714065`30.^\
 ((-1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
                InverseErfc[
@@ -2785,13 +2804,13 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30.]], K$$ =
         100, $CellContext`order$$ = 10, $CellContext`r$$ = 
         0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
         1, $CellContext`\[Sigma]$$ = 0.3}, "ControllerVariables" :> {
-        Hold[$CellContext`S$$, $CellContext`S$94255$$, 0], 
-        Hold[K$$, K$94256$$, 0], 
-        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$94257$$, 0], 
-        Hold[$CellContext`r$$, $CellContext`r$94258$$, 0], 
-        Hold[$CellContext`T$$, $CellContext`T$94259$$, 0], 
-        Hold[$CellContext`order$$, $CellContext`order$94260$$, 0], 
-        Hold[$CellContext`a$$, $CellContext`a$94261$$, 0]}, 
+        Hold[$CellContext`S$$, $CellContext`S$5558$$, 0], 
+        Hold[K$$, K$5559$$, 0], 
+        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$5560$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$5561$$, 0], 
+        Hold[$CellContext`T$$, $CellContext`T$5562$$, 0], 
+        Hold[$CellContext`order$$, $CellContext`order$5563$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$5564$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -2856,10 +2875,9 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
-               0.282094791773878143474039725780386292922025314664499428685`30.\
- 2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.`30.) 
-                 InverseErfc[
-                   2.`30. (1.`30. + 
+               0.2820947917738781434740397257803862929220253146644994284221`\
+30. 2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.`30.\
+) InverseErfc[2.`30. (1.`30. + 
                     2.71828182845904523536028747135266249763859704119002037140\
 65`30.^((-1.`30.) $CellContext`r$$ $CellContext`T$$) 
                     K$$/$CellContext`S$$)^(-1) (1.`30. + 
@@ -2931,9 +2949,9 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
-               0.282094791773878143474039725780386292922025314664499428685`30.\
- 2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.`30.) \
-$CellContext`r$$ $CellContext`T$$ - 1.`30. 
+               0.2820947917738781434740397257803862929220253146644994284221`\
+30. 2.7182818284590452353602874713526624976385970411900203714065`30.^((-1.`30.\
+) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
                   InverseErfc[
                     2.`30. (1.`30. + 
                     2.71828182845904523536028747135266249763859704119002037140\
@@ -3005,7 +3023,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) - 
-             0.282094791773878143474039725780386292922025314664499428685`30. 
+             0.2820947917738781434740397257803862929220253146644994284221`30. 
              2.7182818284590452353602874713526624976385970411900203714065`30.^\
 ((-1.`30.) InverseErfc[
                  2.`30. (1.`30. + 
@@ -3115,7 +3133,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) + 
-             0.282094791773878143474039725780386292922025314664499428685`30. 
+             0.2820947917738781434740397257803862929220253146644994284221`30. 
               2.7182818284590452353602874713526624976385970411900203714065`30.\
 ^((-1.`30.) $CellContext`r$$ $CellContext`T$$ - 1.`30. 
                 InverseErfc[
@@ -3209,7 +3227,7 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
 $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <= 1.`30.]], ""}, 0, 5,
           0.5, Appearance -> "Labeled", ImageSize -> Tiny}}, 
       "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
-     ImageSizeCache->{535., {168., 173.}},
+     ImageSizeCache->{451., {168., 173.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -3359,9 +3377,10 @@ $CellContext`CallPrice]; $CellContext`impliedVol = $CellContext`std/
    3.7192494826977825`*^9, 3.7192505281522136`*^9, 3.7193283949525003`*^9, 
    3.719330508036845*^9, {3.719345670593483*^9, 3.7193456978294287`*^9}, 
    3.719352290128065*^9, 3.719354589083768*^9, 3.719355086553712*^9, {
-   3.7193551338636837`*^9, 
-   3.719355161119095*^9}},ExpressionUUID->"4c00958d-f761-48d5-ad04-\
-ba4d54bdbaf7"]
+   3.7193551338636837`*^9, 3.719355161119095*^9}, 3.719597125090554*^9, 
+   3.7195991438087597`*^9, 
+   3.719599542663143*^9},ExpressionUUID->"ee22a0f9-715f-4603-a918-\
+dd31bd28ccf1"]
 }, Open  ]]
 }, Open  ]],
 
@@ -3904,9 +3923,10 @@ Cell[BoxData["0.29976192122025613`"], "Output",
    3.71935067272196*^9, 3.71935084237057*^9, 3.719350939206358*^9, 
    3.719351092464591*^9, 3.719351334374466*^9, {3.719352643612443*^9, 
    3.7193526864783163`*^9}, {3.7193527168595324`*^9, 
-   3.7193527287574177`*^9}, {3.719352797939767*^9, 
-   3.719352817536838*^9}},ExpressionUUID->"2d914bf2-ef4f-4088-890e-\
-c214f35417c7"],
+   3.7193527287574177`*^9}, {3.719352797939767*^9, 3.719352817536838*^9}, 
+   3.719597125438496*^9, 3.7195991441795893`*^9, 
+   3.71959954294173*^9},ExpressionUUID->"e96550ce-e36b-4586-b583-\
+ce7ca19784c1"],
 
 Cell[BoxData["14.23125478598582`"], "Output",
  CellChangeTimes->{
@@ -3917,9 +3937,10 @@ Cell[BoxData["14.23125478598582`"], "Output",
    3.71935067272196*^9, 3.71935084237057*^9, 3.719350939206358*^9, 
    3.719351092464591*^9, 3.719351334374466*^9, {3.719352643612443*^9, 
    3.7193526864783163`*^9}, {3.7193527168595324`*^9, 
-   3.7193527287574177`*^9}, {3.719352797939767*^9, 
-   3.719352817548154*^9}},ExpressionUUID->"c99a810c-6ffe-4ee4-a45f-\
-a6c9aa381048"],
+   3.7193527287574177`*^9}, {3.719352797939767*^9, 3.719352817536838*^9}, 
+   3.719597125438496*^9, 3.7195991441795893`*^9, 
+   3.719599542946245*^9},ExpressionUUID->"77a6f811-e64b-43eb-ba5d-\
+865ae512bd9a"],
 
 Cell[BoxData["0.2997619212201`"], "Output",
  CellChangeTimes->{
@@ -3930,9 +3951,10 @@ Cell[BoxData["0.2997619212201`"], "Output",
    3.71935067272196*^9, 3.71935084237057*^9, 3.719350939206358*^9, 
    3.719351092464591*^9, 3.719351334374466*^9, {3.719352643612443*^9, 
    3.7193526864783163`*^9}, {3.7193527168595324`*^9, 
-   3.7193527287574177`*^9}, {3.719352797939767*^9, 
-   3.71935281755416*^9}},ExpressionUUID->"1125f29a-61e9-49bb-a62e-\
-990a16c27b6f"]
+   3.7193527287574177`*^9}, {3.719352797939767*^9, 3.719352817536838*^9}, 
+   3.719597125438496*^9, 3.7195991441795893`*^9, 
+   3.719599542949753*^9},ExpressionUUID->"a6277c6c-d28b-4570-b4fb-\
+b62ee3e7df9a"]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -3980,9 +4002,10 @@ fa6c351095b1"],
 Cell[BoxData[
  RowBox[{"{", 
   RowBox[{"0.29976192122025613`", ",", "0.2997619212201`"}], "}"}]], "Output",
- CellChangeTimes->{
-  3.7193529194311457`*^9},ExpressionUUID->"0658c9c7-1777-47cb-b674-\
-d7bf96116e33"]
+ CellChangeTimes->{3.7193529194311457`*^9, 3.719597125634746*^9, 
+  3.71959914433606*^9, 
+  3.719599542994831*^9},ExpressionUUID->"1602dc75-9161-4ceb-aa7a-\
+6ef5a22820b8"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -4001,17 +4024,23 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"{", 
       RowBox[{
-       RowBox[{"targetPutPrice", "=", 
-        RowBox[{"BSPutHandy", "[", 
-         RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], 
-         "]"}]}], ",", 
-       RowBox[{"estimatedPutPrice", "=", 
-        RowBox[{"BSPutTaylorExpansion", "[", 
-         RowBox[{
-         "S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]", ",", "a", ",", 
-          "order"}], "]"}]}], ",", "estimatedIV", ",", "fixa", ",", 
-       "upperbound"}], "}"}], ",", "\[IndentingNewLine]", 
+      "targetPutPrice", ",", "estimatedPutPrice", ",", "estimatedIV", ",", 
+       "fixa", ",", "fixa2", ",", "upperbound", ",", "newtonRoot", ",", "t1", 
+       ",", "t2", ",", "t3"}], "}"}], ",", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
      RowBox[{
+      RowBox[{"targetPutPrice", "=", 
+       RowBox[{"BSPutHandy", "[", 
+        RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}]}],
+       ";", "\[IndentingNewLine]", 
+      RowBox[{"estimatedPutPrice", "=", 
+       RowBox[{"BSPutTaylorExpansion", "[", 
+        RowBox[{
+        "S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]", ",", "a", ",", 
+         "order"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", 
+      RowBox[{"t1", " ", "=", " ", 
+       RowBox[{"AbsoluteTime", "[", "]"}]}], ";", "\[IndentingNewLine]", 
       RowBox[{"fixa", "=", " ", 
        RowBox[{
         RowBox[{"SRVolPut", "[", 
@@ -4028,22 +4057,46 @@ Cell[BoxData[
         RowBox[{
         "targetPutPrice", ",", "S", ",", "K", ",", "T", ",", "r", ",", "fixa",
           ",", "order"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"t2", " ", "=", " ", 
+       RowBox[{"AbsoluteTime", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"fixa2", "=", " ", 
+       RowBox[{
+        RowBox[{"SRVolPut", "[", 
+         RowBox[{"targetPutPrice", ",", "K", ",", "T", ",", 
+          RowBox[{"S", " ", 
+           RowBox[{"Exp", "[", 
+            RowBox[{"r", " ", "T"}], "]"}]}], ",", "r"}], "]"}], "*", 
+        SqrtBox["T"]}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"newtonRoot", " ", "=", " ", 
+       RowBox[{"FindRoot", "[", 
+        RowBox[{
+         RowBox[{
+          RowBox[{"BSPutHandy", "[", 
+           RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "x"}], "]"}], 
+          "\[Equal]", "targetPutPrice"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "fixa2"}], "}"}]}], "]"}]}], ";", 
       "\[IndentingNewLine]", 
+      RowBox[{"t3", " ", "=", " ", 
+       RowBox[{"AbsoluteTime", "[", "]"}]}], ";", "\[IndentingNewLine]", 
       RowBox[{"{", 
        RowBox[{
         RowBox[{"{", 
          RowBox[{"targetPutPrice", ",", "estimatedPutPrice"}], "}"}], ",", 
         RowBox[{"{", 
          RowBox[{
-         "\[Sigma]", ",", "fixa", ",", "upperbound", ",", "estimatedIV"}], 
-         "}"}]}], "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+         "\[Sigma]", ",", "fixa", ",", "upperbound", ",", "estimatedIV", ",", 
+          "newtonRoot"}], "}"}], ",", 
+        RowBox[{"t2", "-", "t1"}], ",", 
+        RowBox[{"t3", "-", "t2"}]}], "}"}]}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
    "\"\<underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)\>\"", ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"S", ",", "100.", ",", "\"\<\>\""}], "}"}], ",", "0", ",", 
-     "150", ",", "1", ",", 
+      RowBox[{"S", ",", "80.", ",", "\"\<\>\""}], "}"}], ",", "0", ",", "150",
+      ",", "1", ",", 
      RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
      RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
    "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
@@ -4051,7 +4104,7 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"K", ",", "100", ",", "\"\<\>\""}], "}"}], ",", "0", ",", "150",
+      RowBox[{"K", ",", "120", ",", "\"\<\>\""}], "}"}], ",", "0", ",", "150",
       ",", "0.5", ",", 
      RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
      RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
@@ -4060,8 +4113,8 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"\[Sigma]", ",", "0.3", ",", "\"\<\>\""}], "}"}], ",", "0.01", 
-     ",", "1", ",", "0.01", ",", 
+      RowBox[{"\[Sigma]", ",", "0.3124245214", ",", "\"\<\>\""}], "}"}], ",", 
+     "0.01", ",", "1", ",", "0.01", ",", 
      RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
      RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
    "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
@@ -4078,8 +4131,8 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"T", ",", "1", ",", "\"\<\>\""}], "}"}], ",", "0.1", ",", "3", 
-     ",", "0.25", ",", 
+      RowBox[{"T", ",", "0.1", ",", "\"\<\>\""}], "}"}], ",", "0.1", ",", "3",
+      ",", "0.25", ",", 
      RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
      RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
    "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
@@ -4119,35 +4172,39 @@ Cell[BoxData[
    3.71935454680587*^9, 3.719354552180088*^9}, {3.71935464966269*^9, 
    3.719354674931552*^9}, {3.71935500981664*^9, 3.719355011362464*^9}, 
    3.719355123049823*^9, {3.7193553180239973`*^9, 3.719355330739197*^9}, {
-   3.719356320313788*^9, 
-   3.719356321233244*^9}},ExpressionUUID->"fcf45a7c-c5f1-4f5e-b48a-\
+   3.719356320313788*^9, 3.719356321233244*^9}, {3.7195992799136887`*^9, 
+   3.719599371142434*^9}, {3.71959958198425*^9, 3.719599594795919*^9}, {
+   3.7196023349832973`*^9, 3.719602583190143*^9}, {3.719602836291514*^9, 
+   3.719602859498005*^9}, {3.7196030218781757`*^9, 3.719603024662224*^9}, {
+   3.719603100732345*^9, 3.719603161471951*^9}, {3.719603279876238*^9, 
+   3.719603324931612*^9}},ExpressionUUID->"fcf45a7c-c5f1-4f5e-b48a-\
 5afdfdc768ae"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = 0.2997619212201755, K$$ = 
-    131.5, $CellContext`order$$ = 10, $CellContext`r$$ = 
-    0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
-    0.6, $CellContext`\[Sigma]$$ = 0.2, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`a$$ = 0.09721456513549231, K$$ = 
+    120, $CellContext`order$$ = 10, $CellContext`r$$ = 
+    0.05, $CellContext`S$$ = 80., $CellContext`T$$ = 
+    0.1, $CellContext`\[Sigma]$$ = 0.3124245214, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{
       Hold["underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)"], 
       Manipulate`Dump`ThisIsNotAControl}, {{
-       Hold[$CellContext`S$$], 100., ""}, 0, 150, 1}, {
+       Hold[$CellContext`S$$], 80., ""}, 0, 150, 1}, {
       Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
       Hold["strike, K"], Manipulate`Dump`ThisIsNotAControl}, {{
-       Hold[K$$], 100, ""}, 0, 150, 0.5}, {
+       Hold[K$$], 120, ""}, 0, 150, 0.5}, {
       Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
       Hold["volatility, \[Sigma]"], Manipulate`Dump`ThisIsNotAControl}, {{
-       Hold[$CellContext`\[Sigma]$$], 0.3, ""}, 0.01, 1, 0.01}, {
+       Hold[$CellContext`\[Sigma]$$], 0.3124245214, ""}, 0.01, 1, 0.01}, {
       Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
       Hold["risk-free rate, r"], Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`r$$], 0.05, ""}, 0., 0.25, 0.01}, {
       Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
       Hold["years to maturity, T"], Manipulate`Dump`ThisIsNotAControl}, {{
-       Hold[$CellContext`T$$], 1, ""}, 0.1, 3, 0.25}, {
+       Hold[$CellContext`T$$], 0.1, ""}, 0.1, 3, 0.25}, {
       Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
       Hold["truncated order, order"], Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`order$$], 10, ""}, 0, 64, 8}, {
@@ -4173,15 +4230,15 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <=
           If[Log[E^($CellContext`r$$ $CellContext`T$$) 
               K$$^(-1) $CellContext`S$$] >= 0, K$$ 
             Exp[(-$CellContext`r$$) $CellContext`T$$] (1/2 - 
-             Exp[$CellContext`y$100874] $CellContext`Polya[-
-               Sqrt[2 $CellContext`y$100874]]), K$$ 
+             Exp[$CellContext`y$26563] $CellContext`Polya[-
+               Sqrt[2 $CellContext`y$26563]]), K$$ 
             Exp[(-$CellContext`r$$) $CellContext`T$$] ($CellContext`Polya[
-               Sqrt[(-2) $CellContext`y$100874]] - Exp[$CellContext`y$100874]/
+               Sqrt[(-2) $CellContext`y$26563]] - Exp[$CellContext`y$26563]/
              2)], Log[
            E^($CellContext`r$$ $CellContext`T$$) K$$^(-1) $CellContext`S$$] >= 
           0], (1/Sqrt[$CellContext`T$$]) (
-          Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] - 
-          Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874]), 
+          Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] - 
+          Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563]), 
          And[$CellContext`S$$ (
             Rational[1, 2] (-1 - Erf[
               2^Rational[-1, 2] (
@@ -4199,10 +4256,10 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + 
                   Log[K$$^(-1) $CellContext`S$$]))])) > \
-$CellContext`P0$100874, $CellContext`y$100874 >= 0], (1/
+$CellContext`P0$26563, $CellContext`y$26563 >= 0], (1/
           Sqrt[$CellContext`T$$]) (
-          Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] + 
-          Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874]), 
+          Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] + 
+          Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563]), 
          And[$CellContext`S$$ (
             Rational[1, 2] (-1 - Erf[
               2^Rational[-1, 2] (
@@ -4220,10 +4277,10 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + 
                   Log[K$$^(-1) $CellContext`S$$]))])) <= \
-$CellContext`P0$100874, $CellContext`y$100874 < 0], (1/
+$CellContext`P0$26563, $CellContext`y$26563 < 0], (1/
           Sqrt[$CellContext`T$$]) (-
-           Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] + 
-          Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874]), 
+           Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] + 
+          Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563]), 
          And[$CellContext`S$$ (
             Rational[1, 2] (-1 - Erf[
               2^Rational[-1, 2] (
@@ -4241,16 +4298,15 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + 
                   Log[K$$^(-1) $CellContext`S$$]))])) > \
-$CellContext`P0$100874, $CellContext`y$100874 < 0], (1/
-          Sqrt[$CellContext`T$$]) (
-          Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] + 
-          Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874])], ""}, 
-      0, 5, 0.5}}, Typeset`size$$ = {385., {3., 9.}}, Typeset`update$$ = 0, 
+$CellContext`P0$26563, $CellContext`y$26563 < 0], (1/Sqrt[$CellContext`T$$]) (
+          Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] + 
+          Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563])], ""}, 0, 
+      5, 0.5}}, Typeset`size$$ = {745., {3., 9.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`S$100876$$ = 0, K$100877$$ = 
-    0, $CellContext`\[Sigma]$100878$$ = 0, $CellContext`r$100879$$ = 
-    0, $CellContext`T$100880$$ = 0, $CellContext`order$100881$$ = 
-    0, $CellContext`a$100882$$ = 0}, 
+    False, $CellContext`S$26565$$ = 0, K$26566$$ = 
+    0, $CellContext`\[Sigma]$26567$$ = 0, $CellContext`r$26568$$ = 
+    0, $CellContext`T$26569$$ = 0, $CellContext`order$26570$$ = 
+    0, $CellContext`a$26571$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`a$$ = $CellContext`T$$^Rational[1, 2] Which[
@@ -4274,37 +4330,15 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <=
             If[Log[E^($CellContext`r$$ $CellContext`T$$) 
                 K$$^(-1) $CellContext`S$$] >= 0, K$$ 
               Exp[(-$CellContext`r$$) $CellContext`T$$] (1/2 - 
-               Exp[$CellContext`y$100874] $CellContext`Polya[-
-                 Sqrt[2 $CellContext`y$100874]]), K$$ 
+               Exp[$CellContext`y$26563] $CellContext`Polya[-
+                 Sqrt[2 $CellContext`y$26563]]), K$$ 
               Exp[(-$CellContext`r$$) $CellContext`T$$] ($CellContext`Polya[
-                 Sqrt[(-2) $CellContext`y$100874]] - 
-               Exp[$CellContext`y$100874]/2)], 
-            Log[E^($CellContext`r$$ $CellContext`T$$) 
-              K$$^(-1) $CellContext`S$$] >= 0], (1/Sqrt[$CellContext`T$$]) (
-            Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] - 
-            Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874]), 
-           
-           And[$CellContext`S$$ (
-              Rational[1, 2] (-1 - Erf[
-                2^Rational[-1, 2] (
-                  Rational[-1, 2] $CellContext`T$$^
-                    Rational[1, 2] $CellContext`\[Sigma]$$ - $CellContext`T$$^
-                   Rational[-1, 
-                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
-$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
-              Rational[1, 2] E^(-$CellContext`r$$ $CellContext`T$$) 
-               K$$ $CellContext`S$$^(-1) (1 + 
-                Erf[2^Rational[-1, 2] (
-                   Rational[1, 2] $CellContext`T$$^
-                    Rational[1, 2] $CellContext`\[Sigma]$$ - $CellContext`T$$^
-                    Rational[-1, 
-                    
-                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
-$CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$100874, \
-$CellContext`y$100874 >= 0], (1/Sqrt[$CellContext`T$$]) (
-            Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] + 
-            Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874]), 
+                 Sqrt[(-2) $CellContext`y$26563]] - Exp[$CellContext`y$26563]/
+               2)], Log[
+             E^($CellContext`r$$ $CellContext`T$$) K$$^(-1) $CellContext`S$$] >= 
+            0], (1/Sqrt[$CellContext`T$$]) (
+            Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] - 
+            Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563]), 
            
            And[$CellContext`S$$ (
               Rational[1, 2] (-1 - Erf[
@@ -4322,11 +4356,32 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) <= \
-$CellContext`P0$100874, $CellContext`y$100874 < 0], (1/
+                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$26563, \
+$CellContext`y$26563 >= 0], (1/Sqrt[$CellContext`T$$]) (
+            Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] + 
+            Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563]), 
+           
+           And[$CellContext`S$$ (
+              Rational[1, 2] (-1 - Erf[
+                2^Rational[-1, 2] (
+                  Rational[-1, 2] $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ - $CellContext`T$$^
+                   Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) + 
+              Rational[1, 2] E^(-$CellContext`r$$ $CellContext`T$$) 
+               K$$ $CellContext`S$$^(-1) (1 + 
+                Erf[2^Rational[-1, 2] (
+                   Rational[1, 2] $CellContext`T$$^
+                    Rational[1, 2] $CellContext`\[Sigma]$$ - $CellContext`T$$^
+                    Rational[-1, 
+                    2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
+$CellContext`T$$ + Log[
+                    K$$^(-1) $CellContext`S$$]))])) <= $CellContext`P0$26563, \
+$CellContext`y$26563 < 0], (1/
             Sqrt[$CellContext`T$$]) (-
-             Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] + 
-            Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874]), 
+             Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] + 
+            Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563]), 
            
            And[$CellContext`S$$ (
               Rational[1, 2] (-1 - Erf[
@@ -4344,33 +4399,36 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$100874, \
-$CellContext`y$100874 < 0], (1/Sqrt[$CellContext`T$$]) (
-            Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] + 
-            Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874])], K$$ = 
-        100, $CellContext`order$$ = 10, $CellContext`r$$ = 
-        0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
-        1, $CellContext`\[Sigma]$$ = 0.3}, "ControllerVariables" :> {
-        Hold[$CellContext`S$$, $CellContext`S$100876$$, 0], 
-        Hold[K$$, K$100877$$, 0], 
-        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$100878$$, 0], 
-        Hold[$CellContext`r$$, $CellContext`r$100879$$, 0], 
-        Hold[$CellContext`T$$, $CellContext`T$100880$$, 0], 
-        Hold[$CellContext`order$$, $CellContext`order$100881$$, 0], 
-        Hold[$CellContext`a$$, $CellContext`a$100882$$, 0]}, 
+                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$26563, \
+$CellContext`y$26563 < 0], (1/Sqrt[$CellContext`T$$]) (
+            Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] + 
+            Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563])], K$$ = 
+        120, $CellContext`order$$ = 10, $CellContext`r$$ = 
+        0.05, $CellContext`S$$ = 80., $CellContext`T$$ = 
+        0.1, $CellContext`\[Sigma]$$ = 0.3124245214}, "ControllerVariables" :> {
+        Hold[$CellContext`S$$, $CellContext`S$26565$$, 0], 
+        Hold[K$$, K$26566$$, 0], 
+        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$26567$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$26568$$, 0], 
+        Hold[$CellContext`T$$, $CellContext`T$26569$$, 0], 
+        Hold[$CellContext`order$$, $CellContext`order$26570$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$26571$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
-      Module[{$CellContext`targetPutPrice$ = \
+      Module[{$CellContext`targetPutPrice$, $CellContext`estimatedPutPrice$, \
+$CellContext`estimatedIV$, $CellContext`fixa$, $CellContext`fixa2$, \
+$CellContext`upperbound$, $CellContext`newtonRoot$, $CellContext`t1$, \
+$CellContext`t2$, $CellContext`t3$}, $CellContext`targetPutPrice$ = \
 $CellContext`BSPutHandy[$CellContext`S$$, 
-           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$], \
+           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$]; \
 $CellContext`estimatedPutPrice$ = \
 $CellContext`BSPutTaylorExpansion[$CellContext`S$$, 
            K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$, \
-$CellContext`a$$, $CellContext`order$$], $CellContext`estimatedIV$, \
-$CellContext`fixa$, $CellContext`upperbound$}, $CellContext`fixa$ = \
+$CellContext`a$$, $CellContext`order$$]; $CellContext`t1$ = 
+         AbsoluteTime[]; $CellContext`fixa$ = \
 $CellContext`SRVolPut[$CellContext`targetPutPrice$, 
             K$$, $CellContext`T$$, $CellContext`S$$ 
             Exp[$CellContext`r$$ $CellContext`T$$], $CellContext`r$$] 
@@ -4379,19 +4437,31 @@ $CellContext`fixa$/
           Sqrt[$CellContext`T$$]; $CellContext`estimatedIV$ = \
 $CellContext`InversePutIV[$CellContext`targetPutPrice$, $CellContext`S$$, 
            K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`fixa$, \
-$CellContext`order$$]; {{$CellContext`targetPutPrice$, \
+$CellContext`order$$]; $CellContext`t2$ = 
+         AbsoluteTime[]; $CellContext`fixa2$ = \
+$CellContext`SRVolPut[$CellContext`targetPutPrice$, 
+            K$$, $CellContext`T$$, $CellContext`S$$ 
+            Exp[$CellContext`r$$ $CellContext`T$$], $CellContext`r$$] 
+          Sqrt[$CellContext`T$$]; $CellContext`newtonRoot$ = 
+         FindRoot[$CellContext`BSPutHandy[$CellContext`S$$, 
+             K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`x] == \
+$CellContext`targetPutPrice$, {$CellContext`x, $CellContext`fixa2$}]; \
+$CellContext`t3$ = 
+         AbsoluteTime[]; {{$CellContext`targetPutPrice$, \
 $CellContext`estimatedPutPrice$}, {$CellContext`\[Sigma]$$, \
-$CellContext`fixa$, $CellContext`upperbound$, $CellContext`estimatedIV$}}], 
+$CellContext`fixa$, $CellContext`upperbound$, $CellContext`estimatedIV$, \
+$CellContext`newtonRoot$}, $CellContext`t2$ - $CellContext`t1$, \
+$CellContext`t3$ - $CellContext`t2$}], 
       "Specifications" :> {
        "underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)", {{$CellContext`S$$, 
-          100., ""}, 0, 150, 1, Appearance -> "Labeled", ImageSize -> Tiny}, 
-        "", "strike, K", {{K$$, 100, ""}, 0, 150, 0.5, Appearance -> 
+          80., ""}, 0, 150, 1, Appearance -> "Labeled", ImageSize -> Tiny}, 
+        "", "strike, K", {{K$$, 120, ""}, 0, 150, 0.5, Appearance -> 
          "Labeled", ImageSize -> Tiny}, "", 
-        "volatility, \[Sigma]", {{$CellContext`\[Sigma]$$, 0.3, ""}, 0.01, 1, 
-         0.01, Appearance -> "Labeled", ImageSize -> Tiny}, "", 
+        "volatility, \[Sigma]", {{$CellContext`\[Sigma]$$, 0.3124245214, ""}, 
+         0.01, 1, 0.01, Appearance -> "Labeled", ImageSize -> Tiny}, "", 
         "risk-free rate, r", {{$CellContext`r$$, 0.05, ""}, 0., 0.25, 0.01, 
          Appearance -> "Labeled", ImageSize -> Tiny}, "", 
-        "years to maturity, T", {{$CellContext`T$$, 1, ""}, 0.1, 3, 0.25, 
+        "years to maturity, T", {{$CellContext`T$$, 0.1, ""}, 0.1, 3, 0.25, 
          Appearance -> "Labeled", ImageSize -> Tiny}, "", 
         "truncated order, order", {{$CellContext`order$$, 10, ""}, 0, 64, 8, 
          Appearance -> "Labeled", ImageSize -> Tiny}, "", 
@@ -4417,15 +4487,15 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <=
              If[Log[E^($CellContext`r$$ $CellContext`T$$) 
                  K$$^(-1) $CellContext`S$$] >= 0, K$$ 
                Exp[(-$CellContext`r$$) $CellContext`T$$] (1/2 - 
-                Exp[$CellContext`y$100874] $CellContext`Polya[-
-                  Sqrt[2 $CellContext`y$100874]]), K$$ 
+                Exp[$CellContext`y$26563] $CellContext`Polya[-
+                  Sqrt[2 $CellContext`y$26563]]), K$$ 
                Exp[(-$CellContext`r$$) $CellContext`T$$] ($CellContext`Polya[
-                  Sqrt[(-2) $CellContext`y$100874]] - 
-                Exp[$CellContext`y$100874]/2)], 
+                  Sqrt[(-2) $CellContext`y$26563]] - 
+                Exp[$CellContext`y$26563]/2)], 
              Log[E^($CellContext`r$$ $CellContext`T$$) 
                K$$^(-1) $CellContext`S$$] >= 0], (1/Sqrt[$CellContext`T$$]) (
-             Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] - 
-             Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874]), 
+             Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] - 
+             Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563]), 
             
             And[$CellContext`S$$ (
                Rational[1, 2] (-1 - Erf[
@@ -4443,10 +4513,10 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$100874, \
-$CellContext`y$100874 >= 0], (1/Sqrt[$CellContext`T$$]) (
-             Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] + 
-             Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874]), 
+                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$26563, \
+$CellContext`y$26563 >= 0], (1/Sqrt[$CellContext`T$$]) (
+             Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] + 
+             Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563]), 
             
             And[$CellContext`S$$ (
                Rational[1, 2] (-1 - Erf[
@@ -4464,11 +4534,11 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) <= \
-$CellContext`P0$100874, $CellContext`y$100874 < 0], (1/
+                    K$$^(-1) $CellContext`S$$]))])) <= $CellContext`P0$26563, \
+$CellContext`y$26563 < 0], (1/
              Sqrt[$CellContext`T$$]) (-
-              Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] + 
-             Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874]), 
+              Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] + 
+             Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563]), 
             
             And[$CellContext`S$$ (
                Rational[1, 2] (-1 - Erf[
@@ -4486,13 +4556,13 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$100874, \
-$CellContext`y$100874 < 0], (1/Sqrt[$CellContext`T$$]) (
-             Sqrt[$CellContext`\[Gamma]$100874 + $CellContext`y$100874] + 
-             Sqrt[$CellContext`\[Gamma]$100874 - $CellContext`y$100874])], 
-          ""}, 0, 5, 0.5, Appearance -> "Labeled", ImageSize -> Tiny}}, 
+                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$26563, \
+$CellContext`y$26563 < 0], (1/Sqrt[$CellContext`T$$]) (
+             Sqrt[$CellContext`\[Gamma]$26563 + $CellContext`y$26563] + 
+             Sqrt[$CellContext`\[Gamma]$26563 - $CellContext`y$26563])], ""}, 
+         0, 5, 0.5, Appearance -> "Labeled", ImageSize -> Tiny}}, 
       "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
-     ImageSizeCache->{563., {168., 173.}},
+     ImageSizeCache->{928., {168., 173.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -4575,200 +4645,7 @@ $CellContext`Z], {$CellContext`Z, $CellContext`a, $CellContext`nOrder}]; \
 $CellContext`putPrice = ReplaceAll[
             
             Normal[$CellContext`IVSeries], $CellContext`Z -> \
-$CellContext`std]], $CellContext`SRVolPut[$CellContext`P, 100, 0.6, 
-         105.12710963760242`, 0.05] := 
-       Module[{$CellContext`srVol$, $CellContext`y$, $CellContext`R$, \
-$CellContext`A$, $CellContext`B$, 
-          C$, $CellContext`\[Alpha]$, $CellContext`\[Beta]$, $CellContext`\
-\[Gamma]$, $CellContext`P0$}, $CellContext`y$ = 
-          Log[$CellContext`F/
-            FE`K$$815]; $CellContext`\[Alpha]$ = $CellContext`P (
-            Exp[FE`r$$815 FE`T$$815]/FE`K$$815); $CellContext`R$ = 
-          2 $CellContext`\[Alpha]$ + Exp[$CellContext`y$] - 
-           1; $CellContext`A$ = (Exp[(1 - 2/Pi) $CellContext`y$] - 
-            Exp[(-(1 - 2/Pi)) $CellContext`y$])^2; $CellContext`B$ = 
-          4 (Exp[(2/Pi) $CellContext`y$] + Exp[((-2)/Pi) $CellContext`y$]) - 
-           2 Exp[-$CellContext`y$] (Exp[(1 - 2/Pi) $CellContext`y$] + 
-            Exp[(-(1 - 2/Pi)) $CellContext`y$]) (Exp[2 $CellContext`y$] + 
-            1 - $CellContext`R$^2); 
-         C$ = Exp[(-2) $CellContext`y$] ($CellContext`R$^2 - (
-             Exp[$CellContext`y$] - 
-             1)^2) ((Exp[$CellContext`y$] + 
-              1)^2 - $CellContext`R$^2); $CellContext`\[Beta]$ = (2 
-            C$)/($CellContext`B$ + 
-           Sqrt[$CellContext`B$^2 + 
-             4 $CellContext`A$ C$]); $CellContext`\[Gamma]$ = (-(Pi/2)) 
-           Log[$CellContext`\[Beta]$]; $CellContext`P0$ = 
-          If[$CellContext`y$ >= 0, FE`K$$815 
-            Exp[(-FE`r$$815) FE`T$$815] (1/2 - 
-             Exp[$CellContext`y$] $CellContext`A$[-Sqrt[2 $CellContext`y$]]), 
-            FE`K$$815 
-            Exp[(-FE`r$$815) 
-              FE`T$$815] ($CellContext`A$[-Sqrt[2 $CellContext`y$]] - 
-             Exp[$CellContext`y$]/2)]; $CellContext`srVol$ = Which[
-            
-            And[$CellContext`P <= $CellContext`P0$, $CellContext`y$ >= 0], (1/
-             Sqrt[FE`T$$815]) (Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] - 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P > $CellContext`P0$, $CellContext`y$ >= 0], (1/
-             Sqrt[FE`T$$815]) (Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            And[$CellContext`P <= $CellContext`P0$, $CellContext`y$ < 0], (1/
-             Sqrt[FE`T$$815]) (-
-              Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P > $CellContext`P0$, $CellContext`y$ < 0], (1/
-             Sqrt[FE`T$$815]) (Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$])]; \
-$CellContext`srVol$], $CellContext`SRVolPut[$CellContext`P, 100, 1, 
-         105.12710963760242`, 0.05] := 
-       Module[{$CellContext`srVol$, $CellContext`y$, $CellContext`R$, \
-$CellContext`A$, $CellContext`B$, 
-          C$, $CellContext`\[Alpha]$, $CellContext`\[Beta]$, $CellContext`\
-\[Gamma]$, $CellContext`P0$}, $CellContext`y$ = 
-          Log[$CellContext`F/
-            FE`K$$945]; $CellContext`\[Alpha]$ = $CellContext`P (
-            Exp[FE`r$$945 FE`T$$945]/FE`K$$945); $CellContext`R$ = 
-          2 $CellContext`\[Alpha]$ + Exp[$CellContext`y$] - 
-           1; $CellContext`A$ = (Exp[(1 - 2/Pi) $CellContext`y$] - 
-            Exp[(-(1 - 2/Pi)) $CellContext`y$])^2; $CellContext`B$ = 
-          4 (Exp[(2/Pi) $CellContext`y$] + Exp[((-2)/Pi) $CellContext`y$]) - 
-           2 Exp[-$CellContext`y$] (Exp[(1 - 2/Pi) $CellContext`y$] + 
-            Exp[(-(1 - 2/Pi)) $CellContext`y$]) (Exp[2 $CellContext`y$] + 
-            1 - $CellContext`R$^2); 
-         C$ = Exp[(-2) $CellContext`y$] ($CellContext`R$^2 - (
-             Exp[$CellContext`y$] - 
-             1)^2) ((Exp[$CellContext`y$] + 
-              1)^2 - $CellContext`R$^2); $CellContext`\[Beta]$ = (2 
-            C$)/($CellContext`B$ + 
-           Sqrt[$CellContext`B$^2 + 
-             4 $CellContext`A$ C$]); $CellContext`\[Gamma]$ = (-(Pi/2)) 
-           Log[$CellContext`\[Beta]$]; $CellContext`P0$ = 
-          If[$CellContext`y$ >= 0, FE`K$$945 
-            Exp[(-FE`r$$945) FE`T$$945] (1/2 - 
-             Exp[$CellContext`y$] $CellContext`A$[-Sqrt[2 $CellContext`y$]]), 
-            FE`K$$945 
-            Exp[(-FE`r$$945) 
-              FE`T$$945] ($CellContext`A$[-Sqrt[2 $CellContext`y$]] - 
-             Exp[$CellContext`y$]/2)]; $CellContext`srVol$ = Which[
-            
-            And[$CellContext`P <= $CellContext`P0$, $CellContext`y$ >= 0], (1/
-             Sqrt[FE`T$$945]) (Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] - 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P > $CellContext`P0$, $CellContext`y$ >= 0], (1/
-             Sqrt[FE`T$$945]) (Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P <= $CellContext`P0$, $CellContext`y$ < 0], (1/
-             Sqrt[FE`T$$945]) (-
-              Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P > $CellContext`P0$, $CellContext`y$ < 0], (1/
-             Sqrt[FE`T$$945]) (Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$])]; \
-$CellContext`srVol$], $CellContext`SRVolPut[$CellContext`P, 150., 1, 
-         105.12710963760242`, 0.01] := 
-       Module[{$CellContext`srVol$, $CellContext`y$, $CellContext`R$, \
-$CellContext`A$, $CellContext`B$, 
-          C$, $CellContext`\[Alpha]$, $CellContext`\[Beta]$, $CellContext`\
-\[Gamma]$, $CellContext`P0$}, $CellContext`y$ = 
-          Log[$CellContext`F/
-            FE`K$$678]; $CellContext`\[Alpha]$ = $CellContext`P (
-            Exp[FE`r$$678 FE`T$$678]/FE`K$$678); $CellContext`R$ = 
-          2 $CellContext`\[Alpha]$ + Exp[$CellContext`y$] - 
-           1; $CellContext`A$ = (Exp[(1 - 2/Pi) $CellContext`y$] - 
-            Exp[(-(1 - 2/Pi)) $CellContext`y$])^2; $CellContext`B$ = 
-          4 (Exp[(2/Pi) $CellContext`y$] + 
-             Exp[((-2)/Pi) $CellContext`y$]) - ((2 Exp[-$CellContext`y$]) (
-             Exp[(1 - 2/Pi) $CellContext`y$] + 
-             Exp[(-(1 - 2/Pi)) $CellContext`y$])) (Exp[2 $CellContext`y$] + 
-            1 - $CellContext`R$^2); 
-         C$ = (Exp[(-2) $CellContext`y$] ($CellContext`R$^2 - (
-              Exp[$CellContext`y$] - 1)^2)) ((Exp[$CellContext`y$] + 
-              1)^2 - $CellContext`R$^2); $CellContext`\[Beta]$ = (2 
-            C$)/($CellContext`B$ + 
-           Sqrt[$CellContext`B$^2 + (4 $CellContext`A$) 
-              C$]); $CellContext`\[Gamma]$ = (-(Pi/2)) 
-           Log[$CellContext`\[Beta]$]; $CellContext`P0$ = 
-          If[$CellContext`y$ >= 
-            0, (FE`K$$678 Exp[(-FE`r$$678) FE`T$$678]) (1/2 - 
-             Exp[$CellContext`y$] $CellContext`A$[-
-               Sqrt[2 $CellContext`y$]]), (FE`K$$678 
-             Exp[(-FE`r$$678) FE`T$$678]) ($CellContext`A$[-
-               Sqrt[2 $CellContext`y$]] - Exp[$CellContext`y$]/
-             2)]; $CellContext`srVol$ = Which[
-            
-            And[$CellContext`P <= $CellContext`P0$, $CellContext`y$ >= 0], (1/
-             Sqrt[FE`T$$678]) (Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] - 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P > $CellContext`P0$, $CellContext`y$ >= 0], (1/
-             Sqrt[FE`T$$678]) (Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P <= $CellContext`P0$, $CellContext`y$ < 0], (1/
-             Sqrt[FE`T$$678]) (-
-              Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P > $CellContext`P0$, $CellContext`y$ < 0], (1/
-             Sqrt[FE`T$$678]) (Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$])]; \
-$CellContext`srVol$], $CellContext`SRVolPut[$CellContext`P, 
-         K$$, $CellContext`T$$, $CellContext`F, $CellContext`r$$] := 
-       Module[{$CellContext`srVol$, $CellContext`y$, $CellContext`R$, \
-$CellContext`A$, $CellContext`B$, 
-          C$, $CellContext`\[Alpha]$, $CellContext`\[Beta]$, $CellContext`\
-\[Gamma]$, $CellContext`P0$}, $CellContext`y$ = 
-          Log[$CellContext`F/K$$]; $CellContext`\[Alpha]$ = $CellContext`P (
-            Exp[$CellContext`r$$ $CellContext`T$$]/K$$); $CellContext`R$ = 
-          2 $CellContext`\[Alpha]$ + Exp[$CellContext`y$] - 
-           1; $CellContext`A$ = (Exp[(1 - 2/Pi) $CellContext`y$] - 
-            Exp[(-(1 - 2/Pi)) $CellContext`y$])^2; $CellContext`B$ = 
-          4 (Exp[(2/Pi) $CellContext`y$] + Exp[((-2)/Pi) $CellContext`y$]) - 
-           2 Exp[-$CellContext`y$] (Exp[(1 - 2/Pi) $CellContext`y$] + 
-            Exp[(-(1 - 2/Pi)) $CellContext`y$]) (Exp[2 $CellContext`y$] + 
-            1 - $CellContext`R$^2); 
-         C$ = 
-          Exp[(-2) $CellContext`y$] ($CellContext`R$^2 - (
-             Exp[$CellContext`y$] - 
-             1)^2) ((Exp[$CellContext`y$] + 
-              1)^2 - $CellContext`R$^2); $CellContext`\[Beta]$ = (2 
-            C$)/($CellContext`B$ + 
-           Sqrt[$CellContext`B$^2 + 
-             4 $CellContext`A$ C$]); $CellContext`\[Gamma]$ = (-(Pi/2)) 
-           Log[$CellContext`\[Beta]$]; $CellContext`P0$ = 
-          If[$CellContext`y$ >= 0, K$$ 
-            Exp[(-$CellContext`r$$) $CellContext`T$$] (1/2 - 
-             Exp[$CellContext`y$] $CellContext`A$[-Sqrt[2 $CellContext`y$]]), 
-            K$$ Exp[(-$CellContext`r$$) $CellContext`T$$] ($CellContext`A$[-
-               Sqrt[2 $CellContext`y$]] - Exp[$CellContext`y$]/
-             2)]; $CellContext`srVol$ = Which[
-            
-            And[$CellContext`P <= $CellContext`P0$, $CellContext`y$ >= 0], (1/
-             Sqrt[$CellContext`T$$]) (
-             Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] - 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P > $CellContext`P0$, $CellContext`y$ >= 0], (1/
-             Sqrt[$CellContext`T$$]) (
-             Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P <= $CellContext`P0$, $CellContext`y$ < 0], (1/
-             Sqrt[$CellContext`T$$]) (-
-              Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$]), 
-            
-            And[$CellContext`P > $CellContext`P0$, $CellContext`y$ < 0], (1/
-             Sqrt[$CellContext`T$$]) (
-             Sqrt[$CellContext`\[Gamma]$ + $CellContext`y$] + 
-             Sqrt[$CellContext`\[Gamma]$ - $CellContext`y$])]; \
-$CellContext`srVol$], $CellContext`SRVolPut[
+$CellContext`std]], $CellContext`SRVolPut[
          Pattern[$CellContext`P, 
           Blank[]], 
          Pattern[K, 
@@ -4836,32 +4713,19 @@ $CellContext`srVol], $CellContext`P[
           Blank[]], 
          Pattern[$CellContext`\[Sigma], 
           Blank[]]] := 
-       Exp[$CellContext`k] $CellContext`Polya[$CellContext`k/$CellContext`\
-\[Sigma] + $CellContext`\[Sigma]/
-            2] - $CellContext`Polya[$CellContext`k/$CellContext`\[Sigma] + \
-$CellContext`\[Sigma]/2], $CellContext`Polya[
+       Exp[$CellContext`k] \
+$CellContext`A[$CellContext`k/$CellContext`\[Sigma] + $CellContext`\[Sigma]/
+            2] - $CellContext`A[$CellContext`k/$CellContext`\[Sigma] + \
+$CellContext`\[Sigma]/2], $CellContext`A[
          Pattern[$CellContext`x, 
           Blank[]]] := 
        1/2 + (Sign[$CellContext`x]/2) 
          Sqrt[1 - Exp[(-(2/Pi)) $CellContext`x^2]], $CellContext`F = 
-       105.12710963760242`, $CellContext`A[
+       105.12710963760242`, $CellContext`Polya[
          Pattern[$CellContext`x, 
           Blank[]]] := 
-       N[1/2 + (Sign[$CellContext`x]/2) 
-          Sqrt[1 - Exp[(-(2/Pi)) $CellContext`x^2]]], 
-       Attributes[$CellContext`srVol$] = {Temporary}, 
-       Attributes[$CellContext`y$] = {Temporary}, 
-       Attributes[$CellContext`R$] = {Temporary}, 
-       Attributes[$CellContext`A$] = {Temporary}, 
-       Attributes[$CellContext`B$] = {Temporary}, 
-       Attributes[C$] = {Temporary}, 
-       Attributes[$CellContext`\[Alpha]$] = {Temporary}, 
-       Attributes[$CellContext`\[Beta]$] = {Temporary}, 
-       Attributes[$CellContext`\[Gamma]$] = {Temporary}, 
-       Attributes[$CellContext`P0$] = {Temporary}, FE`K$$945 = 100, FE`r$$945 = 
-       0.05, FE`T$$945 = 0.6, FE`K$$678 = 85., FE`r$$678 = 0.07, FE`T$$678 = 
-       1.6, FE`K$$815 = 100, FE`r$$815 = 0.05, FE`T$$815 = 
-       0.6, $CellContext`InversePutIV[
+       1/2 + (Sign[$CellContext`x]/2) 
+         Sqrt[1 - Exp[(-(2/Pi)) $CellContext`x^2]], $CellContext`InversePutIV[
          Pattern[$CellContext`CallPrice, 
           Blank[]], 
          Pattern[$CellContext`S, 
@@ -4888,10 +4752,10 @@ $CellContext`inversedIVSeries =
             Normal[$CellContext`inversedIVSeries], $CellContext`Z -> \
 $CellContext`CallPrice]; $CellContext`impliedVol = $CellContext`std/
            Sqrt[$CellContext`T]], 
-       Attributes[$CellContext`y$100874] = {Temporary}, $CellContext`y$100874 = 
+       Attributes[$CellContext`y$26563] = {Temporary}, $CellContext`y$26563 = 
        Log[(E^($CellContext`r$$ $CellContext`T$$) $CellContext`S$$)/K$$], 
-       Attributes[$CellContext`\[Gamma]$100874] = {
-        Temporary}, $CellContext`\[Gamma]$100874 = -(Pi 
+       Attributes[$CellContext`\[Gamma]$26563] = {
+        Temporary}, $CellContext`\[Gamma]$26563 = -(Pi 
          Log[(2 K$$^2 ((
                1 + (E^($CellContext`r$$ $CellContext`T$$) $CellContext`S$$)/
                 K$$)^2 - (-1 + (
@@ -4950,9 +4814,9 @@ $CellContext`S$$^2)/
                     2 - ($CellContext`r$$ $CellContext`T$$ + 
                     Log[$CellContext`S$$/K$$])/(
                     Sqrt[$CellContext`T$$] $CellContext`\[Sigma]$$))/Sqrt[
-                    2]])/2 + (
-                    K$$ (1 + Erf[((
-                    Sqrt[$CellContext`T$$] $CellContext`\[Sigma]$$)/
+                    2]])/
+                   2 + (K$$ (1 + 
+                    Erf[((Sqrt[$CellContext`T$$] $CellContext`\[Sigma]$$)/
                     2 - ($CellContext`r$$ $CellContext`T$$ + 
                     Log[$CellContext`S$$/K$$])/(
                     Sqrt[$CellContext`T$$] $CellContext`\[Sigma]$$))/Sqrt[
@@ -5022,9 +4886,9 @@ $CellContext`S$$)/K$$)^(1 - 2/
                     2 - ($CellContext`r$$ $CellContext`T$$ + 
                     Log[$CellContext`S$$/K$$])/(
                     Sqrt[$CellContext`T$$] $CellContext`\[Sigma]$$))/Sqrt[
-                    2]])/
-                    2 + (K$$ (1 + 
-                    Erf[((Sqrt[$CellContext`T$$] $CellContext`\[Sigma]$$)/
+                    2]])/2 + (
+                    K$$ (1 + Erf[((
+                    Sqrt[$CellContext`T$$] $CellContext`\[Sigma]$$)/
                     2 - ($CellContext`r$$ $CellContext`T$$ + 
                     Log[$CellContext`S$$/K$$])/(
                     Sqrt[$CellContext`T$$] $CellContext`\[Sigma]$$))/Sqrt[
@@ -5033,15 +4897,14 @@ $CellContext`S$$)/K$$)^(1 - 2/
                     K$$)^2))/(
                 E^($CellContext`r$$ $CellContext`T$$) \
 $CellContext`S$$))^2]))])/2, 
-       Attributes[$CellContext`P0$100874] = {
-        Temporary}, $CellContext`P0$100874 = 
+       Attributes[$CellContext`P0$26563] = {Temporary}, $CellContext`P0$26563 = 
        If[Log[(E^($CellContext`r$$ $CellContext`T$$) $CellContext`S$$)/K$$] >= 
          0, K$$ Exp[(-$CellContext`r$$) $CellContext`T$$] (1/2 - 
-          Exp[$CellContext`y$100874] $CellContext`Polya[-
-            Sqrt[2 $CellContext`y$100874]]), K$$ 
+          Exp[$CellContext`y$26563] $CellContext`Polya[-
+            Sqrt[2 $CellContext`y$26563]]), K$$ 
          Exp[(-$CellContext`r$$) $CellContext`T$$] ($CellContext`Polya[
-            Sqrt[(-2) $CellContext`y$100874]] - Exp[$CellContext`y$100874]/
-          2)]}; Typeset`initDone$$ = True),
+            Sqrt[(-2) $CellContext`y$26563]] - Exp[$CellContext`y$26563]/2)]}; 
+     Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
     UnsavedVariables:>{Typeset`initDone$$},
@@ -5050,11 +4913,11 @@ $CellContext`S$$))^2]))])/2,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
-  3.7193549059880133`*^9, 3.719354956984329*^9, 3.719355014050509*^9, 
-   3.719355123482958*^9, {3.719355319906411*^9, 3.719355333126585*^9}, 
-   3.719355379049387*^9, 3.719356217469241*^9, 
-   3.719356321808869*^9},ExpressionUUID->"aabc9450-9d59-4ad9-807f-\
-64b6ad8ebcb0"]
+  3.71960286067775*^9, 3.719602968394055*^9, 3.719603025530138*^9, {
+   3.719603101686261*^9, 3.719603162042346*^9}, {3.7196032806992817`*^9, 
+   3.7196032847154818`*^9}, {3.719603314827915*^9, 
+   3.719603325832387*^9}},ExpressionUUID->"ebb667d2-802b-475c-ae7b-\
+0fec219431b8"]
 }, Open  ]]
 }, Open  ]],
 
@@ -5074,21 +4937,26 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"{", 
       RowBox[{
-       RowBox[{"targetCallPrice", "=", 
-        RowBox[{"BSCallHandy", "[", 
-         RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], 
-         "]"}]}], ",", 
-       RowBox[{"targetPutPrice2", "=", 
-        RowBox[{"BSPutHandy", "[", 
-         RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], 
-         "]"}]}], ",", "targetPutPrice", ",", " ", 
-       RowBox[{"estimatedPutPrice", "=", 
-        RowBox[{"BSPutTaylorExpansion", "[", 
-         RowBox[{
-         "S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]", ",", "a", ",", 
-          "order"}], "]"}]}], ",", "estimatedIV", ",", "fixa", ",", 
-       "upperbound", ",", "F"}], "}"}], ",", "\[IndentingNewLine]", 
+      "targetCallPrice", ",", "targetPutPrice2", ",", "targetPutPrice", ",", 
+       " ", "estimatedPutPrice", ",", "estimatedIV", ",", "fixa", ",", 
+       "upperbound", ",", "F", ",", "t1", ",", "t2"}], "}"}], ",", 
+     "\[IndentingNewLine]", 
      RowBox[{
+      RowBox[{"t1", "=", 
+       RowBox[{"AbsoluteTime", "[", "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"targetCallPrice", "=", 
+       RowBox[{"BSCallHandy", "[", 
+        RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}]}],
+       ";", "\[IndentingNewLine]", 
+      RowBox[{"targetPutPrice2", "=", 
+       RowBox[{"BSPutHandy", "[", 
+        RowBox[{"S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]"}], "]"}]}],
+       ";", "\[IndentingNewLine]", " ", 
+      RowBox[{"estimatedPutPrice", "=", 
+       RowBox[{"BSPutTaylorExpansion", "[", 
+        RowBox[{
+        "S", ",", "K", ",", "T", ",", "r", ",", "\[Sigma]", ",", "a", ",", 
+         "order"}], "]"}]}], ";", "\[IndentingNewLine]", 
       RowBox[{"F", " ", "=", " ", 
        RowBox[{"S", " ", 
         RowBox[{"Exp", "[", 
@@ -5117,6 +4985,8 @@ Cell[BoxData[
         RowBox[{
         "targetPutPrice", ",", "S", ",", "K", ",", "T", ",", "r", ",", "fixa",
           ",", "order"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"t2", " ", "=", " ", 
+       RowBox[{"AbsoluteTime", "[", "]"}]}], ";", "\[IndentingNewLine]", 
       "\[IndentingNewLine]", 
       RowBox[{"{", 
        RowBox[{
@@ -5125,8 +4995,10 @@ Cell[BoxData[
          "targetCallPrice", ",", "targetPutPrice", ",", "targetPutPrice2", 
           ",", "estimatedPutPrice"}], "}"}], ",", 
         RowBox[{"{", 
-         RowBox[{"\[Sigma]", ",", "upperbound", ",", "estimatedIV"}], "}"}]}],
-        "}"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"\[Sigma]", ",", "upperbound", ",", "estimatedIV"}], "}"}], 
+        ",", 
+        RowBox[{"t2", "-", "t1"}]}], "}"}]}]}], "]"}], ",", 
+   "\[IndentingNewLine]", 
    "\"\<underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)\>\"", ",", 
    "\[IndentingNewLine]", 
    RowBox[{"{", 
@@ -5207,16 +5079,18 @@ Cell[BoxData[
  CellChangeTimes->{{3.719352985574544*^9, 3.719353078280504*^9}, {
   3.7193531364922457`*^9, 3.719353240436433*^9}, {3.7193532820198383`*^9, 
   3.719353382098756*^9}, {3.7193546908201*^9, 3.7193547125881147`*^9}, {
-  3.719355046171446*^9, 
-  3.7193550468516817`*^9}},ExpressionUUID->"6aad2cf8-4410-4a66-a990-\
+  3.719355046171446*^9, 3.7193550468516817`*^9}, {3.719596983531098*^9, 
+  3.719597096750547*^9}, {3.719599348498074*^9, 3.719599351604351*^9}, {
+  3.7195996112127132`*^9, 
+  3.719599619288596*^9}},ExpressionUUID->"6aad2cf8-4410-4a66-a990-\
 2b569cc6a6ba"],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
    DynamicModuleBox[{$CellContext`a$$ = 0.2997619212201755, K$$ = 
-    131., $CellContext`order$$ = 10, $CellContext`r$$ = 
-    0.05, $CellContext`S$$ = 118, $CellContext`T$$ = 
+    100, $CellContext`order$$ = 60, $CellContext`r$$ = 
+    0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
     1, $CellContext`\[Sigma]$$ = 0.3, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
@@ -5261,15 +5135,15 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <=
           If[Log[E^($CellContext`r$$ $CellContext`T$$) 
               K$$^(-1) $CellContext`S$$] >= 0, K$$ 
             Exp[(-$CellContext`r$$) $CellContext`T$$] (1/2 - 
-             Exp[$CellContext`y$96658] $CellContext`Polya[-
-               Sqrt[2 $CellContext`y$96658]]), K$$ 
+             Exp[$CellContext`y$12862] $CellContext`Polya[-
+               Sqrt[2 $CellContext`y$12862]]), K$$ 
             Exp[(-$CellContext`r$$) $CellContext`T$$] ($CellContext`Polya[
-               Sqrt[(-2) $CellContext`y$96658]] - Exp[$CellContext`y$96658]/
+               Sqrt[(-2) $CellContext`y$12862]] - Exp[$CellContext`y$12862]/
              2)], Log[
            E^($CellContext`r$$ $CellContext`T$$) K$$^(-1) $CellContext`S$$] >= 
           0], (1/Sqrt[$CellContext`T$$]) (
-          Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] - 
-          Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658]), 
+          Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] - 
+          Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862]), 
          And[$CellContext`S$$ (
             Rational[1, 2] (-1 - Erf[
               2^Rational[-1, 2] (
@@ -5287,10 +5161,10 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + 
                   Log[K$$^(-1) $CellContext`S$$]))])) > \
-$CellContext`P0$96658, $CellContext`y$96658 >= 0], (1/
+$CellContext`P0$12862, $CellContext`y$12862 >= 0], (1/
           Sqrt[$CellContext`T$$]) (
-          Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] + 
-          Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658]), 
+          Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] + 
+          Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862]), 
          And[$CellContext`S$$ (
             Rational[1, 2] (-1 - Erf[
               2^Rational[-1, 2] (
@@ -5308,10 +5182,10 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + 
                   Log[K$$^(-1) $CellContext`S$$]))])) <= \
-$CellContext`P0$96658, $CellContext`y$96658 < 0], (1/
+$CellContext`P0$12862, $CellContext`y$12862 < 0], (1/
           Sqrt[$CellContext`T$$]) (-
-           Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] + 
-          Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658]), 
+           Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] + 
+          Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862]), 
          And[$CellContext`S$$ (
             Rational[1, 2] (-1 - Erf[
               2^Rational[-1, 2] (
@@ -5329,15 +5203,15 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + 
                   Log[K$$^(-1) $CellContext`S$$]))])) > \
-$CellContext`P0$96658, $CellContext`y$96658 < 0], (1/Sqrt[$CellContext`T$$]) (
-          Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] + 
-          Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658])], ""}, 0, 
-      5, 0.5}}, Typeset`size$$ = {454., {3., 9.}}, Typeset`update$$ = 0, 
+$CellContext`P0$12862, $CellContext`y$12862 < 0], (1/Sqrt[$CellContext`T$$]) (
+          Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] + 
+          Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862])], ""}, 0, 
+      5, 0.5}}, Typeset`size$$ = {505., {3., 9.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    False, $CellContext`S$96660$$ = 0, K$96661$$ = 
-    0, $CellContext`\[Sigma]$96662$$ = 0, $CellContext`r$96663$$ = 
-    0, $CellContext`T$96664$$ = 0, $CellContext`order$96665$$ = 
-    0, $CellContext`a$96666$$ = 0}, 
+    False, $CellContext`S$12865$$ = 0, K$12866$$ = 
+    0, $CellContext`\[Sigma]$12867$$ = 0, $CellContext`r$12868$$ = 
+    0, $CellContext`T$12869$$ = 0, $CellContext`order$12870$$ = 
+    0, $CellContext`a$12871$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`a$$ = $CellContext`T$$^Rational[1, 2] Which[
@@ -5361,15 +5235,15 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <=
             If[Log[E^($CellContext`r$$ $CellContext`T$$) 
                 K$$^(-1) $CellContext`S$$] >= 0, K$$ 
               Exp[(-$CellContext`r$$) $CellContext`T$$] (1/2 - 
-               Exp[$CellContext`y$96658] $CellContext`Polya[-
-                 Sqrt[2 $CellContext`y$96658]]), K$$ 
+               Exp[$CellContext`y$12862] $CellContext`Polya[-
+                 Sqrt[2 $CellContext`y$12862]]), K$$ 
               Exp[(-$CellContext`r$$) $CellContext`T$$] ($CellContext`Polya[
-                 Sqrt[(-2) $CellContext`y$96658]] - Exp[$CellContext`y$96658]/
+                 Sqrt[(-2) $CellContext`y$12862]] - Exp[$CellContext`y$12862]/
                2)], Log[
              E^($CellContext`r$$ $CellContext`T$$) K$$^(-1) $CellContext`S$$] >= 
             0], (1/Sqrt[$CellContext`T$$]) (
-            Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] - 
-            Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658]), 
+            Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] - 
+            Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862]), 
            
            And[$CellContext`S$$ (
               Rational[1, 2] (-1 - Erf[
@@ -5387,10 +5261,10 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$96658, \
-$CellContext`y$96658 >= 0], (1/Sqrt[$CellContext`T$$]) (
-            Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] + 
-            Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658]), 
+                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$12862, \
+$CellContext`y$12862 >= 0], (1/Sqrt[$CellContext`T$$]) (
+            Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] + 
+            Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862]), 
            
            And[$CellContext`S$$ (
               Rational[1, 2] (-1 - Erf[
@@ -5408,11 +5282,11 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) <= $CellContext`P0$96658, \
-$CellContext`y$96658 < 0], (1/
+                    K$$^(-1) $CellContext`S$$]))])) <= $CellContext`P0$12862, \
+$CellContext`y$12862 < 0], (1/
             Sqrt[$CellContext`T$$]) (-
-             Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] + 
-            Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658]), 
+             Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] + 
+            Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862]), 
            
            And[$CellContext`S$$ (
               Rational[1, 2] (-1 - Erf[
@@ -5430,36 +5304,38 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$96658, \
-$CellContext`y$96658 < 0], (1/Sqrt[$CellContext`T$$]) (
-            Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] + 
-            Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658])], K$$ = 
+                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$12862, \
+$CellContext`y$12862 < 0], (1/Sqrt[$CellContext`T$$]) (
+            Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] + 
+            Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862])], K$$ = 
         100, $CellContext`order$$ = 10, $CellContext`r$$ = 
         0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
         1, $CellContext`\[Sigma]$$ = 0.3}, "ControllerVariables" :> {
-        Hold[$CellContext`S$$, $CellContext`S$96660$$, 0], 
-        Hold[K$$, K$96661$$, 0], 
-        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$96662$$, 0], 
-        Hold[$CellContext`r$$, $CellContext`r$96663$$, 0], 
-        Hold[$CellContext`T$$, $CellContext`T$96664$$, 0], 
-        Hold[$CellContext`order$$, $CellContext`order$96665$$, 0], 
-        Hold[$CellContext`a$$, $CellContext`a$96666$$, 0]}, 
+        Hold[$CellContext`S$$, $CellContext`S$12865$$, 0], 
+        Hold[K$$, K$12866$$, 0], 
+        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$12867$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$12868$$, 0], 
+        Hold[$CellContext`T$$, $CellContext`T$12869$$, 0], 
+        Hold[$CellContext`order$$, $CellContext`order$12870$$, 0], 
+        Hold[$CellContext`a$$, $CellContext`a$12871$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
-      Module[{$CellContext`targetCallPrice$ = \
+      Module[{$CellContext`targetCallPrice$, $CellContext`targetPutPrice2$, \
+$CellContext`targetPutPrice$, $CellContext`estimatedPutPrice$, \
+$CellContext`estimatedIV$, $CellContext`fixa$, $CellContext`upperbound$, \
+$CellContext`F$, $CellContext`t1$, $CellContext`t2$}, $CellContext`t1$ = 
+         AbsoluteTime[]; $CellContext`targetCallPrice$ = \
 $CellContext`BSCallHandy[$CellContext`S$$, 
-           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$], \
+           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$]; \
 $CellContext`targetPutPrice2$ = $CellContext`BSPutHandy[$CellContext`S$$, 
-           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$], \
-$CellContext`targetPutPrice$, $CellContext`estimatedPutPrice$ = \
+           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$]; \
+$CellContext`estimatedPutPrice$ = \
 $CellContext`BSPutTaylorExpansion[$CellContext`S$$, 
            K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$, \
-$CellContext`a$$, $CellContext`order$$], $CellContext`estimatedIV$, \
-$CellContext`fixa$, $CellContext`upperbound$, $CellContext`F$}, \
-$CellContext`F$ = $CellContext`S$$ 
+$CellContext`a$$, $CellContext`order$$]; $CellContext`F$ = $CellContext`S$$ 
           Exp[$CellContext`r$$ $CellContext`T$$]; \
 $CellContext`targetPutPrice$ = $CellContext`targetCallPrice$ - 
           Exp[(-$CellContext`r$$) $CellContext`T$$] ($CellContext`F$ - 
@@ -5472,10 +5348,12 @@ $CellContext`fixa$/
           Sqrt[$CellContext`T$$]; $CellContext`estimatedIV$ = \
 $CellContext`InversePutIV[$CellContext`targetPutPrice$, $CellContext`S$$, 
            K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`fixa$, \
-$CellContext`order$$]; {{$CellContext`targetCallPrice$, \
+$CellContext`order$$]; $CellContext`t2$ = 
+         AbsoluteTime[]; {{$CellContext`targetCallPrice$, \
 $CellContext`targetPutPrice$, $CellContext`targetPutPrice2$, \
 $CellContext`estimatedPutPrice$}, {$CellContext`\[Sigma]$$, \
-$CellContext`upperbound$, $CellContext`estimatedIV$}}], 
+$CellContext`upperbound$, $CellContext`estimatedIV$}, $CellContext`t2$ - \
+$CellContext`t1$}], 
       "Specifications" :> {
        "underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)", {{$CellContext`S$$, 
           100., ""}, 0, 150, 1, Appearance -> "Labeled", ImageSize -> Tiny}, 
@@ -5511,15 +5389,15 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))])) <=
              If[Log[E^($CellContext`r$$ $CellContext`T$$) 
                  K$$^(-1) $CellContext`S$$] >= 0, K$$ 
                Exp[(-$CellContext`r$$) $CellContext`T$$] (1/2 - 
-                Exp[$CellContext`y$96658] $CellContext`Polya[-
-                  Sqrt[2 $CellContext`y$96658]]), K$$ 
+                Exp[$CellContext`y$12862] $CellContext`Polya[-
+                  Sqrt[2 $CellContext`y$12862]]), K$$ 
                Exp[(-$CellContext`r$$) $CellContext`T$$] ($CellContext`Polya[
-                  Sqrt[(-2) $CellContext`y$96658]] - 
-                Exp[$CellContext`y$96658]/2)], 
+                  Sqrt[(-2) $CellContext`y$12862]] - 
+                Exp[$CellContext`y$12862]/2)], 
              Log[E^($CellContext`r$$ $CellContext`T$$) 
                K$$^(-1) $CellContext`S$$] >= 0], (1/Sqrt[$CellContext`T$$]) (
-             Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] - 
-             Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658]), 
+             Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] - 
+             Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862]), 
             
             And[$CellContext`S$$ (
                Rational[1, 2] (-1 - Erf[
@@ -5537,10 +5415,10 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$96658, \
-$CellContext`y$96658 >= 0], (1/Sqrt[$CellContext`T$$]) (
-             Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] + 
-             Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658]), 
+                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$12862, \
+$CellContext`y$12862 >= 0], (1/Sqrt[$CellContext`T$$]) (
+             Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] + 
+             Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862]), 
             
             And[$CellContext`S$$ (
                Rational[1, 2] (-1 - Erf[
@@ -5557,12 +5435,12 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[1, 2] $CellContext`\[Sigma]$$ - $CellContext`T$$^
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
-$CellContext`T$$ + 
-                    Log[K$$^(-1) $CellContext`S$$]))])) <= \
-$CellContext`P0$96658, $CellContext`y$96658 < 0], (1/
+$CellContext`T$$ + Log[
+                    K$$^(-1) $CellContext`S$$]))])) <= $CellContext`P0$12862, \
+$CellContext`y$12862 < 0], (1/
              Sqrt[$CellContext`T$$]) (-
-              Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] + 
-             Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658]), 
+              Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] + 
+             Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862]), 
             
             And[$CellContext`S$$ (
                Rational[1, 2] (-1 - Erf[
@@ -5580,17 +5458,18 @@ $CellContext`T$$ + Log[K$$^(-1) $CellContext`S$$]))]) +
                     Rational[-1, 
                     2] $CellContext`\[Sigma]$$^(-1) ($CellContext`r$$ \
 $CellContext`T$$ + Log[
-                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$96658, \
-$CellContext`y$96658 < 0], (1/Sqrt[$CellContext`T$$]) (
-             Sqrt[$CellContext`\[Gamma]$96658 + $CellContext`y$96658] + 
-             Sqrt[$CellContext`\[Gamma]$96658 - $CellContext`y$96658])], ""}, 
+                    K$$^(-1) $CellContext`S$$]))])) > $CellContext`P0$12862, \
+$CellContext`y$12862 < 0], (1/Sqrt[$CellContext`T$$]) (
+             Sqrt[$CellContext`\[Gamma]$12862 + $CellContext`y$12862] + 
+             Sqrt[$CellContext`\[Gamma]$12862 - $CellContext`y$12862])], ""}, 
          0, 5, 0.5, Appearance -> "Labeled", ImageSize -> Tiny}}, 
       "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
-     ImageSizeCache->{632., {168., 173.}},
+     ImageSizeCache->{757., {176., 182.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
-    Initialization:>({$CellContext`BSCallHandy[
+    Initialization:>({$CellContext`F = 
+       105.12710963760242`, $CellContext`BSCallHandy[
          Pattern[$CellContext`S, 
           Blank[]], 
          Pattern[K, 
@@ -5691,8 +5570,7 @@ $CellContext`Z], {$CellContext`Z, $CellContext`a, $CellContext`nOrder}]; \
 $CellContext`putPrice = ReplaceAll[
             
             Normal[$CellContext`IVSeries], $CellContext`Z -> \
-$CellContext`std]], $CellContext`F = 
-       105.12710963760242`, $CellContext`SRVolCall[
+$CellContext`std]], $CellContext`SRVolCall[
          Pattern[$CellContext`Call, 
           Blank[]], 
          Pattern[K, 
@@ -5760,15 +5638,15 @@ $CellContext`P0, K
               Sqrt[2 $CellContext`y]])}; $CellContext`srVol], $CellContext`A[
          Pattern[$CellContext`x, 
           Blank[]]] := 
-       N[1/2 + (Sign[$CellContext`x]/2) 
-          Sqrt[1 - Exp[(-(2/Pi)) $CellContext`x^2]]], $CellContext`P[
+       1/2 + (Sign[$CellContext`x]/2) 
+         Sqrt[1 - Exp[(-(2/Pi)) $CellContext`x^2]], $CellContext`P[
          Pattern[$CellContext`k, 
           Blank[]], 
          Pattern[$CellContext`\[Sigma], 
           Blank[]]] := 
-       Exp[$CellContext`k] $CellContext`Polya[$CellContext`k/$CellContext`\
-\[Sigma] + $CellContext`\[Sigma]/
-            2] - $CellContext`Polya[$CellContext`k/$CellContext`\[Sigma] + \
+       Exp[$CellContext`k] \
+$CellContext`A[$CellContext`k/$CellContext`\[Sigma] + $CellContext`\[Sigma]/
+            2] - $CellContext`A[$CellContext`k/$CellContext`\[Sigma] + \
 $CellContext`\[Sigma]/2], $CellContext`Polya[
          Pattern[$CellContext`x, 
           Blank[]]] := 
@@ -5800,10 +5678,10 @@ $CellContext`inversedIVSeries =
             Normal[$CellContext`inversedIVSeries], $CellContext`Z -> \
 $CellContext`CallPrice]; $CellContext`impliedVol = $CellContext`std/
            Sqrt[$CellContext`T]], 
-       Attributes[$CellContext`y$96658] = {Temporary}, $CellContext`y$96658 = 
+       Attributes[$CellContext`y$12862] = {Temporary}, $CellContext`y$12862 = 
        Log[(E^($CellContext`r$$ $CellContext`T$$) $CellContext`S$$)/K$$], 
-       Attributes[$CellContext`\[Gamma]$96658] = {
-        Temporary}, $CellContext`\[Gamma]$96658 = -(Pi 
+       Attributes[$CellContext`\[Gamma]$12862] = {
+        Temporary}, $CellContext`\[Gamma]$12862 = -(Pi 
          Log[(2 K$$^2 ((
                1 + (E^($CellContext`r$$ $CellContext`T$$) $CellContext`S$$)/
                 K$$)^2 - (-1 + (
@@ -5945,13 +5823,13 @@ $CellContext`S$$)/K$$)^(1 - 2/
                     K$$)^2))/(
                 E^($CellContext`r$$ $CellContext`T$$) \
 $CellContext`S$$))^2]))])/2, 
-       Attributes[$CellContext`P0$96658] = {Temporary}, $CellContext`P0$96658 = 
+       Attributes[$CellContext`P0$12862] = {Temporary}, $CellContext`P0$12862 = 
        If[Log[(E^($CellContext`r$$ $CellContext`T$$) $CellContext`S$$)/K$$] >= 
          0, K$$ Exp[(-$CellContext`r$$) $CellContext`T$$] (1/2 - 
-          Exp[$CellContext`y$96658] $CellContext`Polya[-
-            Sqrt[2 $CellContext`y$96658]]), K$$ 
+          Exp[$CellContext`y$12862] $CellContext`Polya[-
+            Sqrt[2 $CellContext`y$12862]]), K$$ 
          Exp[(-$CellContext`r$$) $CellContext`T$$] ($CellContext`Polya[
-            Sqrt[(-2) $CellContext`y$96658]] - Exp[$CellContext`y$96658]/2)]}; 
+            Sqrt[(-2) $CellContext`y$12862]] - Exp[$CellContext`y$12862]/2)]}; 
      Typeset`initDone$$ = True),
     SynchronousInitialization->True,
     UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
@@ -5960,10 +5838,13 @@ $CellContext`S$$))^2]))])/2,
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.719353385088131*^9, 3.719354713428421*^9, 
-  3.719355047612715*^9, 
-  3.719355195530828*^9},ExpressionUUID->"4b1b5fcf-7e0f-46e6-afa4-\
-1bb3d844a1ef"]
+ CellChangeTimes->{
+  3.719353385088131*^9, 3.719354713428421*^9, 3.719355047612715*^9, 
+   3.719355195530828*^9, {3.719597099580229*^9, 3.719597126314396*^9}, 
+   3.719599145015633*^9, 3.719599381125041*^9, 3.719599444260023*^9, 
+   3.719599543341682*^9, 
+   3.719599620177083*^9},ExpressionUUID->"0b0a4122-8e4b-490d-b3ff-\
+bc4afad54ea5"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
@@ -6188,9 +6069,10 @@ Cell[BoxData[
    3.719249646214452*^9, 3.7192496674067063`*^9}, 3.7192497973305883`*^9, {
    3.7192498736099286`*^9, 3.7192498825058794`*^9}, 3.719250021693673*^9, 
    3.7192503122984743`*^9, 3.719250348648583*^9, {3.7192505286996775`*^9, 
-   3.719250548956877*^9}, 3.719328395810012*^9, 
-   3.719330508504327*^9},ExpressionUUID->"9710d4fb-6fa3-4086-82b6-\
-55d33a3fba15"]
+   3.719250548956877*^9}, 3.719328395810012*^9, 3.719330508504327*^9, 
+   3.719597127038951*^9, 3.719599145789501*^9, 
+   3.719599544184043*^9},ExpressionUUID->"57062233-981c-4bae-8499-\
+f2aa551eb25d"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -6234,8 +6116,9 @@ e810ec73958a"],
 
 Cell[BoxData["0.08999999999999983`"], "Output",
  CellChangeTimes->{3.7192505287327657`*^9, 3.7193283960633793`*^9, 
-  3.719330508560129*^9},ExpressionUUID->"72b350ac-602f-4b66-9665-\
-8819ed3974e0"]
+  3.719330508560129*^9, 3.7195971271026697`*^9, 3.719599145952859*^9, 
+  3.719599544264789*^9},ExpressionUUID->"4bee6e78-7445-4a31-b697-\
+0d9e98ef22b2"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -6296,9 +6179,9 @@ c651d0cbd65a"],
 
 Cell[BoxData["0.08999999999999983`"], "Output",
  CellChangeTimes->{3.7192515024294167`*^9, 3.719251594017827*^9, 
-  3.7192521335112157`*^9, 3.719328396112692*^9, 
-  3.719330508612197*^9},ExpressionUUID->"910f7a48-3e08-43d7-bad9-\
-6659b9b32b94"]
+  3.7192521335112157`*^9, 3.719328396112692*^9, 3.719330508612197*^9, 
+  3.719597127270453*^9, 3.719599146070423*^9, 
+  3.71959954434875*^9},ExpressionUUID->"04ca1ce8-89ed-4e95-b7b9-1825a2f35539"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -6457,8 +6340,9 @@ Cell[BoxData[
    3.719330508717431*^9, 3.719340000533102*^9, 3.719340344471113*^9, 
    3.71934243117719*^9, 3.719342597459944*^9, 3.71934282395466*^9, 
    3.7193430224392443`*^9, {3.7193431075248213`*^9, 3.719343117322195*^9}, 
-   3.719343162523795*^9},ExpressionUUID->"cfe6b527-b318-49ea-b66a-\
-ced749b26ba3"]
+   3.719343162523795*^9, 3.719597148636704*^9, 3.7195991689982777`*^9, 
+   3.719599564841387*^9},ExpressionUUID->"43ccce82-1e6e-416b-9d8d-\
+74b402ae1efe"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -6648,9 +6532,10 @@ Cell[BoxData[
    3.719336076439612*^9, 3.719336085357767*^9}, 3.71933612153475*^9, 
    3.7193364136246*^9, 3.719336569449519*^9, 3.7193398750717287`*^9, 
    3.719340128663747*^9, 3.719340354135685*^9, {3.719340387646254*^9, 
-   3.719340419677979*^9}, 3.719343029919279*^9, 
-   3.7193432640002947`*^9},ExpressionUUID->"d3f08343-dafd-4953-8d0f-\
-83abbcad3d30"]
+   3.719340419677979*^9}, 3.719343029919279*^9, 3.7193432640002947`*^9, 
+   3.7195971490660267`*^9, 3.719599169450357*^9, 
+   3.719599565221663*^9},ExpressionUUID->"637b0f45-940a-4beb-874d-\
+dd80c91bd27d"]
 }, Open  ]],
 
 Cell[BoxData[
@@ -6759,18 +6644,21 @@ Cell[BoxData[
    RowBox[{"{", 
     RowBox[{
      RowBox[{"-", "0.05`"}], ",", "0.08999999999999983`", ",", 
-     "0.011258305875889996`", ",", "0.9986712581144364`", ",", 
+     "0.011251994568160784`", ",", "0.9872400388240554`", ",", 
      "2.286243858076187`", ",", 
-     RowBox[{"-", "0.19464591657430108`"}]}], "}"}], ",", 
+     RowBox[{"-", "7.6857386171300055`"}], ",", 
+     RowBox[{"-", "0.001464009528385768`"}]}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{
      RowBox[{"-", "0.05`"}], ",", "0.08999999999999983`", ",", 
-     "0.011245683260431572`", ",", "0.9758088195336745`", ",", 
-     "2.286243858076187`", ",", "0.20752405836747065`"}], "}"}]}], 
-  "}"}]], "Output",
- CellChangeTimes->{
-  3.719339499368786*^9},ExpressionUUID->"d297fbea-a46f-46f9-a552-\
-2c549f274a50"]
+     "0.011251994568160784`", ",", "0.9872400388240554`", ",", 
+     "2.286243858076187`", ",", 
+     RowBox[{"-", "7.6857386171300055`"}], ",", 
+     RowBox[{"-", "0.001464009528385768`"}]}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.719339499368786*^9, 3.7195971493943777`*^9, 
+  3.719599169811327*^9, 
+  3.719599565539029*^9},ExpressionUUID->"875e94aa-9885-44bb-ac66-\
+a9609e8135df"]
 }, Open  ]],
 
 Cell[BoxData[{
@@ -6808,6 +6696,7 @@ Cell[BoxData[{
  CellChangeTimes->{{3.719346315337172*^9, 
   3.7193464941946*^9}},ExpressionUUID->"3077c7de-224c-4f2b-9fb1-dd31b690d097"]
 }, Open  ]]
+}, Open  ]]
 },
 WindowSize->{1397, 855},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -6827,132 +6716,133 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 197, 3, 67, "Section",ExpressionUUID->"4c08c370-1ff2-458c-8eca-c16af5f3a48d"],
+Cell[580, 22, 191, 3, 98, "Title",ExpressionUUID->"6450bd91-c7ec-40b8-9b68-2e11915c5821"],
 Cell[CellGroupData[{
-Cell[802, 29, 354, 10, 30, "Input",ExpressionUUID->"94ad5817-e37a-4d4a-a671-7e33014cd65a"],
-Cell[1159, 41, 3033, 92, 61, "Output",ExpressionUUID->"6df9da43-8414-46b4-91bb-f716aed86285"]
+Cell[796, 29, 197, 3, 67, "Section",ExpressionUUID->"4c08c370-1ff2-458c-8eca-c16af5f3a48d"],
+Cell[CellGroupData[{
+Cell[1018, 36, 354, 10, 30, "Input",ExpressionUUID->"94ad5817-e37a-4d4a-a671-7e33014cd65a"],
+Cell[1375, 48, 3107, 93, 61, "Output",ExpressionUUID->"f5a9952d-75c9-4841-b049-1c06c7b25d7a"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[4229, 138, 348, 9, 47, "Input",ExpressionUUID->"af045238-6101-43fa-9a26-a0db1044e097"],
-Cell[4580, 149, 2277, 67, 58, "Output",ExpressionUUID->"359f9c48-cde8-4c96-9c2b-1df9d2f45674"]
+Cell[4519, 146, 348, 9, 47, "Input",ExpressionUUID->"af045238-6101-43fa-9a26-a0db1044e097"],
+Cell[4870, 157, 2348, 68, 58, "Output",ExpressionUUID->"ad11247a-89f5-4de5-86d1-98a624cc7c20"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[6894, 221, 283, 8, 30, "Input",ExpressionUUID->"5a274af3-1b42-47a9-88b3-4dcbefd9e8f9"],
-Cell[7180, 231, 920, 24, 50, "Output",ExpressionUUID->"17066f38-f133-4e0c-b5d3-12c1db16f8fd"]
+Cell[7255, 230, 283, 8, 30, "Input",ExpressionUUID->"5a274af3-1b42-47a9-88b3-4dcbefd9e8f9"],
+Cell[7541, 240, 992, 25, 50, "Output",ExpressionUUID->"a203dc0b-0f86-4fd7-bf45-184617966625"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[8149, 261, 178, 3, 67, "Section",ExpressionUUID->"6afdbf59-4267-4fe6-bb75-cf95e07339ee"],
-Cell[8330, 266, 3236, 102, 281, "Input",ExpressionUUID->"205c526e-c48d-4f52-adcc-0afc2ae91cb0"]
+Cell[8582, 271, 178, 3, 67, "Section",ExpressionUUID->"6afdbf59-4267-4fe6-bb75-cf95e07339ee"],
+Cell[8763, 276, 3236, 102, 281, "Input",ExpressionUUID->"205c526e-c48d-4f52-adcc-0afc2ae91cb0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11603, 373, 181, 3, 67, "Section",ExpressionUUID->"e78a82ea-0764-40d3-8aed-1d38b54a42c6"],
-Cell[11787, 378, 2647, 68, 262, "Input",ExpressionUUID->"a7c923bf-00cb-4612-89a9-08fed32dd902"],
+Cell[12036, 383, 181, 3, 67, "Section",ExpressionUUID->"e78a82ea-0764-40d3-8aed-1d38b54a42c6"],
+Cell[12220, 388, 2647, 68, 262, "Input",ExpressionUUID->"a7c923bf-00cb-4612-89a9-08fed32dd902"],
 Cell[CellGroupData[{
-Cell[14459, 450, 965, 22, 94, "Input",ExpressionUUID->"244e5e9f-2a67-4c52-ad25-0b772f8812d3"],
-Cell[15427, 474, 520, 8, 34, "Output",ExpressionUUID->"43a09cef-782a-4a0a-9a00-2ae18aa6a717"],
-Cell[15950, 484, 521, 8, 34, "Output",ExpressionUUID->"44cf8122-8569-4286-a348-d440b7b962f5"],
-Cell[16474, 494, 519, 8, 34, "Output",ExpressionUUID->"68665b35-3576-4729-9c83-63ea2727afc8"],
-Cell[16996, 504, 519, 8, 34, "Output",ExpressionUUID->"1505f42e-3b07-4a27-8f91-691541cd097f"]
+Cell[14892, 460, 965, 22, 94, "Input",ExpressionUUID->"244e5e9f-2a67-4c52-ad25-0b772f8812d3"],
+Cell[15860, 484, 592, 9, 34, "Output",ExpressionUUID->"cc1f5878-b03f-4962-a0c3-1a0c710f29a5"],
+Cell[16455, 495, 593, 9, 34, "Output",ExpressionUUID->"8c3982e7-dbf8-455f-a887-989ed566eccc"],
+Cell[17051, 506, 591, 9, 34, "Output",ExpressionUUID->"f6f0635b-d78d-4405-b30e-d7b686632b8a"],
+Cell[17645, 517, 591, 9, 34, "Output",ExpressionUUID->"3f0fb25c-7ece-47cb-980a-87eb62470e40"]
 }, Open  ]],
-Cell[17530, 515, 3122, 77, 383, "Input",ExpressionUUID->"a979571c-e568-4997-95ea-1d358a566165"],
+Cell[18251, 529, 3122, 77, 383, "Input",ExpressionUUID->"a979571c-e568-4997-95ea-1d358a566165"],
 Cell[CellGroupData[{
-Cell[20677, 596, 628, 13, 52, "Input",ExpressionUUID->"d1a321ff-51db-41f0-a378-afd12eea3649"],
-Cell[21308, 611, 513, 8, 34, "Output",ExpressionUUID->"966d66e3-bd9a-486a-8635-86424e24f46e"],
-Cell[21824, 621, 513, 8, 34, "Output",ExpressionUUID->"3f43d6a0-dfa9-44a3-8b4c-8838f1ffc0d6"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[22374, 634, 9245, 205, 1144, "Input",ExpressionUUID->"041da8f9-5be5-42a5-a4f5-27d45525e36f"],
-Cell[31622, 841, 10146, 210, 360, "Output",ExpressionUUID->"9d10ce25-c96e-4362-9182-035a2302b3aa"],
-Cell[41771, 1053, 10082, 212, 360, "Output",ExpressionUUID->"adfa8dd3-ea79-4159-afc4-7d36a1bbc234"],
-Cell[51856, 1267, 274, 7, 24, "Message",ExpressionUUID->"9492f47c-205a-461a-8ac8-27f9d5b1a4c5"],
-Cell[52133, 1276, 276, 7, 24, "Message",ExpressionUUID->"9b234d8b-b3d1-4411-8361-83bbfa772fe1"]
+Cell[21398, 610, 628, 13, 52, "Input",ExpressionUUID->"d1a321ff-51db-41f0-a378-afd12eea3649"],
+Cell[22029, 625, 583, 9, 34, "Output",ExpressionUUID->"ae060288-54c1-4fd6-bbe3-d6d3cb74b35f"],
+Cell[22615, 636, 583, 9, 34, "Output",ExpressionUUID->"6afb70ca-bb1b-41cf-b050-e63fe55a1eae"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[52446, 1288, 1112, 29, 101, "Input",ExpressionUUID->"228c8dda-889a-42ce-bb38-fc3dc9d10ea7"],
-Cell[53561, 1319, 458, 8, 52, "Output",ExpressionUUID->"931b2da8-6215-454a-b1ff-0bbec569db9f"]
+Cell[23235, 650, 9935, 218, 1228, "Input",ExpressionUUID->"041da8f9-5be5-42a5-a4f5-27d45525e36f"],
+Cell[33173, 870, 10553, 216, 360, "Output",ExpressionUUID->"91b18adc-090b-47de-8d70-8eeaf37c017e"],
+Cell[43729, 1088, 10099, 211, 418, "Output",ExpressionUUID->"7511fae0-2c39-4e5e-8907-f0638d490e3c"]
 }, Open  ]],
-Cell[54034, 1330, 1222, 34, 81, "Input",ExpressionUUID->"a715d212-f502-4466-9a8b-254939140f89"],
 Cell[CellGroupData[{
-Cell[55281, 1368, 437, 11, 30, "Input",ExpressionUUID->"4b406a20-e6b0-41e1-9991-0b0384281404"],
-Cell[55721, 1381, 478, 10, 37, "Output",ExpressionUUID->"30eb6192-29fc-41e9-9e54-1b47889014a2"]
+Cell[53865, 1304, 1112, 29, 101, "Input",ExpressionUUID->"228c8dda-889a-42ce-bb38-fc3dc9d10ea7"],
+Cell[54980, 1335, 530, 9, 52, "Output",ExpressionUUID->"6de4e49e-3267-420e-9077-aa1e335d6aff"]
+}, Open  ]],
+Cell[55525, 1347, 1222, 34, 81, "Input",ExpressionUUID->"a715d212-f502-4466-9a8b-254939140f89"],
+Cell[CellGroupData[{
+Cell[56772, 1385, 437, 11, 30, "Input",ExpressionUUID->"4b406a20-e6b0-41e1-9991-0b0384281404"],
+Cell[57212, 1398, 548, 11, 37, "Output",ExpressionUUID->"e40c1d93-60a5-4f4e-a2b8-3cf71de36933"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[56248, 1397, 294, 6, 105, "Section",ExpressionUUID->"4f3ff7d2-4832-4e1e-9fb0-7f1f4cb10327"],
-Cell[56545, 1405, 2782, 73, 296, "Input",ExpressionUUID->"ec986b81-c0c4-4297-8994-af529782013a"],
+Cell[57809, 1415, 294, 6, 105, "Section",ExpressionUUID->"4f3ff7d2-4832-4e1e-9fb0-7f1f4cb10327"],
+Cell[58106, 1423, 2782, 73, 296, "Input",ExpressionUUID->"ec986b81-c0c4-4297-8994-af529782013a"],
 Cell[CellGroupData[{
-Cell[59352, 1482, 886, 23, 30, "Input",ExpressionUUID->"5482c4e2-61db-4db2-af2d-f2e99ebea7fb"],
-Cell[60241, 1507, 345, 5, 34, "Output",ExpressionUUID->"73757650-35be-412a-9c5e-593e29f43e02"]
+Cell[60913, 1500, 886, 23, 30, "Input",ExpressionUUID->"5482c4e2-61db-4db2-af2d-f2e99ebea7fb"],
+Cell[61802, 1525, 413, 6, 34, "Output",ExpressionUUID->"a708b0b8-a1fa-432e-b0c1-9375ad3d5092"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[60623, 1517, 5877, 129, 693, "Input",ExpressionUUID->"7f28ed16-d987-4569-8ff4-9913fe2ae203"],
-Cell[66503, 1648, 96478, 1715, 360, "Output",ExpressionUUID->"4c00958d-f761-48d5-ad04-ba4d54bdbaf7"]
+Cell[62252, 1536, 5877, 129, 693, "Input",ExpressionUUID->"7f28ed16-d987-4569-8ff4-9913fe2ae203"],
+Cell[68132, 1667, 96505, 1715, 360, "Output",ExpressionUUID->"ee22a0f9-715f-4603-a918-dd31bd28ccf1"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[163030, 3369, 217, 5, 67, "Section",ExpressionUUID->"f59f6acb-b86d-4f55-b76b-4fe2874d0efd"],
-Cell[163250, 3376, 18112, 497, 1340, "Input",ExpressionUUID->"55aaaebe-cd64-4bac-885c-152247680c6b"],
+Cell[164686, 3388, 217, 5, 67, "Section",ExpressionUUID->"f59f6acb-b86d-4f55-b76b-4fe2874d0efd"],
+Cell[164906, 3395, 18112, 497, 1340, "Input",ExpressionUUID->"55aaaebe-cd64-4bac-885c-152247680c6b"],
 Cell[CellGroupData[{
-Cell[181387, 3877, 813, 18, 73, "Input",ExpressionUUID->"996344b4-99b1-41f7-81aa-8ab8e83351e3"],
-Cell[182203, 3897, 682, 11, 34, "Output",ExpressionUUID->"2d914bf2-ef4f-4088-890e-c214f35417c7"],
-Cell[182888, 3910, 680, 11, 34, "Output",ExpressionUUID->"c99a810c-6ffe-4ee4-a45f-a6c9aa381048"],
-Cell[183571, 3923, 677, 11, 34, "Output",ExpressionUUID->"1125f29a-61e9-49bb-a62e-990a16c27b6f"]
+Cell[183043, 3896, 813, 18, 73, "Input",ExpressionUUID->"996344b4-99b1-41f7-81aa-8ab8e83351e3"],
+Cell[183859, 3916, 753, 12, 34, "Output",ExpressionUUID->"e96550ce-e36b-4586-b583-ce7ca19784c1"],
+Cell[184615, 3930, 752, 12, 34, "Output",ExpressionUUID->"77a6f811-e64b-43eb-ba5d-865ae512bd9a"],
+Cell[185370, 3944, 750, 12, 34, "Output",ExpressionUUID->"a6277c6c-d28b-4570-b4fb-b62ee3e7df9a"]
 }, Open  ]],
-Cell[184263, 3937, 152, 3, 30, "Input",ExpressionUUID->"3f80c133-1da7-4d20-9cd9-15d5b78df942"],
+Cell[186135, 3959, 152, 3, 30, "Input",ExpressionUUID->"3f80c133-1da7-4d20-9cd9-15d5b78df942"],
 Cell[CellGroupData[{
-Cell[184440, 3944, 1345, 33, 115, "Input",ExpressionUUID->"dee89846-2267-48a7-911a-fa6c351095b1"],
-Cell[185788, 3979, 211, 5, 34, "Output",ExpressionUUID->"0658c9c7-1777-47cb-b674-d7bf96116e33"]
+Cell[186312, 3966, 1345, 33, 115, "Input",ExpressionUUID->"dee89846-2267-48a7-911a-fa6c351095b1"],
+Cell[187660, 4001, 279, 6, 34, "Output",ExpressionUUID->"1602dc75-9161-4ceb-aa7a-6ef5a22820b8"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[186036, 3989, 181, 3, 54, "Subsection",ExpressionUUID->"f00c38ea-0781-4021-8621-261950989f65"],
+Cell[187976, 4012, 181, 3, 54, "Subsection",ExpressionUUID->"f00c38ea-0781-4021-8621-261950989f65"],
 Cell[CellGroupData[{
-Cell[186242, 3996, 5621, 127, 702, "Input",ExpressionUUID->"fcf45a7c-c5f1-4f5e-b48a-5afdfdc768ae"],
-Cell[191866, 4125, 49026, 931, 418, "Output",ExpressionUUID->"aabc9450-9d59-4ad9-807f-64b6ad8ebcb0"]
+Cell[188182, 4019, 7324, 161, 872, "Input",ExpressionUUID->"fcf45a7c-c5f1-4f5e-b48a-5afdfdc768ae"],
+Cell[195509, 4182, 38145, 737, 418, "Output",ExpressionUUID->"ebb667d2-802b-475c-ae7b-0fec219431b8"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[240941, 5062, 178, 3, 54, "Subsection",ExpressionUUID->"4d3d4d40-d83a-45a1-9fbb-398475356cfc"],
+Cell[233703, 4925, 178, 3, 54, "Subsection",ExpressionUUID->"4d3d4d40-d83a-45a1-9fbb-398475356cfc"],
 Cell[CellGroupData[{
-Cell[241144, 5069, 6205, 142, 765, "Input",ExpressionUUID->"6aad2cf8-4410-4a66-a990-2b569cc6a6ba"],
-Cell[247352, 5213, 38649, 752, 360, "Output",ExpressionUUID->"4b1b5fcf-7e0f-46e6-afa4-1bb3d844a1ef"]
+Cell[233906, 4932, 6781, 153, 849, "Input",ExpressionUUID->"6aad2cf8-4410-4a66-a990-2b569cc6a6ba"],
+Cell[240690, 5087, 39068, 759, 377, "Output",ExpressionUUID->"0b0a4122-8e4b-490d-b3ff-bc4afad54ea5"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[286062, 5972, 459, 12, 79, "Section",ExpressionUUID->"b6a27b39-5257-42e3-92f2-97689bff62e4"],
-Cell[286524, 5986, 1433, 35, 161, "Input",ExpressionUUID->"cd9bf93f-daa9-4022-9be4-39a7bfbd146c"],
+Cell[279819, 5853, 459, 12, 79, "Section",ExpressionUUID->"b6a27b39-5257-42e3-92f2-97689bff62e4"],
+Cell[280281, 5867, 1433, 35, 161, "Input",ExpressionUUID->"cd9bf93f-daa9-4022-9be4-39a7bfbd146c"],
 Cell[CellGroupData[{
-Cell[287982, 6025, 1922, 41, 136, "Input",ExpressionUUID->"db1af434-d166-4ba9-8def-4f953255b473"],
-Cell[289907, 6068, 5320, 124, 187, "Output",ExpressionUUID->"9710d4fb-6fa3-4086-82b6-55d33a3fba15"]
+Cell[281739, 5906, 1922, 41, 136, "Input",ExpressionUUID->"db1af434-d166-4ba9-8def-4f953255b473"],
+Cell[283664, 5949, 5390, 125, 187, "Output",ExpressionUUID->"57062233-981c-4bae-8499-f2aa551eb25d"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[295264, 6197, 1469, 35, 157, "Input",ExpressionUUID->"cbadec8e-fa64-4ed2-bd59-e810ec73958a"],
-Cell[296736, 6234, 197, 3, 34, "Output",ExpressionUUID->"72b350ac-602f-4b66-9665-8819ed3974e0"]
+Cell[289091, 6079, 1469, 35, 157, "Input",ExpressionUUID->"cbadec8e-fa64-4ed2-bd59-e810ec73958a"],
+Cell[290563, 6116, 268, 4, 34, "Output",ExpressionUUID->"4bee6e78-7445-4a31-b697-0d9e98ef22b2"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[296970, 6242, 1937, 52, 178, "Input",ExpressionUUID->"72fdd2f5-1ada-4866-9509-c651d0cbd65a"],
-Cell[298910, 6296, 244, 4, 34, "Output",ExpressionUUID->"910f7a48-3e08-43d7-bad9-6659b9b32b94"]
+Cell[290868, 6125, 1937, 52, 178, "Input",ExpressionUUID->"72fdd2f5-1ada-4866-9509-c651d0cbd65a"],
+Cell[292808, 6179, 310, 4, 34, "Output",ExpressionUUID->"04ca1ce8-89ed-4e95-b7b9-1825a2f35539"]
 }, Open  ]],
-Cell[299169, 6303, 211, 4, 30, "Input",ExpressionUUID->"925d8a18-8c53-4c0a-b3a8-f2c627ac0468"],
-Cell[299383, 6309, 2892, 76, 153, "Input",ExpressionUUID->"b73833b8-eb97-47df-8ab7-f20110ccc931"],
-Cell[302278, 6387, 153, 3, 30, "Input",ExpressionUUID->"81fd429b-ac59-4ed7-a632-1d35d683d30d"],
+Cell[293133, 6186, 211, 4, 30, "Input",ExpressionUUID->"925d8a18-8c53-4c0a-b3a8-f2c627ac0468"],
+Cell[293347, 6192, 2892, 76, 153, "Input",ExpressionUUID->"b73833b8-eb97-47df-8ab7-f20110ccc931"],
+Cell[296242, 6270, 153, 3, 30, "Input",ExpressionUUID->"81fd429b-ac59-4ed7-a632-1d35d683d30d"],
 Cell[CellGroupData[{
-Cell[302456, 6394, 2139, 53, 178, "Input",ExpressionUUID->"cdb79355-4509-4149-a182-5929fc50663c"],
-Cell[304598, 6449, 609, 11, 37, "Output",ExpressionUUID->"cfe6b527-b318-49ea-b66a-ced749b26ba3"]
+Cell[296420, 6277, 2139, 53, 178, "Input",ExpressionUUID->"cdb79355-4509-4149-a182-5929fc50663c"],
+Cell[298562, 6332, 681, 12, 37, "Output",ExpressionUUID->"43ccce82-1e6e-416b-9d8d-74b402ae1efe"]
 }, Open  ]],
-Cell[305222, 6463, 3500, 85, 243, "Input",ExpressionUUID->"b47cebbf-93a2-4323-b97d-b650292b0892"],
-Cell[308725, 6550, 766, 21, 52, "Input",ExpressionUUID->"7b9c3baa-230b-47ea-a964-74a03d0ad2eb"],
+Cell[299258, 6347, 3500, 85, 243, "Input",ExpressionUUID->"b47cebbf-93a2-4323-b97d-b650292b0892"],
+Cell[302761, 6434, 766, 21, 52, "Input",ExpressionUUID->"7b9c3baa-230b-47ea-a964-74a03d0ad2eb"],
 Cell[CellGroupData[{
-Cell[309516, 6575, 2006, 46, 157, "Input",ExpressionUUID->"a266c2e0-9306-4503-b0a3-c722919f5467"],
-Cell[311525, 6623, 1444, 29, 34, "Output",ExpressionUUID->"d3f08343-dafd-4953-8d0f-83abbcad3d30"]
+Cell[303552, 6459, 2006, 46, 157, "Input",ExpressionUUID->"a266c2e0-9306-4503-b0a3-c722919f5467"],
+Cell[305561, 6507, 1516, 30, 34, "Output",ExpressionUUID->"637b0f45-940a-4beb-874d-dd80c91bd27d"]
 }, Open  ]],
-Cell[312984, 6655, 2236, 58, 225, "Input",ExpressionUUID->"f147adc7-2d56-4005-b3a8-b54873bc2eaf"],
+Cell[307092, 6540, 2236, 58, 225, "Input",ExpressionUUID->"f147adc7-2d56-4005-b3a8-b54873bc2eaf"],
 Cell[CellGroupData[{
-Cell[315245, 6717, 1431, 36, 157, "Input",ExpressionUUID->"545f3558-8e56-4b6c-b4ed-fb8b2c71f9c0"],
-Cell[316679, 6755, 637, 17, 34, "Output",ExpressionUUID->"d297fbea-a46f-46f9-a552-2c549f274a50"]
+Cell[309353, 6602, 1431, 36, 157, "Input",ExpressionUUID->"545f3558-8e56-4b6c-b4ed-fb8b2c71f9c0"],
+Cell[310787, 6640, 826, 20, 34, "Output",ExpressionUUID->"875e94aa-9885-44bb-ac66-a9609e8135df"]
 }, Open  ]],
-Cell[317331, 6775, 1016, 33, 96, "Input",ExpressionUUID->"3077c7de-224c-4f2b-9fb1-dd31b690d097"]
+Cell[311628, 6663, 1016, 33, 96, "Input",ExpressionUUID->"3077c7de-224c-4f2b-9fb1-dd31b690d097"]
+}, Open  ]]
 }, Open  ]]
 }
 ]
