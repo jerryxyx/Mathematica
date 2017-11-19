@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   2770193,      48864]
-NotebookOptionsPosition[   2761957,      48588]
-NotebookOutlinePosition[   2762332,      48604]
-CellTagsIndexPosition[   2762289,      48601]
+NotebookDataLength[   2813821,      49826]
+NotebookOptionsPosition[   2804902,      49529]
+NotebookOutlinePosition[   2805277,      49545]
+CellTagsIndexPosition[   2805234,      49542]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -45876,12 +45876,12 @@ Cell[BoxData[
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`a$$ = 0.3, K$$ = 100, $CellContext`order$$ =
-     5, $CellContext`r$$ = 0.05, $CellContext`S$$ = 100., $CellContext`T$$ = 
-    1, $CellContext`\[Sigma]$$ = 0.3, Typeset`show$$ = True, 
-    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
-    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
-    "\"untitled\"", Typeset`specs$$ = {{
+   DynamicModuleBox[{$CellContext`a$$ = 0.6500000000000001, K$$ = 
+    44, $CellContext`order$$ = 10, $CellContext`r$$ = 0.05, $CellContext`S$$ =
+     128, $CellContext`T$$ = 1, $CellContext`\[Sigma]$$ = 0.3, 
+    Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+    Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
+    1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
       Hold["underlying, \!\(\*SubscriptBox[\(S\), \(0\)]\)"], 
       Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`S$$], 100., ""}, 0, 150, 1}, {
@@ -45903,7 +45903,7 @@ Cell[BoxData[
       Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
       Hold["fixed volatility, a"], Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`a$$], 0.3, ""}, 0.05, 1, 0.1}}, Typeset`size$$ = {
-    310., {3., 10.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    390., {3., 10.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = False, $CellContext`S$34712$$ = 0, K$34717$$ = 
     0, $CellContext`\[Sigma]$34718$$ = 0, $CellContext`r$34719$$ = 
     0, $CellContext`T$34720$$ = 0, $CellContext`order$34721$$ = 
@@ -45957,7 +45957,7 @@ $CellContext`estimatedIV$, $CellContext`newtonRoot$}}],
         "fixed volatility, a", {{$CellContext`a$$, 0.3, ""}, 0.05, 1, 0.1, 
          Appearance -> "Labeled", ImageSize -> Tiny}}, 
       "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
-     ImageSizeCache->{521., {189., 196.}},
+     ImageSizeCache->{677., {209., 216.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -46969,10 +46969,13 @@ $CellContext`normalCDF[
 Cell[CellGroupData[{
 
 Cell["\<\
-We see the convergent radius equals to fixS and divergent beyond (0, 2 fixS). \
-So we consider the expansion with respect to Log[S]\
+We see the convergent radius equals to fixS and divergent beyond (0, 2 fixS). 
+
+So we consider the expansion with respect to Log[S], and it should be a more \
+feasible choice.\
 \>", "Subsubsection",
- CellChangeTimes->{{3.7200464351143513`*^9, 3.720046504594574*^9}}],
+ CellChangeTimes->{{3.7200464351143513`*^9, 3.720046504594574*^9}, {
+  3.7200480832139854`*^9, 3.720048131702828*^9}}],
 
 Cell["", "Text",
  CellChangeTimes->{{3.720046362835125*^9, 3.7200464071773453`*^9}, 
@@ -48160,19 +48163,6 @@ Cell["Realization", "Subsection",
 
 Cell[CellGroupData[{
 
-Cell["\<\
-Here, the suitable initial guess is not sensitive when fixS > targetS. Like \
-what we got in implied volatility, but much more insensitive. Try some \
-extreme value of fixS like 4*targetS.
-Guess: it is caused by the entire function property. As long as fixS>targetS, \
-it was in the convergent region. We can find a upper boundary just like Teh\
-\[CloseCurlyQuote]s formula and got a good result.\
-\>", "Subsubsection",
- CellChangeTimes->{{3.7200466772805543`*^9, 3.720046705787239*^9}, {
-  3.720046767270667*^9, 3.7200470979745054`*^9}}],
-
-Cell[CellGroupData[{
-
 Cell[BoxData[
  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
   RowBox[{
@@ -48275,8 +48265,8 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"{", 
       RowBox[{"fixS", ",", 
-       RowBox[{"2", "*", "K"}], ",", "\"\<\>\""}], "}"}], ",", "1", ",", 
-     "400", ",", "5", ",", 
+       RowBox[{"2", " ", "K"}], ",", "\"\<\>\""}], "}"}], ",", "1", ",", 
+     "600", ",", "5", ",", 
      RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
      RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
@@ -48286,14 +48276,16 @@ Cell[BoxData[
  CellChangeTimes->{{3.720045225486207*^9, 3.720045284431356*^9}, {
   3.720045321250033*^9, 3.720045414290655*^9}, {3.7200454757077184`*^9, 
   3.720045686827882*^9}, {3.7200461694334717`*^9, 3.720046171028257*^9}, {
-  3.7200462078445315`*^9, 3.72004621409899*^9}}],
+  3.7200462078445315`*^9, 3.72004621409899*^9}, {3.720047324859744*^9, 
+  3.7200473251512575`*^9}, {3.7200524702283497`*^9, 3.720052515382184*^9}, {
+  3.7200531329700255`*^9, 3.7200531339948015`*^9}}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`fixS$$ = 400, K$$ = 117, $CellContext`K2$$ =
-     94, $CellContext`nOrder$$ = 30, $CellContext`r$$ = 
-    0.05, $CellContext`T$$ = 1, $CellContext`\[Sigma]$$ = 0.3, 
+   DynamicModuleBox[{$CellContext`fixS$$ = 2 K$$, K$$ = 
+    100, $CellContext`K2$$ = 20, $CellContext`nOrder$$ = 5, $CellContext`r$$ =
+     0.05, $CellContext`T$$ = 1, $CellContext`\[Sigma]$$ = 0.3, 
     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
@@ -48316,25 +48308,25 @@ Cell[BoxData[
        Hold[$CellContext`nOrder$$], 5, ""}, 0, 100, 5}, {
       Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
       Hold["fixed S, fixS"], Manipulate`Dump`ThisIsNotAControl}, {{
-       Hold[$CellContext`fixS$$], 2 K$$, ""}, 1, 400, 5}}, Typeset`size$$ = {
-    403., {3., 10.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
-    Typeset`skipInitDone$$ = False, $CellContext`K2$83242$$ = 0, K$83243$$ = 
-    0, $CellContext`\[Sigma]$83244$$ = 0, $CellContext`r$83245$$ = 
-    0, $CellContext`T$83246$$ = 0, $CellContext`nOrder$83247$$ = 
-    0, $CellContext`fixS$83248$$ = 0}, 
+       Hold[$CellContext`fixS$$], 2 K$$, ""}, 1, 600, 5}}, Typeset`size$$ = {
+    435., {3., 10.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = False, $CellContext`K2$690037$$ = 0, K$690038$$ =
+     0, $CellContext`\[Sigma]$690039$$ = 0, $CellContext`r$690040$$ = 
+    0, $CellContext`T$690041$$ = 0, $CellContext`nOrder$690042$$ = 
+    0, $CellContext`fixS$690043$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`fixS$$ = 2 K$$, K$$ = 
         100, $CellContext`K2$$ = 20, $CellContext`nOrder$$ = 
         5, $CellContext`r$$ = 0.05, $CellContext`T$$ = 
         1, $CellContext`\[Sigma]$$ = 0.3}, "ControllerVariables" :> {
-        Hold[$CellContext`K2$$, $CellContext`K2$83242$$, 0], 
-        Hold[K$$, K$83243$$, 0], 
-        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$83244$$, 0], 
-        Hold[$CellContext`r$$, $CellContext`r$83245$$, 0], 
-        Hold[$CellContext`T$$, $CellContext`T$83246$$, 0], 
-        Hold[$CellContext`nOrder$$, $CellContext`nOrder$83247$$, 0], 
-        Hold[$CellContext`fixS$$, $CellContext`fixS$83248$$, 0]}, 
+        Hold[$CellContext`K2$$, $CellContext`K2$690037$$, 0], 
+        Hold[K$$, K$690038$$, 0], 
+        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$690039$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$690040$$, 0], 
+        Hold[$CellContext`T$$, $CellContext`T$690041$$, 0], 
+        Hold[$CellContext`nOrder$$, $CellContext`nOrder$690042$$, 0], 
+        Hold[$CellContext`fixS$$, $CellContext`fixS$690043$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -48371,10 +48363,10 @@ $CellContext`BSCallHandy[
          Appearance -> "Labeled", ImageSize -> Tiny}, "", 
         "truncated order, order", {{$CellContext`nOrder$$, 5, ""}, 0, 100, 5, 
          Appearance -> "Labeled", ImageSize -> Tiny}, "", 
-        "fixed S, fixS", {{$CellContext`fixS$$, 2 K$$, ""}, 1, 400, 5, 
+        "fixed S, fixS", {{$CellContext`fixS$$, 2 K$$, ""}, 1, 600, 5, 
          Appearance -> "Labeled", ImageSize -> Tiny}}, 
       "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
-     ImageSizeCache->{690., {199., 206.}},
+     ImageSizeCache->{646., {189., 196.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -48578,10 +48570,959 @@ $CellContext`g}, $CellContext`g = $CellContext`c ($CellContext`d1/Sqrt[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{{3.72004567697369*^9, 3.720045687161333*^9}, 
-   3.7200459429290495`*^9, 3.7200461713707485`*^9, 3.720046214817995*^9}]
+ CellChangeTimes->{{3.720047325647136*^9, 3.720047337353262*^9}, 
+   3.7200482555427537`*^9, 3.720052516300955*^9, 3.7200525723825293`*^9, 
+   3.7200531353909636`*^9}]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Conclusion", "Subsection",
+ CellChangeTimes->{{3.7200482210045505`*^9, 3.720048223176962*^9}}],
+
+Cell["\<\
+Here, the suitable initial guess is not sensitive when fixS > targetS. Like \
+what we got in implied volatility, but much more rapidly convergent. Try some \
+extreme value of fixS like 4*targetS.
+
+Guess: it is caused by the more suitable form of V(x) as it is an entire \
+function w.r.t x. Even though not sufficient to declare that the lagrange \
+inversion series representation is entire too.
+
+Rule of Thumb: As long as fixS>targetS, it convergent. We can find a upper \
+boundary like Teh\[CloseCurlyQuote]s formula and got a good result.\
+\>", "Subsubsection",
+ CellChangeTimes->{
+  3.720048176833216*^9, {3.720048898183049*^9, 3.720048903118185*^9}}]
 }, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The upper bound of the stock price", "Section",
+ CellChangeTimes->{{3.7200507071014137`*^9, 3.7200507151436415`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Series", "[", 
+  RowBox[{
+   RowBox[{
+    FractionBox["x", "2"], " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"Erf", "[", "x", "]"}]}], ")"}]}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.720050791831499*^9, 3.7200508144463487`*^9}, {
+  3.7200528944473414`*^9, 3.720052927534848*^9}}],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{
+   FractionBox["x", "2"], "+", 
+   FractionBox[
+    SuperscriptBox["x", "2"], 
+    SqrtBox["\[Pi]"]], "+", 
+   InterpretationBox[
+    SuperscriptBox[
+     RowBox[{"O", "[", "x", "]"}], "3"],
+    SeriesData[$CellContext`x, 0, {}, 1, 3, 1],
+    Editable->False]}],
+  SeriesData[$CellContext`x, 0, {
+    Rational[1, 2], Pi^Rational[-1, 2]}, 1, 3, 1],
+  Editable->False]], "Output",
+ CellChangeTimes->{
+  3.7200508149817133`*^9, {3.7200529280033026`*^9, 3.72005293658604*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Plot", "[", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{
+      FractionBox["y", "2"], 
+      RowBox[{"(", 
+       RowBox[{"1", "+", 
+        RowBox[{"Erf", "[", "y", "]"}]}], ")"}]}], ",", 
+     RowBox[{
+      RowBox[{"Normal", "[", 
+       RowBox[{"Series", "[", 
+        RowBox[{
+         RowBox[{
+          FractionBox["x", "2"], " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"Erf", "[", "x", "]"}]}], ")"}]}], ",", 
+         RowBox[{"{", 
+          RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}], "/.", 
+      RowBox[{"x", "\[Rule]", "y"}]}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", 
+     RowBox[{"-", "2"}], ",", "2"}], "}"}], ",", 
+   RowBox[{"PlotLegends", "\[Rule]", "\"\<Expressions\>\""}]}], 
+  "]"}]], "Input",
+ CellChangeTimes->{{3.720052961962033*^9, 3.7200530347278495`*^9}}],
+
+Cell[BoxData[
+ TemplateBox[{GraphicsBox[{{{{}, {}, 
+       TagBox[{
+         Directive[
+          Opacity[1.], 
+          RGBColor[0.368417, 0.506779, 0.709798], 
+          AbsoluteThickness[1.6]], 
+         LineBox[CompressedData["
+1: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
+9ruptu9s4v8A7KBFNA==
+          "]]}, Annotation[#, "Charting`Private`Tag$689788#1"]& ], 
+       TagBox[{
+         Directive[
+          Opacity[1.], 
+          RGBColor[0.880722, 0.611041, 0.142051], 
+          AbsoluteThickness[1.6]], 
+         LineBox[CompressedData["
+1:eJwt1PtP02cYhnGEERUnghENm8UBSjwQIzhLpjMPcWpExUijAeMBivEQ0OHI
+FAiJU8ciLhjNxIQ5NSYFFTVFPBEUeAQlRYNRDlK0DG1LuwL2+3Je22HfbfH+
+4crnP7jC07M0e3x9fHwS/+t/F9PMPiklf1Jwljuy0O2RUPDtuzFRw6MSCo6d
+n5hu75dQcFxwwdtmo4SC462Dz3+vkFCw5uSLm0tTJRSc87Lg4L46L1S4vX1K
+X732I3Sy6nHWjLjZ4/AD38986j/tTw/s47SimIE3J9ywl12/5RcyuaCDdYHd
+oSXmMWjni+tjsttOjUIbnzigzV2QMAJ7ON/vRk62cwhaWHvs5dyO64PQzOdr
+bSUXMwbge374bv7ntyIU2M2RQfGrtlzuhya+s7Aww2J1wE5+11j5lVpthx1s
+iz4fyw+ssI2Dj5arF08wwxaOVovosuEu2Mw/r3a+qs41QgOHbNGf3TarFTbw
+nbHGaU1zn8OHXGayne4tqIN63pk0+55pdyks5uqA/NcNh3X0yXO0zDIh7HgK
+wwqKHHjkXt7wDFZTgu7Ni00prbCB1iRO9xu9b4QGOpNqPLakqgs2k2GTaurm
+6WbYQs7wkKOtF6ywjQ7/uEh7ZqYddpCxK0izt8kBOykt79u/Jm7shyZ6siju
+1yf+CuymqMk1jtJ1A/A9qWoy1/gXDkIz+Xh8y7MtQ9BCfyfV7mqcNwJ7yPR1
+6pfzCkahjQ4lBwVHdI1BO4UW96R8pnJBB+m3X7k2nOuGvZS88qd1TbUe2EeV
+uw5GLB//B/aTK+A7v+qtH6GTNC0r1KoSL1QoYMWU+ppLXqhQfenbDTt0XqjQ
+ktw87R96L1QocE5VUWijFyr07ECsNWTICxWKn7TgbOBGCQW5fnB9oU+SUFCF
+yVCWmCyhoLCKvY+K0iUUNL611B6QJ6GgKt2clROvSijo+6nCcPWmhIKicuo0
+ayslFFS8fuf+X2okFJQ9eOGcX5uEghZuzwjTdUooyPz0m/JV3RIK2lzSWXe8
+V0JBk3yvJ4QLCQVxZk774xEJBR15vTY1zSOhIPwLCvoXjceYrQ==
+          "]]}, 
+        Annotation[#, "Charting`Private`Tag$689788#2"]& ]}}, {}, {}}, {
+    DisplayFunction -> Identity, Ticks -> {Automatic, Automatic}, 
+     AxesOrigin -> {0, 0}, 
+     FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+     GridLines -> {None, None}, DisplayFunction -> Identity, 
+     PlotRangePadding -> {{
+        Scaled[0.02], 
+        Scaled[0.02]}, {
+        Scaled[0.05], 
+        Scaled[0.05]}}, PlotRangeClipping -> True, ImagePadding -> All, 
+     DisplayFunction -> Identity, AspectRatio -> 
+     NCache[GoldenRatio^(-1), 0.6180339887498948], Axes -> {True, True}, 
+     AxesLabel -> {None, None}, AxesOrigin -> {0, 0}, DisplayFunction :> 
+     Identity, Frame -> {{False, False}, {False, False}}, 
+     FrameLabel -> {{None, None}, {None, None}}, 
+     FrameTicks -> {{Automatic, Automatic}, {Automatic, Automatic}}, 
+     GridLines -> {None, None}, GridLinesStyle -> Directive[
+       GrayLevel[0.5, 0.4]], 
+     Method -> {
+      "DefaultBoundaryStyle" -> Automatic, "DefaultMeshStyle" -> 
+       AbsolutePointSize[6], "ScalingFunctions" -> None, 
+       "CoordinatesToolOptions" -> {"DisplayFunction" -> ({
+           (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+            Part[#, 1]], 
+           (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+            Part[#, 2]]}& ), "CopiedValueFunction" -> ({
+           (Part[{{Identity, Identity}, {Identity, Identity}}, 1, 2][#]& )[
+            Part[#, 1]], 
+           (Part[{{Identity, Identity}, {Identity, Identity}}, 2, 2][#]& )[
+            Part[#, 2]]}& )}}, 
+     PlotRange -> {{-2, 2}, {-0.9999999591836735, 1.9953221818901266`}}, 
+     PlotRangeClipping -> True, PlotRangePadding -> {{
+        Scaled[0.02], 
+        Scaled[0.02]}, {
+        Scaled[0.02], 
+        Scaled[0.02]}}, Ticks -> {Automatic, Automatic}}],FormBox[
+    FormBox[
+     TemplateBox[{
+       RowBox[{
+         FractionBox["1", "2"], " ", "y", " ", 
+         RowBox[{"(", 
+           RowBox[{"1", "+", 
+             RowBox[{"erf", "(", "y", ")"}]}], ")"}]}], 
+       RowBox[{
+         RowBox[{"Normal", "[", 
+           RowBox[{"Series", "[", 
+             RowBox[{
+               RowBox[{
+                 FractionBox["1", "2"], " ", "x", " ", 
+                 RowBox[{"(", 
+                   RowBox[{"1", "+", 
+                    RowBox[{"erf", "(", "x", ")"}]}], ")"}]}], ",", 
+               RowBox[{"{", 
+                 RowBox[{"x", ",", "0", ",", "1"}], "}"}]}], "]"}], "]"}], 
+         "/.", "\[VeryThinSpace]", 
+         RowBox[{"x", "\[Rule]", "y"}]}]}, "LineLegend", 
+      DisplayFunction -> (FormBox[
+        StyleBox[
+         StyleBox[
+          PaneBox[
+           TagBox[
+            GridBox[{{
+               TagBox[
+                GridBox[{{
+                   GraphicsBox[{{
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    Opacity[1.], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6]], {
+                    LineBox[{{0, 10}, {20, 10}}]}}, {
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    Opacity[1.], 
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    AbsoluteThickness[1.6]], {}}}, AspectRatio -> Full, 
+                    ImageSize -> {20, 10}, PlotRangePadding -> None, 
+                    ImagePadding -> Automatic, 
+                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #}, {
+                   GraphicsBox[{{
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    Opacity[1.], 
+                    RGBColor[0.880722, 0.611041, 0.142051], 
+                    AbsoluteThickness[1.6]], {
+                    LineBox[{{0, 10}, {20, 10}}]}}, {
+                    Directive[
+                    EdgeForm[
+                    Directive[
+                    Opacity[0.3], 
+                    GrayLevel[0]]], 
+                    PointSize[0.5], 
+                    Opacity[1.], 
+                    RGBColor[0.880722, 0.611041, 0.142051], 
+                    AbsoluteThickness[1.6]], {}}}, AspectRatio -> Full, 
+                    ImageSize -> {20, 10}, PlotRangePadding -> None, 
+                    ImagePadding -> Automatic, 
+                    BaselinePosition -> (Scaled[0.1] -> Baseline)], #2}}, 
+                 GridBoxAlignment -> {
+                  "Columns" -> {Center, Left}, "Rows" -> {{Baseline}}}, 
+                 AutoDelete -> False, 
+                 GridBoxDividers -> {
+                  "Columns" -> {{False}}, "Rows" -> {{False}}}, 
+                 GridBoxItemSize -> {"Columns" -> {{All}}, "Rows" -> {{All}}},
+                  GridBoxSpacings -> {
+                  "Columns" -> {{0.5}}, "Rows" -> {{0.8}}}], "Grid"]}}, 
+             GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
+             AutoDelete -> False, 
+             GridBoxItemSize -> {
+              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+             GridBoxSpacings -> {"Columns" -> {{1}}, "Rows" -> {{0}}}], 
+            "Grid"], Alignment -> Left, AppearanceElements -> None, 
+           ImageMargins -> {{5, 5}, {5, 5}}, ImageSizeAction -> 
+           "ResizeToFit"], LineIndent -> 0, StripOnInput -> False], {
+         FontFamily -> "Arial"}, Background -> Automatic, StripOnInput -> 
+         False], TraditionalForm]& ), 
+      InterpretationFunction :> (RowBox[{"LineLegend", "[", 
+         RowBox[{
+           RowBox[{"{", 
+             RowBox[{
+               RowBox[{"Directive", "[", 
+                 RowBox[{
+                   RowBox[{"Opacity", "[", "1.`", "]"}], ",", 
+                   InterpretationBox[
+                    ButtonBox[
+                    TooltipBox[
+                    GraphicsBox[{{
+                    GrayLevel[0], 
+                    RectangleBox[{0, 0}]}, {
+                    GrayLevel[0], 
+                    RectangleBox[{1, -1}]}, {
+                    RGBColor[0.368417, 0.506779, 0.709798], 
+                    RectangleBox[{0, -1}, {2, 1}]}}, AspectRatio -> 1, Frame -> 
+                    True, FrameStyle -> 
+                    RGBColor[
+                    0.24561133333333335`, 0.3378526666666667, 
+                    0.4731986666666667], FrameTicks -> None, PlotRangePadding -> 
+                    None, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    "RGBColor[0.368417, 0.506779, 0.709798]"], Appearance -> 
+                    None, BaseStyle -> {}, BaselinePosition -> Baseline, 
+                    DefaultBaseStyle -> {}, ButtonFunction :> 
+                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    If[
+                    Not[
+                    AbsoluteCurrentValue["Deployed"]], 
+                    SelectionMove[Typeset`box$, All, Expression]; 
+                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                    FrontEnd`Private`$ColorSelectorInitialColor = 
+                    RGBColor[0.368417, 0.506779, 0.709798]; 
+                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                    MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["RGBColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    RGBColor[0.368417, 0.506779, 0.709798], Editable -> False,
+                     Selectable -> False], ",", 
+                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}]}], "]"}], 
+               ",", 
+               RowBox[{"Directive", "[", 
+                 RowBox[{
+                   RowBox[{"Opacity", "[", "1.`", "]"}], ",", 
+                   InterpretationBox[
+                    ButtonBox[
+                    TooltipBox[
+                    GraphicsBox[{{
+                    GrayLevel[0], 
+                    RectangleBox[{0, 0}]}, {
+                    GrayLevel[0], 
+                    RectangleBox[{1, -1}]}, {
+                    RGBColor[0.880722, 0.611041, 0.142051], 
+                    RectangleBox[{0, -1}, {2, 1}]}}, AspectRatio -> 1, Frame -> 
+                    True, FrameStyle -> 
+                    RGBColor[
+                    0.587148, 0.40736066666666665`, 0.09470066666666668], 
+                    FrameTicks -> None, PlotRangePadding -> None, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 1.35 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                    "RGBColor[0.880722, 0.611041, 0.142051]"], Appearance -> 
+                    None, BaseStyle -> {}, BaselinePosition -> Baseline, 
+                    DefaultBaseStyle -> {}, ButtonFunction :> 
+                    With[{Typeset`box$ = EvaluationBox[]}, 
+                    If[
+                    Not[
+                    AbsoluteCurrentValue["Deployed"]], 
+                    SelectionMove[Typeset`box$, All, Expression]; 
+                    FrontEnd`Private`$ColorSelectorInitialAlpha = 1; 
+                    FrontEnd`Private`$ColorSelectorInitialColor = 
+                    RGBColor[0.880722, 0.611041, 0.142051]; 
+                    FrontEnd`Private`$ColorSelectorUseMakeBoxes = True; 
+                    MathLink`CallFrontEnd[
+                    FrontEnd`AttachCell[Typeset`box$, 
+                    FrontEndResource["RGBColorValueSelector"], {
+                    0, {Left, Bottom}}, {Left, Top}, 
+                    "ClosingActions" -> {
+                    "SelectionDeparture", "ParentChanged", 
+                    "EvaluatorQuit"}]]]], BaseStyle -> Inherited, Evaluator -> 
+                    Automatic, Method -> "Preemptive"], 
+                    RGBColor[0.880722, 0.611041, 0.142051], Editable -> False,
+                     Selectable -> False], ",", 
+                   RowBox[{"AbsoluteThickness", "[", "1.6`", "]"}]}], "]"}]}],
+              "}"}], ",", 
+           RowBox[{"{", 
+             RowBox[{
+               TagBox[#, HoldForm], ",", 
+               TagBox[#2, HoldForm]}], "}"}], ",", 
+           RowBox[{"LegendMarkers", "\[Rule]", "None"}], ",", 
+           RowBox[{"LabelStyle", "\[Rule]", 
+             RowBox[{"{", "}"}]}], ",", 
+           RowBox[{"LegendLayout", "\[Rule]", "\"Column\""}]}], "]"}]& ), 
+      Editable -> True], TraditionalForm], TraditionalForm]},
+  "Legended",
+  DisplayFunction->(GridBox[{{
+      TagBox[
+       ItemBox[
+        PaneBox[
+         TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
+         BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
+       "SkipImageSizeLevel"], 
+      ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}}, 
+    GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
+    AutoDelete -> False, GridBoxItemSize -> Automatic, 
+    BaselinePosition -> {1, 1}]& ),
+  Editable->True,
+  InterpretationFunction->(RowBox[{"Legended", "[", 
+     RowBox[{#, ",", 
+       RowBox[{"Placed", "[", 
+         RowBox[{#2, ",", "After"}], "]"}]}], "]"}]& )]], "Output",
+ CellChangeTimes->{{3.7200530261756363`*^9, 3.720053035209508*^9}}]
+}, Open  ]],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"AssetUpperBound", "[", 
+    RowBox[{"price_", ",", "K_", ",", "T_", ",", "r_"}], "]"}], ":=", 
+   RowBox[{
+    RowBox[{"Exp", "[", 
+     RowBox[{
+      RowBox[{"-", "r"}], " ", "T"}], "]"}], " ", "K", "*", 
+    RowBox[{"Exp", "[", 
+     RowBox[{"2", " ", 
+      FractionBox["price", 
+       RowBox[{"K", " ", 
+        RowBox[{"Exp", "[", 
+         RowBox[{
+          RowBox[{"-", "r"}], " ", "T"}], "]"}]}]]}], "]"}]}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"LogAssetUpperBound", "[", 
+    RowBox[{"price_", ",", "K_", ",", "T_", ",", "r_"}], "]"}], ":=", " ", 
+   RowBox[{
+    RowBox[{"2", 
+     FractionBox["price", 
+      RowBox[{"K", " ", 
+       RowBox[{"Exp", "[", 
+        RowBox[{
+         RowBox[{"-", "r"}], " ", "T"}], "]"}]}]]}], " ", "-", " ", 
+    RowBox[{"r", " ", "T"}], " ", "+", " ", 
+    RowBox[{"Log", "[", "K", "]"}]}]}], ";"}]}], "Input",
+ CellChangeTimes->{{3.7200515218782096`*^9, 3.7200516362547626`*^9}, {
+  3.720051732865823*^9, 3.7200517330900173`*^9}, {3.720051811874998*^9, 
+  3.7200518474906883`*^9}, {3.7200518978027487`*^9, 3.7200519400801916`*^9}, {
+  3.7200520905715537`*^9, 3.720052092653572*^9}, {3.7200526229614897`*^9, 
+  3.7200527498375807`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"x0", "=", 
+        RowBox[{"Log", "[", "fixS", "]"}]}], ",", "x", ",", "newtonRoot", ",",
+        "estimatedPrice"}], "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"x", " ", "=", " ", 
+       RowBox[{"LogAssetOfPrice", "[", 
+        RowBox[{
+        "K", ",", "T", ",", "r", ",", "\[Sigma]", ",", "K2", ",", "1", ",", 
+         "x0", ",", "nOrder"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"newtonRoot", " ", "=", " ", 
+       RowBox[{"Timing", "[", 
+        RowBox[{"FindRoot", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"BSCallHandy", "[", 
+            RowBox[{
+             RowBox[{"Exp", "[", "xx", "]"}], ",", "K", ",", "T", ",", "r", 
+             ",", "\[Sigma]"}], "]"}], "\[Equal]", "K2"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"xx", ",", 
+            RowBox[{"Log", "[", "fixS", "]"}]}], "}"}]}], "]"}], "]"}]}], ";",
+       "\[IndentingNewLine]", 
+      RowBox[{"estimatedPrice", " ", "=", " ", 
+       RowBox[{"BSCallHandy", "[", 
+        RowBox[{
+         RowBox[{"Exp", "[", "x", "]"}], ",", "K", ",", "T", ",", "r", ",", 
+         "\[Sigma]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"K2", ",", "estimatedPrice"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"Exp", "[", "x", "]"}], ",", "x", ",", "newtonRoot"}], 
+         "}"}]}], "}"}]}]}], "\[IndentingNewLine]", "]"}], ",", 
+   "\[IndentingNewLine]", "\"\<target price, K2\>\"", ",", 
+   "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"K2", ",", "20", ",", "\"\<\>\""}], "}"}], ",", "0", ",", "100",
+      ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<strike, K\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"K", ",", "100", ",", "\"\<\>\""}], "}"}], ",", "0", ",", "150",
+      ",", "1", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<volatility, \[Sigma]\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Sigma]", ",", "0.3", ",", "\"\<\>\""}], "}"}], ",", "0.01", 
+     ",", "1", ",", "0.01", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<risk-free rate, r\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"r", ",", "0.05", ",", "\"\<\>\""}], "}"}], ",", "0.0", ",", 
+     "0.25", ",", "0.01", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<years to maturity, T\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"T", ",", "1", ",", "\"\<\>\""}], "}"}], ",", "0.1", ",", "3", 
+     ",", "0.25", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<truncated order, order\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"nOrder", ",", "5", ",", "\"\<\>\""}], "}"}], ",", "0", ",", 
+     "100", ",", "5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\"\<\>\"", ",", "\[IndentingNewLine]", 
+   "\"\<fixed S, fixS\>\"", ",", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"fixS", ",", 
+       RowBox[{
+        RowBox[{"Exp", "[", 
+         RowBox[{
+          RowBox[{"-", "r"}], " ", "T"}], "]"}], " ", "K", "*", 
+        RowBox[{"Exp", "[", 
+         RowBox[{"2", " ", 
+          FractionBox["K2", 
+           RowBox[{"K", " ", 
+            RowBox[{"Exp", "[", 
+             RowBox[{
+              RowBox[{"-", "r"}], " ", "T"}], "]"}]}]]}], "]"}]}], ",", 
+       "\"\<\>\""}], "}"}], ",", "1", ",", "600", ",", "5", ",", 
+     RowBox[{"Appearance", "\[Rule]", "\"\<Labeled\>\""}], ",", " ", 
+     RowBox[{"ImageSize", "\[Rule]", " ", "Tiny"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"ControlPlacement", "\[Rule]", "Left"}], ",", 
+   RowBox[{"SaveDefinitions", "\[Rule]", "True"}]}], "\[IndentingNewLine]", 
+  "]"}]], "Input"],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`fixS$$ = 
+    E^(2 E^($CellContext`r$$ $CellContext`T$$) 
+       K$$^(-1) $CellContext`K2$$ - $CellContext`r$$ $CellContext`T$$) K$$, 
+    K$$ = 100, $CellContext`K2$$ = 20, $CellContext`nOrder$$ = 
+    5, $CellContext`r$$ = 0.05, $CellContext`T$$ = 
+    1, $CellContext`\[Sigma]$$ = 0.3, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold["target price, K2"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`K2$$], 20, ""}, 0, 100, 1}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["strike, K"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[K$$], 100, ""}, 0, 150, 1}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["volatility, \[Sigma]"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`\[Sigma]$$], 0.3, ""}, 0.01, 1, 0.01}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["risk-free rate, r"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`r$$], 0.05, ""}, 0., 0.25, 0.01}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["years to maturity, T"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`T$$], 1, ""}, 0.1, 3, 0.25}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["truncated order, order"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`nOrder$$], 5, ""}, 0, 100, 5}, {
+      Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
+      Hold["fixed S, fixS"], Manipulate`Dump`ThisIsNotAControl}, {{
+       Hold[$CellContext`fixS$$], 
+       E^(2 E^($CellContext`r$$ $CellContext`T$$) 
+          K$$^(-1) $CellContext`K2$$ - $CellContext`r$$ $CellContext`T$$) K$$,
+        ""}, 1, 600, 5}}, Typeset`size$$ = {427., {3., 10.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    False, $CellContext`K2$690146$$ = 0, K$690147$$ = 
+    0, $CellContext`\[Sigma]$690148$$ = 0, $CellContext`r$690149$$ = 
+    0, $CellContext`T$690150$$ = 0, $CellContext`nOrder$690151$$ = 
+    0, $CellContext`fixS$690152$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`fixS$$ = 
+        E^(2 E^($CellContext`r$$ $CellContext`T$$) 
+            K$$^(-1) $CellContext`K2$$ - $CellContext`r$$ $CellContext`T$$) 
+         K$$, K$$ = 100, $CellContext`K2$$ = 20, $CellContext`nOrder$$ = 
+        5, $CellContext`r$$ = 0.05, $CellContext`T$$ = 
+        1, $CellContext`\[Sigma]$$ = 0.3}, "ControllerVariables" :> {
+        Hold[$CellContext`K2$$, $CellContext`K2$690146$$, 0], 
+        Hold[K$$, K$690147$$, 0], 
+        Hold[$CellContext`\[Sigma]$$, $CellContext`\[Sigma]$690148$$, 0], 
+        Hold[$CellContext`r$$, $CellContext`r$690149$$, 0], 
+        Hold[$CellContext`T$$, $CellContext`T$690150$$, 0], 
+        Hold[$CellContext`nOrder$$, $CellContext`nOrder$690151$$, 0], 
+        Hold[$CellContext`fixS$$, $CellContext`fixS$690152$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`x0$ = 
+         Log[$CellContext`fixS$$], $CellContext`x$, $CellContext`newtonRoot$, \
+$CellContext`estimatedPrice$}, $CellContext`x$ = $CellContext`LogAssetOfPrice[
+          K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$, \
+$CellContext`K2$$, 
+           1, $CellContext`x0$, $CellContext`nOrder$$]; \
+$CellContext`newtonRoot$ = Timing[
+           FindRoot[$CellContext`BSCallHandy[
+              Exp[$CellContext`xx], 
+              K$$, $CellContext`T$$, $CellContext`r$$, \
+$CellContext`\[Sigma]$$] == $CellContext`K2$$, {$CellContext`xx, 
+             
+             Log[$CellContext`fixS$$]}]]; $CellContext`estimatedPrice$ = \
+$CellContext`BSCallHandy[
+           Exp[$CellContext`x$], 
+           K$$, $CellContext`T$$, $CellContext`r$$, $CellContext`\[Sigma]$$]; \
+{{$CellContext`K2$$, $CellContext`estimatedPrice$}, {
+           Exp[$CellContext`x$], $CellContext`x$, $CellContext`newtonRoot$}}],
+       "Specifications" :> {
+       "target price, K2", {{$CellContext`K2$$, 20, ""}, 0, 100, 1, 
+         Appearance -> "Labeled", ImageSize -> Tiny}, "", 
+        "strike, K", {{K$$, 100, ""}, 0, 150, 1, Appearance -> "Labeled", 
+         ImageSize -> Tiny}, "", 
+        "volatility, \[Sigma]", {{$CellContext`\[Sigma]$$, 0.3, ""}, 0.01, 1, 
+         0.01, Appearance -> "Labeled", ImageSize -> Tiny}, "", 
+        "risk-free rate, r", {{$CellContext`r$$, 0.05, ""}, 0., 0.25, 0.01, 
+         Appearance -> "Labeled", ImageSize -> Tiny}, "", 
+        "years to maturity, T", {{$CellContext`T$$, 1, ""}, 0.1, 3, 0.25, 
+         Appearance -> "Labeled", ImageSize -> Tiny}, "", 
+        "truncated order, order", {{$CellContext`nOrder$$, 5, ""}, 0, 100, 5, 
+         Appearance -> "Labeled", ImageSize -> Tiny}, "", 
+        "fixed S, fixS", {{$CellContext`fixS$$, 
+          E^(2 E^($CellContext`r$$ $CellContext`T$$) 
+             K$$^(-1) $CellContext`K2$$ - $CellContext`r$$ $CellContext`T$$) 
+          K$$, ""}, 1, 600, 5, Appearance -> "Labeled", ImageSize -> Tiny}}, 
+      "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
+     ImageSizeCache->{638., {189., 196.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    Initialization:>({$CellContext`estimatedPrice = 
+       20.003221853058662`, $CellContext`LogAssetOfPrice[
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]], 
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]], 
+         Pattern[$CellContext`price, 
+          Blank[]], 
+         Pattern[$CellContext`c, 
+          Blank[]], 
+         Pattern[$CellContext`x0, 
+          Blank[]], 
+         Pattern[$CellContext`n, 
+          Blank[]]] := 
+       Module[{$CellContext`fixS, $CellContext`fixPrice, $CellContext`gk}, \
+$CellContext`fixS = Exp[$CellContext`x0]; $CellContext`fixPrice = 
+          If[$CellContext`c == 1, 
+            $CellContext`BSCallHandy[$CellContext`fixS, 
+             K, $CellContext`T, $CellContext`r, $CellContext`\[Sigma]], 
+            $CellContext`BSPutHandy[$CellContext`fixS, 
+             K, $CellContext`T, $CellContext`r, $CellContext`\[Sigma]]]; \
+$CellContext`gk = Function[$CellContext`k, 
+            $CellContext`DpX[
+            K, $CellContext`T, $CellContext`r, $CellContext`\[Sigma], \
+$CellContext`c, $CellContext`price, $CellContext`x0, $CellContext`k]]; \
+$CellContext`x0 + 
+          Sum[($CellContext`gk[$CellContext`k]/
+             Factorial[$CellContext`k]) ($CellContext`price - \
+$CellContext`fixPrice)^$CellContext`k, {$CellContext`k, 
+             1, $CellContext`n}]], $CellContext`BSCallHandy[
+         Pattern[$CellContext`S, 
+          Blank[]], 
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]], 
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]]] := $CellContext`S $CellContext`normalCDF[
+           $CellContext`d1[
+            $CellContext`logForward[$CellContext`S, 
+             K, $CellContext`T, $CellContext`r], 
+            $CellContext`Std[$CellContext`\[Sigma], $CellContext`T]]] - K 
+        Exp[(-$CellContext`r) $CellContext`T] $CellContext`normalCDF[
+          $CellContext`d2[
+           $CellContext`logForward[$CellContext`S, 
+            K, $CellContext`T, $CellContext`r], 
+           $CellContext`Std[$CellContext`\[Sigma], $CellContext`T]]], \
+$CellContext`normalCDF[
+         Pattern[$CellContext`d, 
+          Blank[]]] := (1/2) (1 + 
+         Erf[$CellContext`d/Sqrt[2]]), $CellContext`d1[
+         Pattern[$CellContext`lo, 
+          Blank[]], 
+         Pattern[$CellContext`Z, 
+          Blank[]]] := $CellContext`lo/$CellContext`Z + $CellContext`Z/
+         2, $CellContext`Z[
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]]] := $CellContext`\[Sigma] 
+        Sqrt[$CellContext`T], $CellContext`logForward[
+         Pattern[$CellContext`S, 
+          Blank[]], 
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]]] := 
+       Log[$CellContext`S/K] + $CellContext`r $CellContext`T, $CellContext`Std[
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]]] := $CellContext`\[Sigma] 
+        Sqrt[$CellContext`T], $CellContext`d2[
+         Pattern[$CellContext`lo, 
+          Blank[]], 
+         Pattern[$CellContext`Z, 
+          Blank[]]] := $CellContext`lo/$CellContext`Z - $CellContext`Z/
+        2, $CellContext`BSPutHandy[
+         Pattern[$CellContext`S, 
+          Blank[]], 
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]], 
+         Pattern[$CellContext`\[Sigma], 
+          
+          Blank[]]] := (-$CellContext`S) \
+$CellContext`normalCDF[-$CellContext`d1[
+             $CellContext`logForward[$CellContext`S, 
+              K, $CellContext`T, $CellContext`r], 
+             $CellContext`Std[$CellContext`\[Sigma], $CellContext`T]]] + 
+        K Exp[(-$CellContext`r) $CellContext`T] \
+$CellContext`normalCDF[-$CellContext`d2[
+             $CellContext`logForward[$CellContext`S, 
+              K, $CellContext`T, $CellContext`r], 
+             $CellContext`Std[$CellContext`\[Sigma], $CellContext`T]]], \
+$CellContext`DpX[
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]], 
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]], 
+         Pattern[$CellContext`c, 
+          Blank[]], 
+         Pattern[$CellContext`Price, 
+          Blank[]], 
+         Pattern[$CellContext`x0, 
+          Blank[]], 
+         Pattern[$CellContext`n, 
+          Blank[]]] := 
+       Module[{$CellContext`f, $CellContext`fHat, $CellContext`fHatArray, \
+$CellContext`g}, $CellContext`f := Function[$CellContext`k, 
+            $CellContext`DxV[$CellContext`x0, 
+             K, $CellContext`T, $CellContext`r, $CellContext`\[Sigma], \
+$CellContext`c, $CellContext`k]]; $CellContext`fHat := 
+          Function[$CellContext`k, $CellContext`f[$CellContext`k + 
+              1]/(($CellContext`k + 1) $CellContext`f[
+             1])]; $CellContext`fHatArray := Function[$CellContext`k, 
+            Table[
+             $CellContext`fHat[$CellContext`j], {$CellContext`j, 
+              1, $CellContext`k}]]; $CellContext`g = 
+          Which[$CellContext`n == 0, 0, $CellContext`n == 1, 1/$CellContext`f[
+            1], $CellContext`n >= 2, (1/$CellContext`f[1]^$CellContext`n) 
+            Sum[(-1)^$CellContext`k (
+               Factorial[$CellContext`n + $CellContext`k - 1]/
+               Factorial[$CellContext`n - 1]) 
+              BellY[$CellContext`n - 1, $CellContext`k, 
+                $CellContext`fHatArray[$CellContext`n - $CellContext`k]], \
+{$CellContext`k, 1, $CellContext`n - 1}]]; $CellContext`g], $CellContext`f[
+         Pattern[$CellContext`z$, 
+          Blank[]]] := ReplaceAll[
+         With[{$CellContext`S$ = 100, $CellContext`K$ = 100, $CellContext`T$ = 
+           1, $CellContext`r$ = 0.05}, 
+          $CellContext`BSCallHandy[$CellContext`S$, $CellContext`K$, \
+$CellContext`T$, $CellContext`r$, FE`\[Sigma]$$161]], 
+         FE`\[Sigma]$$161 -> $CellContext`z$], 
+       Attributes[$CellContext`z$] = {Temporary}, 
+       Attributes[$CellContext`S$] = {Temporary}, 
+       Attributes[$CellContext`T$] = {Temporary}, 
+       Attributes[$CellContext`r$] = {Temporary}, FE`\[Sigma]$$161 = 
+       0.3, $CellContext`DxV[
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]], 
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]], 
+         Pattern[$CellContext`c, 
+          Blank[]], 
+         Pattern[$CellContext`n, 
+          Blank[]]] := 
+       Module[{$CellContext`d1 = $CellContext`d1x[$CellContext`x, 
+            K, $CellContext`T, $CellContext`r, $CellContext`\[Sigma]], \
+$CellContext`g}, $CellContext`g = $CellContext`c ($CellContext`d1/Sqrt[
+            2]); $CellContext`c (Exp[$CellContext`x]/2) (1 + 
+            Erf[$CellContext`g]) + $CellContext`c Exp[$CellContext`x] (1/2) 
+           Sum[(Binomial[$CellContext`n - 
+                1, $CellContext`j] ((-1)^($CellContext`j - 1) (2/Sqrt[Pi]) 
+               HermiteH[$CellContext`j - 1, $CellContext`g] 
+               Exp[-$CellContext`g^2]))/($CellContext`c 
+              Sqrt[2] $CellContext`\[Sigma] 
+              Sqrt[$CellContext`T])^$CellContext`j, {$CellContext`j, 
+              1, $CellContext`n - 1}]], $CellContext`d1x[
+         Pattern[$CellContext`x, 
+          Blank[]], 
+         Pattern[K, 
+          Blank[]], 
+         Pattern[$CellContext`T, 
+          Blank[]], 
+         Pattern[$CellContext`r, 
+          Blank[]], 
+         Pattern[$CellContext`\[Sigma], 
+          Blank[]]] := ($CellContext`x + $CellContext`r $CellContext`T - Log[
+         K] + ($CellContext`\[Sigma]^2 $CellContext`T)/
+          2)/($CellContext`\[Sigma] Sqrt[$CellContext`T])}; 
+     Typeset`initDone$$ = True),
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{3.720053145810226*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Conclusion", "Subsection",
+ CellChangeTimes->{{3.720053206650938*^9, 3.7200532171249766`*^9}}],
+
+Cell["This is a nice upper bound of implied asset price.", "Subsubsection",
+ CellChangeTimes->{{3.720053273803355*^9, 3.7200533620417542`*^9}}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -48748,121 +49689,142 @@ Cell[2641608, 45730, 1483, 32, 224, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[2643128, 45767, 4734, 106, 694, "Input"],
-Cell[2647865, 45875, 15276, 323, 403, "Output"]
+Cell[2647865, 45875, 15290, 323, 443, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2663178, 46203, 1491, 38, 158, "Input"],
-Cell[2664672, 46243, 509, 10, 33, "Output"]
+Cell[2663192, 46203, 1491, 38, 158, "Input"],
+Cell[2664686, 46243, 509, 10, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2665218, 46258, 132, 1, 53, "Subsection"],
-Cell[2665353, 46261, 733, 14, 33, "Output"],
+Cell[2665232, 46258, 132, 1, 53, "Subsection"],
+Cell[2665367, 46261, 733, 14, 33, "Output"],
 Cell[CellGroupData[{
-Cell[2666111, 46279, 1789, 42, 158, "Input"],
-Cell[2667903, 46323, 652, 12, 33, "Output"],
-Cell[2668558, 46337, 1915, 42, 264, "Output"]
+Cell[2666125, 46279, 1789, 42, 158, "Input"],
+Cell[2667917, 46323, 652, 12, 33, "Output"],
+Cell[2668572, 46337, 1915, 42, 264, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2670534, 46386, 164, 2, 78, "Section"],
+Cell[2670548, 46386, 164, 2, 78, "Section"],
 Cell[CellGroupData[{
-Cell[2670723, 46392, 71, 1, 33, "Input"],
-Cell[2670797, 46395, 119, 2, 33, "Output"]
+Cell[2670737, 46392, 71, 1, 33, "Input"],
+Cell[2670811, 46395, 119, 2, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2670953, 46402, 815, 22, 56, "Input"],
-Cell[2671771, 46426, 703, 15, 39, "Output"]
+Cell[2670967, 46402, 815, 22, 56, "Input"],
+Cell[2671785, 46426, 703, 15, 39, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2672511, 46446, 768, 21, 56, "Input"],
-Cell[2673282, 46469, 2643, 71, 59, "Output"]
+Cell[2672525, 46446, 768, 21, 56, "Input"],
+Cell[2673296, 46469, 2643, 71, 59, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2675962, 46545, 136, 2, 33, "Input"],
-Cell[2676101, 46549, 2433, 59, 59, "Output"]
+Cell[2675976, 46545, 136, 2, 33, "Input"],
+Cell[2676115, 46549, 2433, 59, 59, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2678571, 46613, 107, 1, 53, "Subsection"],
+Cell[2678585, 46613, 107, 1, 53, "Subsection"],
 Cell[CellGroupData[{
-Cell[2678703, 46618, 6690, 143, 848, "Input"],
-Cell[2685396, 46763, 10501, 202, 403, "Output"]
+Cell[2678717, 46618, 6690, 143, 848, "Input"],
+Cell[2685410, 46763, 10501, 202, 403, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2695934, 46970, 232, 4, 43, "Subsubsection"],
-Cell[2696169, 46976, 112, 2, 32, "Text"]
+Cell[2695948, 46970, 327, 7, 106, "Subsubsection"],
+Cell[2696278, 46979, 112, 2, 32, "Text"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2696330, 46984, 163, 2, 53, "Subsection"],
+Cell[2696439, 46987, 163, 2, 53, "Subsection"],
 Cell[CellGroupData[{
-Cell[2696518, 46990, 857, 24, 56, "Input"],
-Cell[2697378, 47016, 575, 13, 33, "Output"]
+Cell[2696627, 46993, 857, 24, 56, "Input"],
+Cell[2697487, 47019, 575, 13, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2697990, 47034, 711, 20, 56, "Input"],
-Cell[2698704, 47056, 2446, 69, 59, "Output"]
+Cell[2698099, 47037, 711, 20, 56, "Input"],
+Cell[2698813, 47059, 2446, 69, 59, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2701187, 47130, 136, 2, 33, "Input"],
-Cell[2701326, 47134, 2354, 58, 59, "Output"]
+Cell[2701296, 47133, 136, 2, 33, "Input"],
+Cell[2701435, 47137, 2354, 58, 59, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2703717, 47197, 256, 6, 33, "Input"],
-Cell[2703976, 47205, 227, 4, 33, "Output"]
+Cell[2703826, 47200, 256, 6, 33, "Input"],
+Cell[2704085, 47208, 227, 4, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2704240, 47214, 71, 1, 33, "Input"],
-Cell[2704314, 47217, 121, 2, 33, "Output"]
+Cell[2704349, 47217, 71, 1, 33, "Input"],
+Cell[2704423, 47220, 121, 2, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2704472, 47224, 6448, 142, 848, "Input"],
-Cell[2710923, 47368, 10197, 201, 403, "Output"]
+Cell[2704581, 47227, 6448, 142, 848, "Input"],
+Cell[2711032, 47371, 10197, 201, 403, "Output"]
 }, Open  ]],
-Cell[2721135, 47572, 3873, 95, 401, "Input"],
+Cell[2721244, 47575, 3873, 95, 401, "Input"],
 Cell[CellGroupData[{
-Cell[2725033, 47671, 1215, 30, 122, "Input"],
-Cell[2726251, 47703, 813, 16, 33, "Output"]
-}, Open  ]],
-Cell[CellGroupData[{
-Cell[2727101, 47724, 71, 1, 33, "Input"],
-Cell[2727175, 47727, 119, 2, 33, "Output"]
+Cell[2725142, 47674, 1215, 30, 122, "Input"],
+Cell[2726360, 47706, 813, 16, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2727331, 47734, 1336, 34, 122, "Input"],
-Cell[2728670, 47770, 1444, 35, 66, "Output"]
+Cell[2727210, 47727, 71, 1, 33, "Input"],
+Cell[2727284, 47730, 119, 2, 33, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2730151, 47810, 916, 26, 56, "Input"],
-Cell[2731070, 47838, 2590, 70, 66, "Output"]
+Cell[2727440, 47737, 1336, 34, 122, "Input"],
+Cell[2728779, 47773, 1444, 35, 66, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2733697, 47913, 66, 1, 33, "Input"],
-Cell[2733766, 47916, 2670, 71, 66, "Output"]
+Cell[2730260, 47813, 916, 26, 56, "Input"],
+Cell[2731179, 47841, 2590, 70, 66, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2736473, 47992, 870, 24, 33, "Input"],
-Cell[2737346, 48018, 537, 12, 39, "Output"]
-}, Open  ]],
-Cell[2737898, 48033, 2454, 60, 188, "Input"],
-Cell[CellGroupData[{
-Cell[2740377, 48097, 71, 1, 33, "Input"],
-Cell[2740451, 48100, 123, 2, 33, "Output"]
+Cell[2733806, 47916, 66, 1, 33, "Input"],
+Cell[2733875, 47919, 2670, 71, 66, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2740611, 48107, 1424, 35, 78, "Input"],
-Cell[2742038, 48144, 390, 6, 33, "Output"]
+Cell[2736582, 47995, 870, 24, 33, "Input"],
+Cell[2737455, 48021, 537, 12, 39, "Output"]
+}, Open  ]],
+Cell[2738007, 48036, 2454, 60, 188, "Input"],
+Cell[CellGroupData[{
+Cell[2740486, 48100, 71, 1, 33, "Input"],
+Cell[2740560, 48103, 123, 2, 33, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2740720, 48110, 1424, 35, 78, "Input"],
+Cell[2742147, 48147, 390, 6, 33, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[2742477, 48156, 150, 2, 53, "Subsection"],
+Cell[2742586, 48159, 150, 2, 53, "Subsection"],
 Cell[CellGroupData[{
-Cell[2742652, 48162, 548, 9, 137, "Subsubsection"],
+Cell[2742761, 48165, 5158, 115, 672, "Input"],
+Cell[2747922, 48282, 13703, 292, 403, "Output"]
+}, Open  ]]
+}, Open  ]],
 Cell[CellGroupData[{
-Cell[2743225, 48175, 5006, 113, 672, "Input"],
-Cell[2748234, 48290, 13659, 291, 423, "Output"]
+Cell[2761674, 48580, 100, 1, 53, "Subsection"],
+Cell[2761777, 48583, 664, 13, 230, "Subsubsection"]
 }, Open  ]]
-}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2762490, 48602, 123, 1, 78, "Section"],
+Cell[CellGroupData[{
+Cell[2762638, 48607, 392, 11, 51, "Input"],
+Cell[2763033, 48620, 517, 16, 58, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2763587, 48641, 882, 27, 51, "Input"],
+Cell[2764472, 48670, 19631, 383, 264, "Output"]
+}, Open  ]],
+Cell[2784118, 49056, 1264, 34, 106, "Input"],
+Cell[CellGroupData[{
+Cell[2785407, 49094, 5078, 119, 720, "Input"],
+Cell[2790488, 49215, 14091, 300, 403, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2804616, 49520, 100, 1, 53, "Subsection"],
+Cell[2804719, 49523, 143, 1, 43, "Subsubsection"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
