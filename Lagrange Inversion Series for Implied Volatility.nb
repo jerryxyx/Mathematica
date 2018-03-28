@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     62092,       1553]
-NotebookOptionsPosition[     60881,       1511]
-NotebookOutlinePosition[     61226,       1526]
-CellTagsIndexPosition[     61183,       1523]
+NotebookDataLength[     64877,       1629]
+NotebookOptionsPosition[     63340,       1579]
+NotebookOutlinePosition[     63685,       1594]
+CellTagsIndexPosition[     63642,       1591]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -590,7 +590,7 @@ Cell[BoxData[
       Hold[""], Manipulate`Dump`ThisIsNotAControl}, {
       Hold["fixed volatility, a"], Manipulate`Dump`ThisIsNotAControl}, {{
        Hold[$CellContext`a$$], 0.3, ""}, 0.05, 1, 0.1}}, Typeset`size$$ = {
-    271.5, {22., 12.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    988.6, {155.725, 29.625}}, Typeset`update$$ = 0, Typeset`initDone$$, 
     Typeset`skipInitDone$$ = False, $CellContext`S$3059$$ = 0, K$3060$$ = 
     0, $CellContext`\[Sigma]$3061$$ = 0, $CellContext`r$3062$$ = 
     0, $CellContext`T$3063$$ = 0, $CellContext`order$3064$$ = 
@@ -651,7 +651,7 @@ $CellContext`estimatedIV$, $CellContext`U$, $CellContext`newtonRoot$}}],
         "fixed volatility, a", {{$CellContext`a$$, 0.3, ""}, 0.05, 1, 0.1, 
          Appearance -> "Labeled", ImageSize -> Tiny}}, 
       "Options" :> {ControlPlacement -> Left}, "DefaultOptions" :> {}],
-     ImageSizeCache->{527., {170., 176.}},
+     ImageSizeCache->{1180., {170., 176.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -896,7 +896,75 @@ $CellContext`g}, $CellContext`g = $CellContext`c ($CellContext`d1/Sqrt[
    Deployed->True,
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
- CellChangeTimes->{3.7233324399891725`*^9}]
+ CellChangeTimes->{3.7233324399891725`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0\\\"]\\) \
+encountered.\"",2,42,9,26924979743408937018,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.723497186284282*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0\\\"]\\) \
+encountered.\"",2,42,10,26924979743408937018,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7234971863023305`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0\\\"]\\) \
+encountered.\"",2,42,11,26924979743408937018,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.723497186317405*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,42,12,26924979743408937018,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.72349718633344*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Infinity","indet",
+   "\"Indeterminate expression \\!\\(\\*RowBox[{\\\"0\\\", \\\" \\\", \
+RowBox[{\\\"(\\\", RowBox[{\\\"-\\\", \\\"\[Infinity]\\\"}], \\\")\\\"}]}]\\) \
+encountered.\"",2,42,13,26924979743408937018,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7234971863354197`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Infinity","indet",
+   "\"Indeterminate expression \\!\\(\\*RowBox[{\\\"0\\\", \\\" \\\", \
+RowBox[{\\\"(\\\", RowBox[{\\\"-\\\", \\\"\[Infinity]\\\"}], \\\")\\\"}]}]\\) \
+encountered.\"",2,42,14,26924979743408937018,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7234971863523026`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Infinity","indet",
+   "\"Indeterminate expression \\!\\(\\*RowBox[{\\\"0\\\", \\\" \\\", \\\"\
+\[Infinity]\\\"}]\\) encountered.\"",2,42,15,26924979743408937018,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7234971863763666`*^9}],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Infinity\\\", \
+\\\"::\\\", \\\"indet\\\"}], \\\"MessageName\\\"]\\) will be suppressed \
+during this calculation.\"",2,42,16,26924979743408937018,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7234971863954315`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -1525,33 +1593,41 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 4433, 136, 413, "Input"],
-Cell[4994, 158, 2240, 65, 349, "Input"],
-Cell[7237, 225, 1267, 42, 139, "Input"],
-Cell[8507, 269, 3194, 84, 392, "Input"],
-Cell[11704, 355, 2140, 56, 186, "Input"],
+Cell[558, 20, 4433, 136, 299, "Input"],
+Cell[4994, 158, 2240, 65, 240, "Input"],
+Cell[7237, 225, 1267, 42, 63, "Input"],
+Cell[8507, 269, 3194, 84, 354, "Input"],
+Cell[11704, 355, 2140, 56, 148, "Input"],
 Cell[CellGroupData[{
-Cell[13869, 415, 5914, 133, 825, "Input"],
-Cell[19786, 550, 531, 10, 40, "Message"],
-Cell[20320, 562, 16020, 336, 363, "Output"]
+Cell[13869, 415, 5914, 133, 787, "Input"],
+Cell[19786, 550, 531, 10, 23, "Message"],
+Cell[20320, 562, 16028, 336, 363, "Output"],
+Cell[36351, 900, 257, 6, 40, "Message"],
+Cell[36611, 908, 260, 6, 40, "Message"],
+Cell[36874, 916, 258, 6, 40, "Message"],
+Cell[37135, 924, 337, 7, 21, "Message"],
+Cell[37475, 933, 342, 7, 23, "Message"],
+Cell[37820, 942, 342, 7, 23, "Message"],
+Cell[38165, 951, 287, 6, 21, "Message"],
+Cell[38455, 959, 344, 7, 21, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[36377, 903, 100, 1, 70, "Section"],
-Cell[36480, 906, 193, 4, 49, "Text"],
-Cell[36676, 912, 420, 12, 30, "Input"],
-Cell[37099, 926, 5712, 143, 428, "Input"],
+Cell[38836, 971, 100, 1, 70, "Section"],
+Cell[38939, 974, 193, 4, 30, "Text"],
+Cell[39135, 980, 420, 12, 30, "Input"],
+Cell[39558, 994, 5712, 143, 409, "Input"],
 Cell[CellGroupData[{
-Cell[42836, 1073, 130, 1, 49, "Subsection"],
-Cell[42969, 1076, 1223, 36, 185, "Input"],
-Cell[44195, 1114, 91, 1, 30, "Input"],
-Cell[44289, 1117, 7894, 173, 563, "Input"],
+Cell[45295, 1141, 130, 1, 49, "Subsection"],
+Cell[45428, 1144, 1223, 36, 185, "Input"],
+Cell[46654, 1182, 91, 1, 30, "Input"],
+Cell[46748, 1185, 7894, 173, 563, "Input"],
 Cell[CellGroupData[{
-Cell[52208, 1294, 1468, 34, 126, "Input"],
-Cell[53679, 1330, 3885, 91, 126, "Output"]
+Cell[54667, 1362, 1468, 34, 126, "Input"],
+Cell[56138, 1398, 3885, 91, 126, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[57601, 1426, 1244, 31, 126, "Input"],
-Cell[58848, 1459, 1993, 47, 126, "Output"]
+Cell[60060, 1494, 1244, 31, 126, "Input"],
+Cell[61307, 1527, 1993, 47, 69, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
